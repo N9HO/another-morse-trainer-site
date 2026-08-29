@@ -152,6 +152,11 @@
           </tbody>
         </table>
       </div>
+      <div class="tip warn">
+        <span class="tip-icon">CHECK</span>
+        <p><strong>Check this before your first session.</strong> iOS ships at 33 WPM, but <strong>Android ships at 18 WPM</strong>, which is slow enough to count dits at. If you're on Android, open Settings and raise the character speed to at least 33 before you build the counting habit. Leave the Farnsworth (effective) speed wherever you're comfortable.</p>
+      </div>
+
       <p>Character speed is held high for one reason: at 33 WPM a character physically arrives too fast to count. You cannot go <em>"dah-di-dah-dit… that's C"</em>, because there isn't time. The only thing your brain can do is take the whole thing as a single sound, which is exactly the skill you're trying to build. Drop below about 33 and counting becomes possible again, your brain takes the shortcut, and you build a habit you'll later have to break.</p>
       <div class="tip">
         <span class="tip-icon">KEY</span>
@@ -184,7 +189,7 @@
             <tr><td>Copying letters</td><td>All 36, slow</td><td><a href="#words">Common Words</a> and <a href="#typeit">Type It</a>. Close the Farnsworth gap.</td></tr>
             <tr><td>Copying words</td><td>~15 WPM effective</td><td><a href="#headcopy">Head Copy</a>, <a href="#rapidfire">Rapid Fire</a>, <a href="#stories">Short Stories</a>.</td></tr>
             <tr><td>Operating</td><td>~18 WPM+</td><td><a href="#pileup">Pileup Runner</a>, <a href="#contest">Contest</a>, <a href="#repeater">Repeater</a>.</td></tr>
-            <tr><td>Pushing</td><td>30 WPM+</td><td><a href="#qrq">QRQ Speed</a> and head copy at pace.</td></tr>
+            <tr><td>Pushing</td><td>35 to 60 WPM</td><td><a href="#qrq">QRQ Speed</a> and head copy at pace.</td></tr>
           </tbody>
         </table>
       </div>
@@ -477,7 +482,8 @@
       <h2><span class="h2-mc">&minus;&minus;·&minus;</span>QRQ Speed</h2>
       <div class="entry">
         <p class="entry-why">High-speed copy for when 33 WPM has stopped feeling fast.</p>
-        <p>Free-recall typing at <strong>35 or 40 WPM</strong>. At these speeds there is no time for anything but instant recognition, which is precisely the point. It's the mode that proves whether a character is truly automatic or merely fast.</p>
+        <p>Free-recall typing at <strong>35, 40, 50 or 60 WPM</strong>. At these speeds there is no time for anything but instant recognition, which is precisely the point. It's the mode that proves whether a character is truly automatic or merely fast.</p>
+        <p>QRQ runs on its own speed setting and does not touch your global WPM, so you can push here without disturbing the speed the rest of your practice uses. 50 and 60 are there for operators who already work QRQ; if 35 is a struggle, that is the right place to stay.</p>
         <p>Don't start here. Come back to it once your <a href="#progress">recognition times</a> at 33 WPM are consistently under a second.</p>
       </div>
     </section>
@@ -537,10 +543,19 @@
           <li><strong>QRN (noise)</strong>: atmospheric noise at selectable levels.</li>
           <li><strong>Cut numbers</strong>: digits sent as letters to save time (0→T, 9→N). You can type either form.</li>
           <li><strong>Bust behavior</strong>: what happens when you get a call wrong, and whether stations <strong>give up</strong> and drop out after you keep busting them.</li>
+          <li><strong>Who got away</strong>: when a caller runs out of patience and leaves, this decides whether you hear about it. <strong>At the end</strong> (the default) lists the ones who walked in the run summary, along with what you had them as. <strong>As it happens</strong> also raises a banner mid-run naming the call. <strong>Off</strong> keeps the run uninterrupted.</li>
           <li><strong>Keep partial call</strong>: a partly-copied call stays in the box so you can send <span class="morse">?</span> and add to it rather than retyping from scratch.</li>
           <li><strong>Callsign shapes</strong>: US-only, or mix in DX prefixes.</li>
         </ul>
         <p>A <strong>live log</strong> and rate readout run alongside, and after a station is worked the simulator auto re-calls so the run keeps moving.</p>
+
+        <h3>When your copy is close but wrong</h3>
+        <p>The pileup answers a miscopy the way an operator would rather than treating everything short of perfect as a total bust:</p>
+        <ul>
+          <li><strong>A near miss gets corrected.</strong> Send <code>N9HS</code> for <code>N9HO</code> and that station comes back with its own call again, and keeps sending it until you get it right. It still counts as a bust and still spends the station's patience, so a caller you never resolve will eventually walk, but you get the chance to fix it.</li>
+          <li><strong>An ambiguous copy brings back both.</strong> If what you sent sits equally close to two calls, both answer, because neither knows which you meant. Refusing to guess is your job, not the pileup's. Neither one gives up its exchange until you actually name one, so you cannot end up working a station you never copied.</li>
+          <li><strong>A partial works from anywhere in the call.</strong> Querying the middle or the end is ordinary contest practice: <code>9H?</code> is how you ask <code>N9HO</code> to come back. The fragment no longer has to be the start of the call.</li>
+        </ul>
         <div class="tip">
           <span class="tip-icon">TIP</span>
           <p>Start with <strong>Single Caller</strong>, one station, no QSB or QRN. Add one variable at a time. Jumping straight to eight callers with noise and fading is how people conclude they can't do this. They can, just not all at once.</p>
@@ -738,13 +753,18 @@
         <table class="spec">
           <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
           <tbody>
-            <tr><td>Character speed</td><td>How fast each character is sent. Default <strong>33 WPM</strong>. Going below about 33 invites element-counting, so raise the recognition target instead.</td></tr>
+            <tr><td>Character speed</td><td>How fast each character is sent, up to <strong>60 WPM</strong> (<code>15-60</code> on iOS, <code>5-60</code> on Android). Ships at 33 WPM on iOS and 18 WPM on Android; either way, <a href="#method">33 or above is the number to aim for</a>. Going below about 33 invites element-counting, so raise the recognition target instead.</td></tr>
             <tr><td>Farnsworth spacing</td><td>Keeps characters at full speed but stretches the gaps between them, down to your chosen effective WPM. Multi-character content only.</td></tr>
             <tr><td>Sidetone pitch</td><td>The tone frequency, <code>300-1000 Hz</code>. Default 600 Hz. Pick what's comfortable for your ears over a long session.</td></tr>
+            <tr><td>Background noise</td><td>A continuous low noise floor under everything: <strong>Off, Whisper, Low, Moderate, Heavy</strong>. Defaults to Whisper, which is quiet enough that you won't notice it. See <a href="#noisefloor">why it's on</a>.</td></tr>
             <tr><td>Preview tone</td><td>Sends <code>PARIS</code> at your current settings so you can hear the effect before committing.</td></tr>
           </tbody>
         </table>
       </div>
+
+      <h3 id="noisefloor">Why there's a noise floor</h3>
+      <p>A quiet hiss runs under everything by default, and it is deliberate. <strong>Bluetooth earbuds power their receiver down during silence</strong> and wake a moment late, which clips the front of the first character. You lose the character, the app records a miss, and nothing on screen suggests your headphones did it rather than your ear. A continuous floor keeps the stream alive so the buds never sleep.</p>
+      <p>At the default <strong>Whisper</strong> level it sits around 56 dB under the tone, quiet enough that most people never consciously hear it. The louder settings exist for a different reason: it is band noise, so copying through it is closer to working a real signal than copying off a silent tone generator. Turn it up when you want that, or <strong>Off</strong> if you're on wired headphones and prefer silence.</p>
 
       <h3>Learning</h3>
       <div class="tbl-wrap">
@@ -798,7 +818,14 @@
       <p class="guide-lead">You can key into the app with real hardware, not just the touch key.</p>
 
       <h3>MIDI keys</h3>
-      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening. On Android, <strong>Bluetooth LE MIDI</strong> keys are supported too, with unplug detection.</p>
+      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
+
+      <h3>Bluetooth LE MIDI keys</h3>
+      <p>Wireless keys work on <strong>both platforms</strong>. Android scans for them directly, with unplug detection.</p>
+      <div class="tip warn">
+        <span class="tip-icon">iOS</span>
+        <p>On iPhone and iPad, <strong>pairing the key in Settings &gt; Bluetooth is not enough</strong>. iOS only hands a Bluetooth MIDI key to an app once something has connected it as a MIDI device, and only the system's own MIDI pairing sheet does that. Open that sheet from inside the app: the Vail adapter row in the <a href="#repeater">Repeater</a>, or <a href="#sending">Sending Practice</a>. Until you do, the app will correctly report no MIDI adapter even though iOS shows the key as connected.</p>
+      </div>
 
       <h3>Vail Adapter</h3>
       <p>The Vail Adapter gets full support, in both directions:</p>
@@ -837,7 +864,9 @@
       <p>Say the NATO word rather than the letter, since "Charlie" carries far better than "C", especially with background noise. When it asks <em>"did you say…?"</em>, correct it: those corrections are learned and the matching improves. And it needs microphone permission, so check that first if it's doing nothing at all.</p>
 
       <h3>My MIDI key isn't doing anything.</h3>
-      <p>Open <a href="#sending">Sending Practice</a> and look at the connected-key readout, which will tell you whether the app can see the hardware at all. If it can't, that's a connection problem rather than an app one. On Android, Bluetooth LE keys need Bluetooth permission granted.</p>
+      <p>Open <a href="#sending">Sending Practice</a> and look at the connected-key readout, which will tell you whether the app can see the hardware at all.</p>
+      <p><strong>On iPhone or iPad with a Bluetooth key,</strong> this is almost always the same cause: pairing it in iOS Settings does not make it visible to apps. Open the MIDI pairing sheet from inside the app instead, via the Vail adapter row in the <a href="#repeater">Repeater</a> or via Sending Practice. <a href="#hardware">Full explanation here.</a></p>
+      <p><strong>On Android,</strong> Bluetooth LE keys need Bluetooth permission granted.</p>
 
       <h3>Does it work offline?</h3>
       <p>Yes, for everything except the two networked features: the <a href="#repeater">Repeater</a> needs a connection to reach the Vail network, and the <strong>news</strong> source in <a href="#stories">Short Stories</a> needs one to fetch headlines. All training, all stats and all other content are on-device.</p>
