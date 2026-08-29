@@ -34,7 +34,7 @@
   <nav class="nav-links">
     <a href="/#features">Features</a>
     <a href="/#modes">Modes</a>
-    <a href="/#about">About</a>
+    <a href="/guide/">Guide</a>
     <a href="https://github.com/N9HO/another-morse-trainer">GitHub</a>
   </nav>
   <a class="btn btn-primary btn-sm" href="/">Home</a>
@@ -43,7 +43,7 @@
 <main>
 <article class="legal">
   <h1>Privacy Policy</h1>
-  <p class="date">Effective date: June 13, 2026</p>
+  <p class="date">Effective date: August 29, 2026</p>
 
   <p class="lead">Another Morse Trainer (“the app”) is a Morse code learning app.
   The short version: <strong>the app does not collect, transmit, or share any
@@ -62,14 +62,37 @@
   any third party, and is deleted when you uninstall the app.</p>
 
   <h2>Microphone</h2>
-  <p>The app requests microphone access <strong>only</strong> for the optional
-  “Voice answers” feature, which lets you speak your answer instead of tapping
-  it. When you use this feature, your speech is transcribed using your device’s
-  built-in speech recognition (for example, Apple’s on iOS or Google’s on
-  Android), which may process the audio to convert it to text.</p>
+  <p>The app requests microphone access for two optional features, both off
+  until you use them:</p>
+  <ul>
+    <li><strong>Voice answers</strong> — speak your answer instead of tapping it.
+        Your speech is transcribed using your device’s built-in speech
+        recognition (for example, Apple’s on iOS or Google’s on Android), which
+        may process the audio to convert it to text.</li>
+    <li><strong>CW Decoder</strong> — listens to received Morse (from a radio
+        speaker, for instance) and decodes it to text. This runs entirely
+        on your device; the audio is analysed in memory and is not sent
+        anywhere.</li>
+  </ul>
   <p>The app itself does <strong>not</strong> record, save, or transmit any
-  audio. The microphone is used only while you actively start a voice answer, and
-  the feature is off by default.</p>
+  audio. The microphone is used only while you are actively using one of these
+  features.</p>
+
+  <h2>Network features</h2>
+  <p>Training, progress and settings all work offline. Two optional features
+  connect to the internet when you choose to use them:</p>
+  <ul>
+    <li><strong>Repeater</strong> — connects to the third-party
+        <a href="https://vail.woozle.org">Vail</a> CW network so you can send and
+        receive live Morse with other operators. What you key on a channel is
+        sent to others on that channel, along with the channel name you choose.
+        Vail is operated independently of this app and has its own terms; no
+        account and no personal information is required to use it.</li>
+    <li><strong>Today’s news</strong> in Short Stories — fetches public RSS
+        headlines to send as copy practice. This is an ordinary request to the
+        news source for its public feed; no information about you is included.</li>
+  </ul>
+  <p>Neither feature sends your settings, progress, or any personal data.</p>
 
   <h2>Notifications</h2>
   <p>If you enable the daily practice reminder, the app schedules a local

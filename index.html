@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Another Morse Trainer — Learn Morse. Hear Progress.</title>
-<meta name="description" content="A modern Morse code trainer for iPhone. Train your ear with the Koch method, time-to-recognize tracking, and drills inspired by real-world CW operation.">
+<meta name="description" content="A modern Morse code trainer for iPhone and Android. Koch-method drills, a leveled Journey, pileup and contest simulators, a code exam, live CW over the network, and a microphone decoder.">
 <meta name="theme-color" content="#071B34">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <meta property="og:title" content="Another Morse Trainer">
-<meta property="og:description" content="Learn Morse without memorizing charts. Train your ear with modern methods inspired by real-world CW operation.">
+<meta property="og:description" content="Learn Morse without memorizing charts. Twenty ways to train, on iPhone and Android — from your first two letters to working a contest pileup.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +25,11 @@
   <nav class="nav-links">
     <a href="#features">Features</a>
     <a href="#modes">Modes</a>
+    <a href="/guide/">Guide</a>
     <a href="#about">About</a>
     <a href="https://github.com/N9HO/another-morse-trainer">GitHub</a>
   </nav>
-  <a class="btn btn-primary btn-sm" href="#about">Get Started</a>
+  <a class="btn btn-primary btn-sm" href="/guide/">Read the Guide</a>
 </header>
 
 <main id="top">
@@ -36,13 +37,40 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-copy">
-      <p class="eyebrow"><span class="morse">·&#8202;&#8202;&#8202;&minus;</span>&nbsp; Koch method · 33 WPM</p>
-      <h1>Learn Morse<br>Without Memorizing<br><span class="accent">Charts</span></h1>
-      <p class="lede">Train your ear using modern methods inspired by real-world CW operation. No lookup tables, no rote charts — just listen, recognize, and get faster.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#about">Start Learning</a>
-        <a class="btn btn-ghost" href="https://github.com/N9HO/another-morse-trainer">View on GitHub</a>
+      <div class="platform-pills">
+        <span class="pill ios">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.8c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.9-3-.8c-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7 2-1.1 2.8-2.2c.9-1.3 1.2-2.5 1.3-2.6-.1 0-2.5-1-2.5-3.9zM14.2 5.9c.6-.8 1-1.9.9-3-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-.9 2.9 1 0 2.1-.5 2.7-1.3z"/></svg>
+          iPhone &amp; iPad
+        </span>
+        <span class="pill android">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.5c.5 0 .9.4.9.9v4.4c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-4.4c0-.5.4-.9.9-.9zm-11.2 0c.5 0 .9.4.9.9v4.4c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-4.4c0-.5.4-.9.9-.9zm1.5-.2h8.2v6.9c0 .5-.4.9-.9.9h-.8v2.1c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-2.1h-1.3v2.1c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-2.1h-.8c-.5 0-.9-.4-.9-.9V9.3zm6.3-5.1 1-1.5c.1-.1 0-.3-.1-.3s-.2 0-.3.1l-1 1.5c-.7-.3-1.5-.5-2.3-.5s-1.6.2-2.3.5l-1-1.5c-.1-.1-.2-.1-.3-.1s-.2.2-.1.3l1 1.5C6.5 5.3 5.6 6.7 5.4 8.3h13.2c-.2-1.6-1.1-3-2.4-4.1zM9.3 6.6c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5zm5.4 0c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5z"/></svg>
+          Android
+        </span>
+        <span class="pill">Free &amp; open source</span>
       </div>
+      <h1>Learn Morse<br>Without Memorizing<br><span class="accent">Charts</span></h1>
+      <p class="lede">Train your ear using modern methods inspired by real-world CW operation. No lookup tables, no rote charts — just listen, recognize, and get faster. Now on both iPhone and Android.</p>
+
+      <div class="store-badges">
+        <div class="store-badge" role="img" aria-label="App Store — coming soon">
+          <span class="sb-soon">Coming soon</span>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.8c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.9-3-.8c-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7 2-1.1 2.8-2.2c.9-1.3 1.2-2.5 1.3-2.6-.1 0-2.5-1-2.5-3.9zM14.2 5.9c.6-.8 1-1.9.9-3-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-.9 2.9 1 0 2.1-.5 2.7-1.3z"/></svg>
+          <span class="sb-text">
+            <span class="sb-small">Download on the</span>
+            <span class="sb-big">App Store</span>
+          </span>
+        </div>
+        <div class="store-badge" role="img" aria-label="Google Play — coming soon">
+          <span class="sb-soon">Coming soon</span>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.7 2.2l-.1.1zm12.5 6.2L13.4 11l-9.2-9.2c.2-.1.5-.1.8.1l11.1 6.6zM17.8 9.6l2.6 1.5c.8.5.8 1.3 0 1.8l-2.6 1.5-2.9-2.4 2.9-2.4zM16.1 15.5 5 22.1c-.3.2-.6.2-.8.1l9.2-9.2 2.7 2.5z"/></svg>
+          <span class="sb-text">
+            <span class="sb-small">Get it on</span>
+            <span class="sb-big">Google Play</span>
+          </span>
+        </div>
+      </div>
+      <p class="store-note">Both apps are in testing ahead of release. In the meantime you can build from source or follow along on <a href="https://github.com/N9HO/another-morse-trainer">GitHub</a> — and the <a href="/guide/">full guide</a> already covers every mode.</p>
+
       <p class="tagline">Learn Morse. <span class="accent">Hear Progress.</span></p>
     </div>
     <div class="hero-art">
@@ -71,14 +99,14 @@
         <p>Every answer is timed from the last tone. The app knows not just whether you got it — but how fast — and drills what's still slow.</p>
       </article>
       <article class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 8h11l-2-2M4 14h13l-2 2"/><circle cx="19" cy="8" r="2"/></svg></div>
+        <h3>A leveled Journey</h3>
+        <p>A gamified path from letters through prosigns, Q-codes and call signs — with an unlock map, saved progress, and a bar that drains when you miss.</p>
+      </article>
+      <article class="card">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h13M12 4l4 4-4 4M21 16H8M12 12l-4 4 4 4"/></svg></div>
         <h3>Confusion drills</h3>
         <p>It quietly learns the pairs you actually mix up (B/D, U/V, S/H…) and builds targeted sessions to sort them out.</p>
-      </article>
-      <article class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4"/></svg></div>
-        <h3>Farnsworth spacing</h3>
-        <p>Keep characters at full speed while stretching the gaps. Adjustable tone and effective WPM let you ramp up comfortably.</p>
       </article>
       <article class="card">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0116 0v2"/><rect x="2.5" y="13.5" width="4.2" height="6.5" rx="2"/><rect x="17.3" y="13.5" width="4.2" height="6.5" rx="2"/></svg></div>
@@ -86,9 +114,24 @@
         <p>Passive practice for the car or a walk: code plays, then the answer is spoken aloud — with full background audio and lock-screen controls.</p>
       </article>
       <article class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M8 7v10M4 10v4M16 7v10M20 10v4"/></svg></div>
+        <h3>Send, don't just copy</h3>
+        <p>Key it back on a touch key, a hardware MIDI key, or a Vail Adapter — with live decode. Or print drill sheets built from what you've studied.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 00-3 3v6a3 3 0 006 0V5a3 3 0 00-3-3z"/><path d="M19 10v1a7 7 0 01-14 0v-1M12 18v4M8 22h8"/></svg></div>
+        <h3>Decode off the air</h3>
+        <p>Point the microphone at your rig's speaker or a WebSDR and read received Morse as text, with live WPM and pitch telemetry.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 100-16 8 8 0 000 16z"/><path d="M2 12h4M18 12h4M12 2v2M12 20v2"/></svg></div>
+        <h3>Work a real pileup</h3>
+        <p>Call CQ against a simulated pileup with QSB, QRN, cut numbers and busted calls — or run a timed leg of a real weekly contest.</p>
+      </article>
+      <article class="card">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M6 20v-7M12 20V5M18 20v-9"/></svg></div>
         <h3>Progress you can see</h3>
-        <p>Per-character accuracy, median recognition time, and your most-confused pairs — weakest first, so you always know what to work on.</p>
+        <p>Daily streak, per-character accuracy, median recognition time, most-confused pairs, and performance by speed band — weakest first.</p>
       </article>
     </div>
   </section>
@@ -101,6 +144,7 @@
       <ul class="checklist">
         <li>Sound-alike answer choices that mirror real on-air confusion</li>
         <li>Auto-advance on correct, instant reveal on a miss</li>
+        <li>Answer by tapping, typing, speaking, or keying it back</li>
         <li>Opt-in punctuation and prosigns when you're ready</li>
       </ul>
     </div>
@@ -124,18 +168,58 @@
 
   <!-- MODES -->
   <section id="modes" class="section">
-    <h2 class="section-title">Nine ways to train</h2>
-    <p class="section-sub">Pick a style at the start of every session and practice on a timer, or go until you stop.</p>
-    <div class="grid modes">
-      <div class="mode"><span class="mode-mc">·&minus;</span><div><h4>Characters</h4><p>The Koch ladder — single letters, numbers, and symbols.</p></div></div>
-      <div class="mode"><span class="mode-mc">·&minus;&minus;</span><div><h4>Words</h4><p>Common words and call signs copied as whole sounds.</p></div></div>
-      <div class="mode"><span class="mode-mc">·&minus;</span><div><h4>Abbreviations</h4><p>CW shorthand and Q-codes — what are they actually saying?</p></div></div>
-      <div class="mode"><span class="mode-mc">&minus;·&minus;·&minus;</span><div><h4>Prosigns</h4><p>Run-together patterns like &lt;AR&gt; and &lt;SK&gt;.</p></div></div>
-      <div class="mode"><span class="mode-mc">····</span><div><h4>Head Copy</h4><p>Hold a whole word in your head, then self-grade the recall.</p></div></div>
-      <div class="mode"><span class="mode-mc">&minus;</span><div><h4>Type It</h4><p>Free recall — hear it, type it, no multiple choice.</p></div></div>
-      <div class="mode"><span class="mode-mc">&#8644;</span><div><h4>Confusion Drill</h4><p>Targeted reps on the exact pairs you keep mixing up.</p></div></div>
-      <div class="mode"><span class="mode-mc">····</span><div><h4>Listen &amp; Learn</h4><p>Hands-free, eyes-free practice with spoken answers.</p></div></div>
-      <div class="mode"><span class="mode-mc">&minus;·&minus;&minus;·</span><div><h4>QSO Simulator</h4><p>Work a simulated POTA contact and log the exchange.</p></div></div>
+    <h2 class="section-title">Twenty ways to train</h2>
+    <p class="section-sub">Pick a style at the start of every session and practice on a timer, or go until you stop. Every mode below is on both iPhone and Android. <a class="accent" href="/guide/">The guide walks through each one →</a></p>
+
+    <div class="mode-group">
+      <div class="mode-group-head"><h3>Learn the characters</h3><span>Start here</span></div>
+      <div class="grid modes">
+        <div class="mode"><span class="mode-mc">·&minus;&minus;&minus;</span><div><h4>Journey</h4><p>A leveled path from letters to call signs, with an unlock map and saved progress.</p></div></div>
+        <div class="mode"><span class="mode-mc">&minus;·&minus;·</span><div><h4>Characters</h4><p>The Koch ladder — single letters and numbers, then pairs, triples, and words.</p></div></div>
+        <div class="mode"><span class="mode-mc">&#8644;</span><div><h4>Confusion Drill</h4><p>Targeted reps on the exact pairs you keep mixing up.</p></div></div>
+      </div>
+    </div>
+
+    <div class="mode-group">
+      <div class="mode-group-head"><h3>Copy real content</h3><span>What you'll actually hear on the air</span></div>
+      <div class="grid modes">
+        <div class="mode"><span class="mode-mc">·&minus;&minus;</span><div><h4>Common Words</h4><p>Ham words copied as whole sounds — or bring your own word list.</p></div></div>
+        <div class="mode"><span class="mode-mc">·&minus;</span><div><h4>Abbreviations</h4><p>CW shorthand — what are they actually saying?</p></div></div>
+        <div class="mode"><span class="mode-mc">&minus;&minus;·&minus;</span><div><h4>Q-Codes</h4><p>QRZ, QSY, QTH and the rest of the Q-signal shorthand.</p></div></div>
+        <div class="mode"><span class="mode-mc">·&minus;&minus;·</span><div><h4>Prosigns</h4><p>Run-together patterns like &lt;AR&gt; and &lt;SK&gt;.</p></div></div>
+        <div class="mode"><span class="mode-mc">···</span><div><h4>Short Stories</h4><p>Continuous copy: 32 fables, longer classics with a bookmark, or today's news.</p></div></div>
+      </div>
+    </div>
+
+    <div class="mode-group">
+      <div class="mode-group-head"><h3>Build speed</h3><span>Once the alphabet is solid</span></div>
+      <div class="grid modes">
+        <div class="mode"><span class="mode-mc">····</span><div><h4>Head Copy</h4><p>Hold a whole word in your head, then self-grade the recall.</p></div></div>
+        <div class="mode"><span class="mode-mc">&minus;</span><div><h4>Type It</h4><p>Free recall — hear it, type it, no multiple choice.</p></div></div>
+        <div class="mode"><span class="mode-mc">&minus;&minus;·&minus;</span><div><h4>QRQ Speed</h4><p>High-speed copy at 35 or 40 WPM, for when 33 feels comfortable.</p></div></div>
+        <div class="mode"><span class="mode-mc">·&minus;·</span><div><h4>Rapid Fire</h4><p>Call signs, words, number groups or states sent back to back at your pace.</p></div></div>
+      </div>
+    </div>
+
+    <div class="mode-group">
+      <div class="mode-group-head"><h3>Get on the air</h3><span>Operating, not just copying</span></div>
+      <div class="grid modes">
+        <div class="mode"><span class="mode-mc">·&minus;&minus;·</span><div><h4>Pileup Runner</h4><p>Call CQ and work a simulated pileup, your own side keyed on the air.</p></div></div>
+        <div class="mode"><span class="mode-mc">&minus;·&minus;·</span><div><h4>Contest</h4><p>Timed runs of five real weekly CW events, with a live score and scorecard.</p></div></div>
+        <div class="mode"><span class="mode-mc">·</span><div><h4>Code Exam</h4><p>The FCC/ARRL-style copy test at 5, 13 or 20 WPM.</p></div></div>
+        <div class="mode"><span class="mode-mc">·&minus;·</span><div><h4>Repeater</h4><p>Live CW with real operators over the Vail network, with a signal timeline.</p></div></div>
+      </div>
+    </div>
+
+    <div class="mode-group">
+      <div class="mode-group-head"><h3>Send, decode &amp; look up</h3><span>The other half of CW</span></div>
+      <div class="grid modes">
+        <div class="mode"><span class="mode-mc">···</span><div><h4>Sending Practice</h4><p>Hear it, key it back — touch key or hardware MIDI key, with live decode.</p></div></div>
+        <div class="mode"><span class="mode-mc">&minus;··</span><div><h4>Sending Drills</h4><p>Printable practice sheets built from the characters you've studied.</p></div></div>
+        <div class="mode"><span class="mode-mc">&minus;··</span><div><h4>CW Decoder</h4><p>Point the mic at a rig or WebSDR and read received Morse as text.</p></div></div>
+        <div class="mode"><span class="mode-mc">·&minus;·</span><div><h4>Reference</h4><p>Tap-to-hear chart of prosigns, Q-codes, abbreviations, lingo and cut numbers.</p></div></div>
+        <div class="mode"><span class="mode-mc">·&minus;··</span><div><h4>Listen &amp; Learn</h4><p>Hands-free, eyes-free practice with spoken answers.</p></div></div>
+      </div>
     </div>
   </section>
 
@@ -143,9 +227,11 @@
   <section id="about" class="section about">
     <img class="about-mark" src="assets/mark.png" alt="">
     <h2 class="section-title">An honest trainer, built by a ham</h2>
-    <p class="section-sub center">Another Morse Trainer is a free, open-source app for iPhone. It was built the way a CW operator actually learns — by ear, at speed, focusing relentlessly on what you get wrong. Made for real copy. Made to help you learn.</p>
+    <p class="section-sub center">Another Morse Trainer is a free, open-source app for iPhone and Android. It was built the way a CW operator actually learns — by ear, at speed, focusing relentlessly on what you get wrong. No accounts, no ads, no tracking: everything stays on your device.</p>
     <div class="hero-actions center">
-      <a class="btn btn-primary" href="https://github.com/N9HO/another-morse-trainer">View on GitHub</a>
+      <a class="btn btn-primary" href="/guide/">Read the Guide</a>
+      <a class="btn btn-ghost" href="https://github.com/N9HO/another-morse-trainer">iOS on GitHub</a>
+      <a class="btn btn-ghost" href="https://github.com/N9HO/another-morse-trainer-android">Android on GitHub</a>
     </div>
   </section>
 
@@ -159,12 +245,17 @@
   </div>
   <div class="badges">
     <span class="badge"><i>license</i><b class="green">MIT</b></span>
-    <span class="badge"><i>language</i><b class="amber">Swift</b></span>
-    <span class="badge"><i>platform</i><b class="teal">iOS</b></span>
-    <span class="badge"><i>status</i><b class="green">Active</b></span>
+    <span class="badge"><i>ios</i><b class="amber">Swift</b></span>
+    <span class="badge"><i>android</i><b class="green">Kotlin</b></span>
+    <span class="badge"><i>status</i><b class="teal">Active</b></span>
   </div>
-  <p class="footer-repo"><a href="https://github.com/N9HO/another-morse-trainer">github.com/N9HO/another-morse-trainer</a></p>
-  <p class="footer-fine">A modern, open-source Morse code trainer for iPhone. 73 &amp; good copy.</p>
+  <p class="footer-repo">
+    <a href="https://github.com/N9HO/another-morse-trainer">another-morse-trainer</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/N9HO/another-morse-trainer-android">another-morse-trainer-android</a>
+  </p>
+  <p class="footer-fine"><a href="/guide/" style="color:var(--teal)">Guide</a> &nbsp;·&nbsp; <a href="/privacy/" style="color:var(--teal)">Privacy</a></p>
+  <p class="footer-fine">A modern, open-source Morse code trainer for iPhone and Android. 73 &amp; good copy.</p>
 </footer>
 
 </body>
