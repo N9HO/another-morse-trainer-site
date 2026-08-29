@@ -20,7 +20,7 @@ python3 -m http.server 4178
 | File | Purpose |
 |------|---------|
 | `index.html` | Landing page — hero, features, all 20 modes grouped by purpose |
-| `guide/index.html` | The user manual: every mode, setting, and hardware option |
+| `guide/index.html` | The user manual: every mode, setting, hardware option, and the FAQ covering how to get the app |
 | `privacy/index.html` | Privacy policy (linked from both app store listings) |
 | `styles.css` | Navy / teal / white theme, responsive layout, guide layout |
 | `assets/mark.png` | Logo symbol (background keyed to transparent) |
@@ -41,14 +41,30 @@ app repos. It's organised as:
 When a mode is added or renamed in either app, update the matching section here
 and the mode grid on `index.html`.
 
-## Store badges
+## Store badges and availability
 
-The App Store and Google Play badges in the hero are intentionally **not links** —
-they carry a "Coming soon" ribbon while both apps are in testing. When a listing
-goes live, wrap the relevant `.store-badge` in an `<a href="…">`, drop its
-`.sb-soon` span, and remove the `opacity` by deleting the badge's disabled
-styling. The paragraph below them (`.store-note`) should be updated at the same
-time.
+The two hero badges track where each app actually is:
+
+| Badge | State | Markup |
+|-------|-------|--------|
+| TestFlight | iOS open beta — **live link** | `<a class="store-badge" href="…">` with `<span class="sb-soon live">Open beta</span>` |
+| Google Play | Android closed testing — **not a link** | `<div class="store-badge">` with `<span class="sb-soon">Closed testing</span>` |
+
+`a.store-badge` picks up full opacity and a hover lift; the plain `div` form stays
+dimmed and non-interactive. When the Play listing goes public, swap the `div` for
+an `<a href="…">`, change the ribbon to `class="sb-soon live"`, and update the
+`.store-note` paragraph underneath — it's the sentence that tells people iOS is
+open and Android is invite-only via Discord.
+
+Links used in the hero, nav, footer and guide FAQ:
+
+- TestFlight — <https://testflight.apple.com/join/ZwXF88Gh>
+- Discord — <https://discord.gg/qgyk3TPUd9>
+
+Discord is the route to an Android closed-test invite, so it appears in the nav,
+the community block on the landing page, the footer of every page, and the first
+two answers in the guide's FAQ. If the invite is ever rotated, those are the
+places to change.
 
 ## Brand
 

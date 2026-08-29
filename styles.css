@@ -368,10 +368,14 @@ a{color:inherit;text-decoration:none}
 
 /* callout */
 .tip{
-  display:flex;gap:13px;
+  /* Grid, not flex: a tip with two paragraphs must stack them in the second
+     column rather than laying them out side by side. */
+  display:grid;grid-template-columns:auto 1fr;gap:0 13px;align-items:start;
   background:rgba(39,211,232,.07);border:1px solid rgba(39,211,232,.22);
   border-radius:12px;padding:16px 18px;margin:20px 0;
 }
+.tip > .tip-icon{grid-column:1;grid-row:1}
+.tip > p{grid-column:2}
 .tip.warn{background:rgba(245,158,11,.07);border-color:rgba(245,158,11,.26)}
 .tip-icon{
   font-family:"JetBrains Mono",monospace;font-weight:700;color:var(--teal);
@@ -436,4 +440,41 @@ table.spec code{font-family:"JetBrains Mono",monospace;color:var(--teal);font-si
   .store-badge{min-width:0;flex:1 1 100%}
   .guide{padding:24px 20px 72px}
   .guide-hero{padding:48px 20px 8px}
+}
+
+/* ---- live (linked) store badge, vs. the disabled "not yet" one ---- */
+a.store-badge{
+  opacity:1;cursor:pointer;
+  transition:transform .15s ease,border-color .2s ease,box-shadow .2s ease;
+}
+a.store-badge:hover{
+  transform:translateY(-3px);border-color:var(--teal);
+  box-shadow:0 10px 26px rgba(39,211,232,.18);
+}
+.sb-soon.live{background:var(--green);color:#04231A}
+
+/* ---- Discord ---- */
+.btn-discord{background:#5865F2;color:#fff;box-shadow:0 6px 20px rgba(88,101,242,.3)}
+.btn-discord:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(88,101,242,.42)}
+.btn svg,.btn-discord svg{width:18px;height:18px;margin-right:9px;flex-shrink:0}
+
+.community{
+  display:flex;align-items:center;gap:22px;
+  background:linear-gradient(135deg,rgba(88,101,242,.14),rgba(39,211,232,.07));
+  border:1px solid rgba(88,101,242,.34);
+  border-radius:16px;padding:24px 26px;margin-top:42px;
+  text-align:left;   /* .about centres its children; this block reads better left */
+}
+.community-icon{
+  width:52px;height:52px;border-radius:14px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  background:#5865F2;color:#fff;
+}
+.community-icon svg{width:29px;height:29px}
+.community h3{font-size:1.16rem;margin-bottom:5px}
+.community p{color:var(--muted);font-size:.97rem;margin:0}
+.community .btn{margin-left:auto;flex-shrink:0}
+@media(max-width:700px){
+  .community{flex-direction:column;text-align:center;gap:16px}
+  .community .btn{margin-left:0}
 }
