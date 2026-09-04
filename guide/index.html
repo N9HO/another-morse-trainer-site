@@ -35,13 +35,13 @@
 <section class="guide-hero">
   <p class="eyebrow"><span class="morse">·&#8202;&#8202;&#8202;&minus;</span>&nbsp; The manual</p>
   <h1>Everything in the app,<br>and <span class="accent">how to use it</span></h1>
-  <p class="lede">Twenty ways to train, on iPhone and Android. This page walks through each one: what it's for, when to reach for it, and how to get the most out of it. Skip to whatever you need.</p>
+  <p class="lede">Twenty-one ways to train, on iPhone and Android, plus <a href="#dailydit">Daily Dit</a>, the shared word-a-day puzzle. This page walks through each one: what it's for, when to reach for it, and how to get the most out of it. Skip to whatever you need.</p>
 
   <div class="jump">
     <a href="#start"><b>New here?</b><span>Your first session, in five minutes.</span></a>
     <a href="#method"><b>Why 33 WPM?</b><span>The two speeds, and which one to change.</span></a>
     <a href="#fasttrack"><b>On the air fast</b><span>The short path to your first contact.</span></a>
-    <a href="#modes"><b>The modes</b><span>All twenty, grouped by what they're for.</span></a>
+    <a href="#dailydit"><b>Daily Dit</b><span>Today's word in Morse. Guess it, share the grid.</span></a>
   </div>
 </section>
 
@@ -58,6 +58,9 @@
         <a href="#home">The home screen</a>
         <a href="#session">Running a session</a>
         <a href="#answering">Ways to answer</a>
+
+        <h4>Every day</h4>
+        <a href="#dailydit">Daily Dit</a>
       </div>
       <div>
         <h4>Learn the characters</h4>
@@ -283,6 +286,7 @@
           </tbody>
         </table>
       </div>
+      <p>Under the header sit two cards. <strong><a href="#dailydit">Daily Dit</a></strong> is today's puzzle, and the card tells you where you stand: the puzzle number, how many guesses you've spent, or the speed you got it at. <strong>New to Morse? Start here</strong> opens a condensed, in-app version of the opening sections of this guide: how to begin, why the code sounds fast, and what good looks like week by week. It stays there; it's as useful in week three as on day one.</p>
       <p>Below that, the training tiles run roughly in learning order: <strong>Journey</strong> first, then the six choice-quiz modes, then the speed and operating modes, then the tools. You can jump anywhere at any time; nothing is locked behind anything else.</p>
     </section>
 
@@ -334,10 +338,43 @@
       </div>
     </section>
 
+    <!-- DAILY DIT -->
+    <section id="dailydit">
+      <h2><span class="h2-mc">·</span>Daily Dit <span class="tag new">New</span></h2>
+      <div class="entry">
+        <p class="entry-why">One five-letter word a day, sent in Morse, the same for every player on the same date. The ten-minute habit, with a scoreboard.</p>
+        <p>Tap the card on the home screen, pick a starting speed, and play the word. Type a five-letter guess and every letter is scored: <strong>green</strong> is the right letter in the right place, <strong>amber</strong> is a letter that's in the word but somewhere else, and grey is not in the word at all. Letters you've ruled out are listed underneath so you don't burn a guess on them twice.</p>
+        <p><strong>Replays are free.</strong> Hear the word as many times as you like; only guesses count. You get 21 of them, and each has to be a real word, checked against a full dictionary, so <span class="morse">CRANE</span> and <span class="morse">SLATE</span> are fine even though the answers themselves come from a shorter list of common words.</p>
+
+        <h3>The speed ladder</h3>
+        <p>This is what makes it a CW game rather than a word game. The word plays at the speed you chose, and <strong>every three guesses it drops 5 WPM</strong>, down to a floor of 10. A word you can't catch at 75 WPM comes back within reach, and the number that matters is the speed you were still at when you got it. Guessing a word you know is wrong, just to drag the code slower, is a legitimate tactic.</p>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Starting speeds</td><td>20, 25, 30, 40, 50, 60 or 75 WPM. Locked at your first guess.</td></tr>
+              <tr><td>Guesses</td><td>21 a day. Each must be a real five-letter word.</td></tr>
+              <tr><td>Speed step</td><td>Down 5 WPM after every 3 guesses, never below 10 WPM.</td></tr>
+              <tr><td>Hide the chart</td><td>Play without the dit-dah reference on screen. Set before your first guess, and your share text says "no reference".</td></tr>
+              <tr><td>Streak</td><td>A guess counts as a practice day, so the puzzle alone keeps your <a href="#progress">streak</a> alive.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Sharing it</h3>
+        <p>When you're done, solved or out of guesses, the app builds a pasteable result: a headline with the puzzle number, your guesses out of 21 and the speed you got it at, then the emoji grid of every guess, then a link back here. It's plain text on purpose, so it survives being pasted into Discord or a group chat. Copy it or share it straight from the result screen.</p>
+        <p>The word is chosen from the <strong>date on your own device</strong>, not from a server, so it works offline and everyone playing on the 3rd gets the 3rd's word, on iPhone and Android alike. Puzzle #1 was January 1st, 2026. The next puzzle arrives at midnight, your time, even if you leave the app open.</p>
+        <div class="tip">
+          <span class="tip-icon">TIP</span>
+          <p>Start higher than feels comfortable. The first few guesses at 60 or 75 WPM are as much about hearing the <em>shape</em> of the word as catching every letter, and the ladder will bring it down to you. The share line reads a lot better at 45 than at 20.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ MODES ============ -->
     <section id="modes">
       <h2><span class="h2-mc">&minus;·&minus;</span>The modes</h2>
-      <p class="guide-lead">Twenty of them. They're grouped here the way you'd actually grow into them, but nothing is gated, so use whatever you want whenever you want.</p>
+      <p class="guide-lead">Twenty-one of them. They're grouped here the way you'd actually grow into them, but nothing is gated, so use whatever you want whenever you want.</p>
     </section>
 
     <!-- JOURNEY -->
@@ -357,7 +394,8 @@
         </ol>
         <h3>How a level works</h3>
         <p>Each level introduces its new items and mixes them with what you already know. A <strong>progress bar fills on a hit and drains on a miss</strong>, and you clear the level by filling it, so a run of misses genuinely sets you back. (If you'd rather it didn't drain, that's toggleable in Settings.)</p>
-        <p>The <strong>unlock map</strong> shows the whole route: what you've cleared, where you are, and what's ahead. Progress is saved, so you can put it down for a week and pick up where you left off.</p>
+        <p>A level's <strong>new items get at least half of its prompts</strong>, so a prosign level actually drills the prosigns rather than quizzing you on letters you learned weeks ago, and a prosign's wrong answers are other prosigns once the pool has them, not three plain letters you could rule out from the labels.</p>
+        <p>The <strong>unlock map</strong> shows the whole route: what you've cleared, where you are, and what's ahead. Progress is saved, so you can put it down for a week and pick up where you left off. On Android, what you tell <strong>Settings → Proficiency</strong> unlocks the Journey that far too: someone who knows the letters starts at the first level with a digit in it, and "everything" starts at the first prosign level. It only ever unlocks forward, so cleared levels are never taken back.</p>
         <div class="tip">
           <span class="tip-icon">TIP</span>
           <p>Journey deliberately never pits the letter <strong>K</strong> against the prosign <strong>&lt;K&gt;</strong> in the same set of answer choices. They're identical sounds, and asking you to tell them apart would be testing nothing.</p>
@@ -371,8 +409,11 @@
       <div class="entry">
         <p class="entry-why">The classic Koch ladder, with you holding the controls instead of Journey.</p>
         <p>A-Z and 0-9, added one at a time as your recognition time comes down. Same engine as Journey, but you choose the settings and there's no level structure, just the ladder.</p>
+        <h3>Meeting a new character</h3>
+        <p>Before a character or prosign is drilled for the first time, the track <strong>stops and introduces it</strong>: the item on its own, its pattern in symbols and spoken out as "dah-di-dah", its sound when the screen appears and again on Replay, and a Start button when you're ready. Then the drill carries on with it in the mix. If you'd rather meet new characters cold, <strong>Settings → New characters</strong> turns the introduction off.</p>
         <h3>Track stage</h3>
-        <p>The Characters track moves through stages as you improve: <strong>single characters → pairs → triples → words &amp; call signs</strong>. Normally it advances on its own, but you can <strong>pin it</strong> on the setup screen if you want to stay on single characters for a while longer, or jump ahead to word-length copy.</p>
+        <p>The Characters track moves through stages as you improve: <strong>single characters → pairs → triples → words &amp; call signs</strong>. Normally it advances on its own, but you can <strong>pin it</strong> if you want to stay on single characters for a while longer, or jump ahead to word-length copy.</p>
+        <p>The pin is on the setup screen and, since the stage is the thing you most often want to change once words start coming at you, it's <strong>one gear-tap away mid-session</strong> too: on iOS the Track stage picker sits in the session's Settings with a "Back to" button for the previous stage, and on Android the stage pills sit on the drill itself, in Characters and in <a href="#sending">Sending Practice</a>.</p>
         <p>Pinning is the right call when you want deliberate practice on one thing. Leave it unpinned when you just want the app to keep you at the edge of your ability.</p>
         <div class="tip">
           <span class="tip-icon">NOTE</span>
@@ -400,7 +441,7 @@
         <p>Whole ham-radio words sent as single units: <span class="morse">CQ</span>, <span class="morse">DE</span>, <span class="morse">ANTENNA</span>, <span class="morse">RIG</span>. The goal is to stop spelling words out letter by letter and start recognizing their overall shape, the same way you read English without sounding out syllables.</p>
         <h3>Your own word list</h3>
         <p>Turn on <strong>Use my word list</strong> in Settings and paste in whatever you want: your callsign, your local repeater, club names, the vocabulary of whatever you actually talk about on the air. One entry per line. The quiz then draws from your list instead of the built-in ranked pool.</p>
-        <p>The built-in pool is size-adjustable too: a smaller pool means more repetition per word, a larger one means more variety.</p>
+        <p>The built-in pool is the 1000 most useful words, ranked, and it's size-adjustable: <strong>top 100, 300, 500 or 1000</strong>. A smaller pool means more repetition per word, a larger one means more variety.</p>
       </div>
     </section>
 
@@ -537,7 +578,7 @@
         <h3>Realism controls</h3>
         <p>This is where it stops being a quiz. All of these are adjustable:</p>
         <ul>
-          <li><strong>Caller count</strong>: 1 to 8 stations answering at once.</li>
+          <li><strong>Max callers</strong>: a cap of 1 to 8 stations answering at once. Lower it mid-run and the surplus callers are sent away straight away, never the one you're working.</li>
           <li><strong>Speed band and tone spread</strong>: callers at different speeds and different pitches across the band. Zero-beat stacks them all on your exact pitch, which is far harder.</li>
           <li><strong>QSB (fading)</strong>: signals rise and fall mid-exchange.</li>
           <li><strong>QRN (noise)</strong>: atmospheric noise at selectable levels.</li>
@@ -555,6 +596,7 @@
           <li><strong>A near miss gets corrected.</strong> Send <code>N9HS</code> for <code>N9HO</code> and that station comes back with its own call again, and keeps sending it until you get it right. It still counts as a bust and still spends the station's patience, so a caller you never resolve will eventually walk, but you get the chance to fix it.</li>
           <li><strong>An ambiguous copy brings back both.</strong> If what you sent sits equally close to two calls, both answer, because neither knows which you meant. Refusing to guess is your job, not the pileup's. Neither one gives up its exchange until you actually name one, so you cannot end up working a station you never copied.</li>
           <li><strong>A partial works from anywhere in the call.</strong> Querying the middle or the end is ordinary contest practice: <code>9H?</code> is how you ask <code>N9HO</code> to come back. The fragment no longer has to be the start of the call.</li>
+          <li><strong>A partial can have a hole in it.</strong> A <span class="morse">?</span> anywhere in what you send marks a gap, so <code>N?O</code> brings back every call that starts with N and ends with O. And a fragment doesn't have to be consecutive: send <code>NO?</code> and any call carrying those letters in that order answers.</li>
         </ul>
         <div class="tip">
           <span class="tip-icon">TIP</span>
@@ -700,6 +742,7 @@
       <div class="entry">
         <p class="entry-why">Practice with your hands and eyes busy: driving, walking, washing up.</p>
         <p>Code plays, then the answer is <strong>spoken aloud</strong>. No interaction at all. It keeps playing with the screen locked, with full background audio and lock-screen controls, so it works with the phone in your pocket.</p>
+        <p>It deals the whole pool like a deck of cards, <strong>every item once before anything repeats</strong>, and the word source is the full 1000-word list, so a long commute doesn't circle back to the same dozen words.</p>
         <ul>
           <li><strong>What it announces</strong>: choose the content it draws from.</li>
           <li><strong>Gap before the spoken answer</strong>: set how long you get to answer in your head before it tells you.</li>
@@ -716,7 +759,7 @@
         <table class="spec">
           <thead><tr><th>What</th><th>Tells you</th></tr></thead>
           <tbody>
-            <tr><td>Daily streak</td><td>Consecutive days practised, with milestone celebrations. The single best predictor of whether you'll learn this.</td></tr>
+            <tr><td>Daily streak</td><td>Consecutive days practised, with milestone celebrations. The single best predictor of whether you'll learn this. A <a href="#dailydit">Daily Dit</a> guess counts as a practice day.</td></tr>
             <tr><td>Accuracy</td><td>Overall hit rate, and your best copy.</td></tr>
             <tr><td>Per-character stats</td><td>Accuracy <em>and</em> median recognition time for every character. The slow ones are the real work list.</td></tr>
             <tr><td>Recognition chart</td><td>Recognition speed per character, so slow ones are visible at a glance.</td></tr>
@@ -771,13 +814,14 @@
         <table class="spec">
           <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
           <tbody>
-            <tr><td>Proficiency</td><td>What you already know. Sets your starting character set. Changing it restarts your active set.</td></tr>
+            <tr><td>Proficiency</td><td>What you already know. Sets your starting character set. Changing it restarts your active set. It's asked once, at first run, and lives here; on Android it also unlocks the <a href="#journey">Journey</a> as far as it reaches.</td></tr>
+            <tr><td>New characters</td><td>Whether a character or prosign is introduced on its own, with its sound and a Replay button, before it joins the drill for the first time. On by default.</td></tr>
             <tr><td>Answer choices</td><td>Maximum number of multiple-choice buttons. Choices only ever include characters you've met, so the count grows as you learn.</td></tr>
             <tr><td>Recognition target</td><td>The time bar a character must beat to count as learned, <code>0.5-2.5 s</code> (default 1.0 s). Beat it consistently and a new character is added.</td></tr>
-            <tr><td>Word pool</td><td>How many ranked common words to draw from. Smaller = more repetition, larger = more variety.</td></tr>
+            <tr><td>Word pool</td><td>How many ranked common words to draw from: top 100, 300, 500 or 1000. Smaller = more repetition, larger = more variety.</td></tr>
             <tr><td>Use my word list</td><td>Replace the built-in pool with your own words, one per line.</td></tr>
-            <tr><td>Punctuation</td><td>Opt individual punctuation marks into your practice. <code>?</code> is already part of the base set.</td></tr>
-            <tr><td>Track stage</td><td>Pin the Characters ladder to a stage: characters, pairs, triples, or words &amp; call signs.</td></tr>
+            <tr><td>Punctuation</td><td>Opt individual punctuation marks into your practice. <code>?</code> is already part of the base set. A mark you opt in is earned through the ladder like any other character; opting it back out takes it out of the drill again, and its stats are kept for when you return to it.</td></tr>
+            <tr><td>Track stage</td><td>Pin the Characters ladder to a stage: characters, pairs, triples, or words &amp; call signs. Also reachable mid-session, from the gear on iOS and the stage pills on Android.</td></tr>
           </tbody>
         </table>
       </div>
@@ -869,7 +913,10 @@
       <p><strong>On Android,</strong> Bluetooth LE keys need Bluetooth permission granted.</p>
 
       <h3>Does it work offline?</h3>
-      <p>Yes, for everything except the two networked features: the <a href="#repeater">Repeater</a> needs a connection to reach the Vail network, and the <strong>news</strong> source in <a href="#stories">Short Stories</a> needs one to fetch headlines. All training, all stats and all other content are on-device.</p>
+      <p>Yes, for everything except the two networked features: the <a href="#repeater">Repeater</a> needs a connection to reach the Vail network, and the <strong>news</strong> source in <a href="#stories">Short Stories</a> needs one to fetch headlines. All training, all stats and all other content are on-device. That includes <a href="#dailydit">Daily Dit</a>: the day's word is worked out from the date on your phone, not fetched from a server.</p>
+
+      <h3>It paused my music.</h3>
+      <p>On purpose. On iPhone, a practice session takes the audio route for itself, the way a phone call would, and hands it back when the session ends, so whatever was playing resumes. Android has always done the same through audio focus. The exception is the <a href="#repeater">Repeater</a>, which mixes with other audio so it can run alongside a radio app.</p>
 
       <h3>Where is my data?</h3>
       <p>On your device. No accounts, no ads, no tracking, no analytics. Progress and settings never leave the phone. See the <a href="/privacy/">privacy policy</a> for the full statement.</p>

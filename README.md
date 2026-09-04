@@ -19,7 +19,7 @@ python3 -m http.server 4178
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Landing page: hero, features, all 20 modes grouped by purpose |
+| `index.html` | Landing page: hero, Daily Dit, features, all 21 modes grouped by purpose |
 | `guide/index.html` | The user manual: every mode, setting, hardware option, and the FAQ covering how to get the app |
 | `privacy/index.html` | Privacy policy (linked from both app store listings) |
 | `styles.css` | Navy / teal / white theme, responsive layout, guide layout |
@@ -34,7 +34,8 @@ app repos. It's organised as:
 
 - **Basics**: getting started, how Koch / time-to-recognize / Farnsworth work,
   the home screen, running a session, the four ways to answer
-- **The modes**: all twenty, grouped as learn the characters · copy real content ·
+- **Daily Dit**: the shared word-a-day puzzle, its speed ladder and share text
+- **The modes**: all twenty-one, grouped as learn the characters · copy real content ·
   build speed · get on the air · send, decode & look up
 - **Reference**: progress & stats, every setting, hardware keys, troubleshooting
 
