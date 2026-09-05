@@ -19,7 +19,7 @@ python3 -m http.server 4178
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Landing page: hero, Daily Dit, features, all 21 modes grouped by purpose |
+| `index.html` | Landing page: hero, features, all 22 modes grouped by purpose |
 | `guide/index.html` | The user manual: every mode, setting, hardware option, and the FAQ covering how to get the app |
 | `privacy/index.html` | Privacy policy (linked from both app store listings) |
 | `styles.css` | Navy / teal / white theme, responsive layout, guide layout |
@@ -34,9 +34,9 @@ app repos. It's organised as:
 
 - **Basics**: getting started, how Koch / time-to-recognize / Farnsworth work,
   the home screen, running a session, the four ways to answer
-- **Daily Dit**: the shared word-a-day puzzle, its speed ladder and share text
-- **The modes**: all twenty-one, grouped as learn the characters · copy real content ·
-  build speed · get on the air · send, decode & look up
+- **The modes**: all twenty-two (Daily Dit among them), grouped as learn the
+  characters · copy real content · build speed · get on the air · send, decode &
+  look up
 - **Reference**: progress & stats, every setting, hardware keys, troubleshooting
 
 When a mode is added or renamed in either app, update the matching section here
@@ -75,7 +75,7 @@ places to change.
 
 ## The apps
 
-- **iOS**, native SwiftUI:
-  [N9HO/another-morse-trainer](https://github.com/N9HO/another-morse-trainer)
-- **Android**, Kotlin + Jetpack Compose:
-  [N9HO/another-morse-trainer-android](https://github.com/N9HO/another-morse-trainer-android)
+- Both apps live in one repository, [N9HO/another-morse-trainer](https://github.com/N9HO/another-morse-trainer):
+  `ios/` (native SwiftUI) and `android/` (Kotlin + Jetpack Compose). Its `PARITY.md`
+  is the rule that the two apps ship the same feature set, and its `CLAUDE.md`
+  carries the rule that this guide changes in the same release as the app.
