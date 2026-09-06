@@ -174,6 +174,9 @@ a{color:inherit;text-decoration:none}
 .about-mark{height:104px;width:auto;margin-bottom:24px;filter:drop-shadow(0 8px 26px rgba(39,211,232,.22))}
 .about .section-sub{font-size:1.12rem;margin-bottom:8px}
 .about .hero-actions{margin-top:28px}
+.about .about-support{font-size:.98rem;margin:22px auto 0}
+.about-support a{color:var(--teal)}
+.about-support a:hover{text-decoration:underline}
 
 /* footer */
 .footer{
