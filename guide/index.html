@@ -65,6 +65,7 @@
         <a href="#characters">Characters</a>
         <a href="#confusion">Confusion Drill</a>
         <a href="#invaders">Morse Invaders</a>
+        <a href="#asteroids">CW Asteroids</a>
 
         <h4>Copy real content</h4>
         <a href="#words">Common Words</a>
@@ -286,7 +287,7 @@
         </table>
       </div>
       <p>Under the header sit two cards. <strong><a href="#dailydit">Daily Dit</a></strong> is today's puzzle, and the card tells you where you stand: the puzzle number, how many guesses and listens you've spent, or the speed you got it at. <strong>New to Morse? Start here</strong> opens a condensed, in-app version of the opening sections of this guide: how to begin, why the code sounds fast, and what good looks like week by week. It stays there; it's as useful in week three as on day one.</p>
-      <p>Below that, the training tiles run roughly in learning order: <strong>Journey</strong> first, then the six choice-quiz modes, then the speed and operating modes, then the tools, with <a href="#invaders">Morse Invaders</a> at the end. You can jump anywhere at any time; nothing is locked behind anything else.</p>
+      <p>Below that, the training tiles run roughly in learning order: <strong>Journey</strong> first, then the six choice-quiz modes, then the speed and operating modes, then the tools, with the arcade games, <a href="#invaders">Morse Invaders</a> and <a href="#asteroids">CW Asteroids</a>, at the end. You can jump anywhere at any time; nothing is locked behind anything else.</p>
     </section>
 
     <!-- SESSION -->
@@ -432,6 +433,41 @@
         <div class="tip">
           <span class="tip-icon">TIP</span>
           <p>Start on <strong>Relaxed</strong> with your active set. The game gets hard on its own; Fast is for when Normal's later waves stop landing anything.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASTEROIDS -->
+    <section id="asteroids">
+      <h2><span class="h2-mc">·&minus;</span>CW Asteroids</h2>
+      <div class="entry">
+        <p class="entry-why">Arcade sending: the other half of Morse Invaders. There you name what you hear; here you key what you see.</p>
+        <p>Your ship sits at the centre of the field and asteroids drift in from the edges, each carrying a visible label. Destroy one before it reaches the ship. Two ways to play:</p>
+        <ul>
+          <li><strong>See it, send it</strong>: key an asteroid's label on the on-screen key or a <a href="#hardware">hardware key</a>. Each decoded character is added to what you've sent so far (the readout under the field shows it): the moment it spells a label, the nearest asteroid carrying that label is destroyed; while it could still be the start of a label, the game waits for the next character; when it can't be, that's a miss and the readout clears. A pause of 2.5 s with a partial label pending clears it silently. You choose which asteroid to send next, so with several on screen, take the one nearest the ship.</li>
+          <li><strong>Hear it, tap it</strong>: the game sends one asteroid's label in Morse, and only the asteroid carrying it is the target. Tap it; tap the ship (or <strong>Hear it again</strong>) to hear the label once more. Tapping an asteroid with a different label is a miss; tapping empty space does nothing. When the target is gone, the next one is sent at once.</li>
+        </ul>
+        <p>Asteroids carry either <strong>your active Koch set</strong> or the <strong>full alphabet and digits</strong>. The first two waves are single characters. From <strong>wave 3</strong> some spawns are larger asteroids carrying a short word (two to five characters from the top 300 common words, spelt entirely from your set) or a generated callsign; the share grows 15% a wave up to half of spawns. A word asteroid <strong>splits</strong> when hit: one small asteroid per character, fanning out from where it was, each still heading for the ship. In hear-it mode the whole word is sent as one unit.</p>
+        <h3>The speed ramp</h3>
+        <p>In hear-it mode the game starts slow and speeds up as you land hits, more gently than Morse Invaders does. A game opens <strong>8 WPM below your character speed</strong>, never below 15, and steps up <strong>1 WPM after every four hits</strong> (four in total, not in a row) until it reaches your character speed. An asteroid that reaches the ship steps the speed back 1 WPM, never below where the game started; a miss leaves it alone. Farnsworth spacing doesn't apply. The setup card says where a game will open and where it climbs to, the score line shows the speed right now, and the end card shows the highest speed you reached. In see-it mode nothing is sent, so there is no ramp: the decoder listens at your character speed.</p>
+        <h3>How it's scored</h3>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Lives</td><td>Three. An asteroid that reaches the ship costs one; at zero the game is over.</td></tr>
+              <tr><td>Points</td><td>100 per character of the label, times the combo multiplier: a single character is 100, a four-letter word 400, and its four fragments 100 each.</td></tr>
+              <tr><td>Combo</td><td>Consecutive hits: ×1 for the first three, ×2 for the next three, up to ×4. A miss or an asteroid reaching the ship resets it.</td></tr>
+              <tr><td>Waves</td><td>Every 8 hits clears a wave (fragments count). On Normal the first wave spawns an asteroid every 3 s with 12 s to reach the ship; each wave after that spawns 10% faster and closes in 8% faster, down to 1.2 s between asteroids and 5 s to the ship. At most five asteroids are on the field at once.</td></tr>
+              <tr><td>Difficulty</td><td><strong>Relaxed</strong>, <strong>Normal</strong> or <strong>Fast</strong>: the same rules with more or less breathing room (every timing scaled by 1.35, 1 or 0.75).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The end card shows your score, the wave you reached, accuracy, best combo and, in hear-it mode, the speed you reached. Your input, character set and difficulty are remembered for next time.</p>
+        <p><strong>It counts.</strong> Every hit and miss feeds the same per-character stats and <a href="#confusion">confusion matrix</a> as the drills do. A destroyed asteroid is a correct recognition of every character in its label; a wrong character keyed, or the wrong asteroid tapped, records the pair you confused (the character that was expected against the one you sent or picked); an asteroid that reaches the ship is a miss on each of its characters. The end card's accuracy counts asteroids; the session in <a href="#progress">Progress</a> counts characters, so a word is worth its length there.</p>
+        <div class="tip">
+          <span class="tip-icon">TIP</span>
+          <p>In send mode, keep your letter spacing clean: the decoder finalises a character on the letter gap, and a run-together pair reads as one wrong character. If you're not sure what the decoder heard, the readout under the field tells you.</p>
         </div>
       </div>
     </section>
@@ -915,7 +951,7 @@
       <p class="guide-lead">You can key into the app with real hardware, not just the touch key.</p>
 
       <h3>MIDI keys</h3>
-      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a> in keying mode, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
+      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a> in keying mode, <a href="#asteroids">CW Asteroids</a> in send mode, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
 
       <h3>Bluetooth LE MIDI keys</h3>
       <p>Wireless keys work on <strong>both platforms</strong>. Android scans for them directly, with unplug detection.</p>
