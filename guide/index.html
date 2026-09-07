@@ -65,6 +65,7 @@
         <a href="#characters">Characters</a>
         <a href="#confusion">Confusion Drill</a>
         <a href="#invaders">Morse Invaders</a>
+        <a href="#galaga">CW Galaga</a>
 
         <h4>Copy real content</h4>
         <a href="#words">Common Words</a>
@@ -286,7 +287,7 @@
         </table>
       </div>
       <p>Under the header sit two cards. <strong><a href="#dailydit">Daily Dit</a></strong> is today's puzzle, and the card tells you where you stand: the puzzle number, how many guesses and listens you've spent, or the speed you got it at. <strong>New to Morse? Start here</strong> opens a condensed, in-app version of the opening sections of this guide: how to begin, why the code sounds fast, and what good looks like week by week. It stays there; it's as useful in week three as on day one.</p>
-      <p>Below that, the training tiles run roughly in learning order: <strong>Journey</strong> first, then the six choice-quiz modes, then the speed and operating modes, then the tools, with <a href="#invaders">Morse Invaders</a> at the end. You can jump anywhere at any time; nothing is locked behind anything else.</p>
+      <p>Below that, the training tiles run roughly in learning order: <strong>Journey</strong> first, then the six choice-quiz modes, then the speed and operating modes, then the tools, with the arcade games, <a href="#invaders">Morse Invaders</a> and <a href="#galaga">CW Galaga</a>, at the end. You can jump anywhere at any time; nothing is locked behind anything else.</p>
     </section>
 
     <!-- SESSION -->
@@ -434,6 +435,42 @@
         <div class="tip">
           <span class="tip-icon">TIP</span>
           <p>Start on <strong>Relaxed</strong> with your active set. The game gets hard on its own; Fast is for when Normal's later waves stop landing anything.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALAGA -->
+    <section id="galaga">
+      <h2><span class="h2-mc">&minus;&minus;·</span>CW Galaga</h2>
+      <div class="entry">
+        <p class="entry-why">The second arcade game: the same drill as Morse Invaders, but the enemies come at you instead of falling.</p>
+        <p>Enemies swoop onto the field one at a time along curved paths, alternating from the left and the right, and settle into a formation at the top. Once a few have settled, one at a time peels off and dives at your ship at the bottom; if it isn't shot it loops back to its slot and will dive again. You shoot an enemy by naming the character it carries. Two ways to play, the same two as Invaders:</p>
+        <ul>
+          <li><strong>Hear it, type it</strong>: the enemies fly in unmarked. Each one is sent in Morse as it enters, and <strong>sent again as it starts a dive</strong>, so the threat announces itself (tap any enemy to hear it again). Type the character you heard on the on-screen <strong>QWERTY</strong> keyboard, the same one Invaders uses, and the most dangerous enemy carrying it is hit. A hardware keyboard works too.</li>
+          <li><strong>See it, key it</strong>: each enemy shows its character directly above it. Key it on the on-screen key or a <a href="#hardware">hardware key</a>, and the decoded character shoots the most dangerous one carrying it.</li>
+        </ul>
+        <p>"Most dangerous" is decided for you: a diving enemy first (the lower it is, the sooner), then one climbing back from a dive, then the lowest row of the formation, then anything still flying in. The enemies carry either <strong>your active Koch set</strong> or the <strong>full alphabet and digits</strong>, and a character already on the field is not sent again while another is free, so a character usually names exactly one enemy.</p>
+        <h3>The speed ramp</h3>
+        <p>In hear-it mode the game starts slow and speeds up as you land hits, on a gentler ramp than Invaders'. A game opens <strong>8 WPM below your character speed</strong>, never below 15, and steps up <strong>1 WPM after every six hits</strong> (six in total, not in a row) until it reaches your character speed. A dive that gets through steps the speed back 1 WPM, never below where the game started; a wrong shot leaves it alone. Farnsworth spacing doesn't apply, since a single character has no gaps to stretch. The setup card says where a game will open and where it climbs to, the score line shows the speed right now, and the end card shows the highest speed you reached. In see-it mode nothing is sent, so there is no ramp: the decoder listens at your character speed.</p>
+        <h3>How it's scored</h3>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Lives</td><td>Three. A dive that reaches the bottom costs one; at zero the game is over. The enemy that got through climbs back to its slot and stays in play.</td></tr>
+              <tr><td>Points</td><td>100 per hit, 150 for an enemy shot while it is diving, times the combo multiplier. Clearing a wave adds 500.</td></tr>
+              <tr><td>Combo</td><td>Consecutive hits: ×1 for the first three, ×2 for the next three, and so on up to <strong>×8</strong>. A wrong shot or a dive that gets through resets it.</td></tr>
+              <tr><td>Formation</td><td>Wave 1 is two rows of four; the formation grows a column a wave and a row every second wave, to four rows of six from wave 5. A wave is cleared when every enemy in it has been shot; the next one flies in after a short pause.</td></tr>
+              <tr><td>Timing</td><td>On Normal, wave 1 releases an enemy every 1.4 s with a 2.4 s flight to its slot, and once the formation has someone in it a dive starts every 3 s and takes 4 s to reach the bottom (the climb back takes half that). Each wave tightens every one of those (8%, 6%, 10% and 8% a wave) down to floors of 0.5 s, 1.2 s, 1 s and 1.8 s, and from wave 3 two enemies can be off the formation at once, from wave 5 three.</td></tr>
+              <tr><td>Difficulty</td><td><strong>Relaxed</strong>, <strong>Normal</strong> or <strong>Fast</strong>: the same rules with more or less breathing room (every timing scaled by 1.35, 1 or 0.75).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The end card shows your score, the wave you reached, accuracy, best combo and, in hear-it mode, the speed you reached. Your input, character set and difficulty are remembered for next time, separately from Invaders'.</p>
+        <p><strong>It counts.</strong> Every hit and miss feeds the same per-character stats and <a href="#confusion">confusion matrix</a> as the drills and Invaders do: a wrong shot records the pair you confused (what you pressed against the most dangerous enemy on the field), and a dive that gets through is a miss on that character. The session lands in your history as <strong>CW Galaga</strong>.</p>
+        <div class="tip">
+          <span class="tip-icon">TIP</span>
+          <p>Don't try to clear the formation from the top down. Shoot whatever is diving, then whatever is climbing back; the formation itself is safe until it moves.</p>
         </div>
       </div>
     </section>
@@ -919,7 +956,7 @@
       <p class="guide-lead">You can key into the app with real hardware, not just the touch key.</p>
 
       <h3>MIDI keys</h3>
-      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a> in keying mode, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
+      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a> and <a href="#galaga">CW Galaga</a> in keying mode, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
 
       <h3>Bluetooth LE MIDI keys</h3>
       <p>Wireless keys work on <strong>both platforms</strong>. Android scans for them directly, with unplug detection.</p>
