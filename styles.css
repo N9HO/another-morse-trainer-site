@@ -120,6 +120,26 @@ a{color:inherit;text-decoration:none}
 .card h3{font-size:1.15rem;margin-bottom:8px}
 .card p{color:var(--muted);font-size:.98rem}
 
+/* why */
+.why{padding-top:0}
+.why-inner{
+  max-width:64ch;margin:0 auto;
+  padding:40px 36px;
+  background:var(--navy-card);
+  border:1px solid var(--navy-line);
+  border-radius:20px;
+}
+.why-kicker{font-family:"JetBrains Mono",monospace;color:var(--teal);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.why-lead{font-size:1.3rem;font-weight:700;letter-spacing:-.01em;margin:22px 0 14px}
+.why-inner p{color:var(--muted);font-size:1.05rem}
+.why-inner p+p{margin-top:14px}
+.why-inner .why-lead{color:var(--ink)}
+.why-sign{color:var(--ink) !important;font-weight:600;margin-top:22px !important}
+.why-sign .morse{letter-spacing:.08em}
+@media(max-width:600px){
+  .why-inner{padding:28px 20px;border-radius:16px}
+}
+
 /* showcase */
 .showcase{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .checklist{list-style:none;margin-top:24px;display:flex;flex-direction:column;gap:12px}
