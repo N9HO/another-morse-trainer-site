@@ -65,6 +65,7 @@
         <a href="#characters">Characters</a>
         <a href="#confusion">Confusion Drill</a>
         <a href="#invaders">Morse Invaders</a>
+        <a href="#dungeon">CW Dungeon</a>
 
         <h4>Copy real content</h4>
         <a href="#words">Common Words</a>
@@ -286,7 +287,7 @@
         </table>
       </div>
       <p>Under the header sit two cards. <strong><a href="#dailydit">Daily Dit</a></strong> is today's puzzle, and the card tells you where you stand: the puzzle number, how many guesses and listens you've spent, or the speed you got it at. <strong>New to Morse? Start here</strong> opens a condensed, in-app version of the opening sections of this guide: how to begin, why the code sounds fast, and what good looks like week by week. It stays there; it's as useful in week three as on day one.</p>
-      <p>Below that, the training tiles run roughly in learning order: <strong>Journey</strong> first, then the six choice-quiz modes, then the speed and operating modes, then the tools, with <a href="#invaders">Morse Invaders</a> at the end. You can jump anywhere at any time; nothing is locked behind anything else.</p>
+      <p>Below that, the training tiles run roughly in learning order: <strong>Journey</strong> first, then the six choice-quiz modes, then the speed and operating modes, then the tools, with the games, <a href="#invaders">Morse Invaders</a> and <a href="#dungeon">CW Dungeon</a>, at the end. You can jump anywhere at any time; nothing is locked behind anything else.</p>
     </section>
 
     <!-- SESSION -->
@@ -432,6 +433,43 @@
         <div class="tip">
           <span class="tip-icon">TIP</span>
           <p>Start on <strong>Relaxed</strong> with your active set. The game gets hard on its own; Fast is for when Normal's later waves stop landing anything.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DUNGEON -->
+    <section id="dungeon">
+      <h2><span class="h2-mc">&minus;··</span>CW Dungeon</h2>
+      <div class="entry">
+        <p class="entry-why">Copy on the way in, send on the way out: a roguelike where every spell is a word you hear and every counter is a word you key.</p>
+        <p>You stand in a dungeon room facing one or two monsters. Each one <strong>casts a spell by sending a word in Morse</strong> (<span class="morse">FIRE</span>, <span class="morse">STORM</span>, <span class="morse">CURSE</span>). Copy it, look it up in the spell book on screen, and <strong>key the counter word</strong> (<span class="morse">WATER</span>, <span class="morse">PORT</span>, <span class="morse">BLESS</span>) on the on-screen key or a <a href="#hardware">hardware key</a> before the attack lands. The word you key is decoded live; it casts the moment it matches the counter, or, if it doesn't, as soon as a word gap of silence follows it. Tap a monster to hear its spell again; the clock keeps running.</p>
+        <ul>
+          <li>A <strong>counter keyed in time</strong> takes one hit off the monster and scores. A counter marked ♥ in the spell book also <strong>heals you</strong> one life, up to the three you started with.</li>
+          <li>A <strong>wrong word</strong>, or the window closing with nothing keyed, costs a life. Keying the spell itself back instead of its counter is a wrong word; the game tells you so.</li>
+          <li>When every monster in the room is down the room is cleared and the next opens. Rooms 1 and 2 hold one monster, later rooms two, and <strong>every fifth room is a dragon</strong> that takes four hits instead of two.</li>
+        </ul>
+        <h3>The spell book</h3>
+        <p>Twenty-four fixed pairs, each spelled from the letters you'd know at some point on the Koch ladder, from <span class="morse">TRAP</span>&nbsp;&rarr;&nbsp;<span class="morse">MAP</span> (eight letters in) to <span class="morse">HEX</span>&nbsp;&rarr;&nbsp;<span class="morse">CHARM</span> (the whole alphabet). With <strong>My active characters</strong> the book holds only the pairs your current set spells, so a learner partway up the ladder gets a short book of words made from letters they know. If the set spells fewer than three pairs, the four <strong>starter spells</strong> (which need the first ten Koch letters) are used instead, and the setup screen says so. <strong>Full alphabet</strong> plays the whole book. The pairs in play are shown on the setup screen and along the bottom of the room during a run.</p>
+        <h3>The speed ramp</h3>
+        <p>Spells are sent at a speed that climbs as you land counters. A game opens <strong>8 WPM below your character speed</strong>, never below 15, and steps up <strong>1 WPM after every four counters</strong> (four in total, not in a row) until it reaches your character speed. A hit taken steps it back 1 WPM, never below where the game started. Unlike Morse Invaders, a spell is a whole word, so your <strong>Farnsworth spacing</strong> applies to it when the switch is on: the letters speed up with the ramp, the gaps between them stay at your effective speed. The setup screen says where a game opens and where it climbs to; the score line shows the speed right now; the end card shows the highest speed you reached.</p>
+        <h3>How it's scored</h3>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Lives</td><td>Three. A wrong or late counter costs one; a ♥ counter restores one; at zero the run is over.</td></tr>
+              <tr><td>Points</td><td>100 per counter, times the combo multiplier, plus 250 for each room cleared.</td></tr>
+              <tr><td>Combo</td><td>Consecutive counters: ×1 for the first three, ×2 for the next three, up to ×4. A hit taken resets it.</td></tr>
+              <tr><td>Attack window</td><td>Opens when the spell has finished sounding. On Normal it is 6 s in room 1 and 8% shorter each room after, down to 2.5 s. The next spell comes 1 s after the last resolves, 2 s after a room is cleared.</td></tr>
+              <tr><td>Difficulty</td><td><strong>Relaxed</strong>, <strong>Normal</strong> or <strong>Fast</strong>: the same rules with more or less breathing room (every window scaled by 1.35, 1 or 0.75).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The end card shows your score, rooms cleared, accuracy, best combo and the speed you reached. Your character set and difficulty are remembered for next time.</p>
+        <p><strong>It counts.</strong> Every character of every counter you key feeds the same per-character stats and <a href="#confusion">confusion matrix</a> as the drills do, letter by letter against the counter word: a right letter is a hit, a wrong letter records the pair you confused, and a letter you never reached (short or late) is a miss on that letter. A run is real sending practice, not a break from it.</p>
+        <div class="tip">
+          <span class="tip-icon">TIP</span>
+          <p>Read the spell book before you start and say the counters to yourself. In the room there is no time to hunt: the copy has to land as a word and the counter has to leave as one.</p>
         </div>
       </div>
     </section>
@@ -915,7 +953,7 @@
       <p class="guide-lead">You can key into the app with real hardware, not just the touch key.</p>
 
       <h3>MIDI keys</h3>
-      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a> in keying mode, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
+      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a> in keying mode, <a href="#dungeon">CW Dungeon</a>, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
 
       <h3>Bluetooth LE MIDI keys</h3>
       <p>Wireless keys work on <strong>both platforms</strong>. Android scans for them directly, with unplug detection.</p>
