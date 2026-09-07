@@ -66,6 +66,7 @@
         <a href="#confusion">Confusion Drill</a>
         <a href="#invaders">Morse Invaders</a>
         <a href="#galaga">CW Galaga</a>
+        <a href="#defender">Morse Defender</a>
 
         <h4>Copy real content</h4>
         <a href="#words">Common Words</a>
@@ -471,6 +472,44 @@
         <div class="tip">
           <span class="tip-icon">TIP</span>
           <p>Don't try to clear the formation from the top down. Shoot whatever is diving, then whatever is climbing back; the formation itself is safe until it moves.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEFENDER -->
+    <section id="defender">
+      <h2><span class="h2-mc">&minus;··</span>Morse Defender</h2>
+      <div class="entry">
+        <p class="entry-why">Arcade callsign copy: hear a callsign under pressure, find it on the screen, act on it before it's too late.</p>
+        <p>Cities and ships &mdash; the <strong>assets</strong> &mdash; line the bottom of the play field, each with its callsign written under it. Attackers come down from the top in five columns, and each one <strong>sends the callsign of the asset it is heading for</strong> in Morse as it launches (tap it to hear it again). Nothing on screen says where an attacker is going; only the callsign does. Copy it, find that asset, and route the defence to it before the attacker arrives. Two ways to route:</p>
+        <ul>
+          <li><strong>Tap the target</strong>: tap the asset whose callsign you heard. The attacker aimed at it is destroyed. Tap an asset nothing is aimed at and the shot is wasted.</li>
+          <li><strong>Type the callsign</strong>: type what you heard on the on-screen keyboard &mdash; the same <strong>QWERTY</strong> layout as Morse Invaders, with a digit row when the callsigns can have digits and a backspace &mdash; and the defence routes itself the moment your copy matches an asset. A copy that runs past the longest callsign on the field without matching is a wasted shot. A hardware keyboard works too.</li>
+        </ul>
+        <p>An attacker that reaches its asset destroys it; the rubble stays where it stood so the row doesn't shift under you, and any other attacker aimed at the same asset turns back. <strong>The assets are your lives:</strong> when the last one falls, the game is over.</p>
+        <h3>Where the callsigns come from</h3>
+        <p><strong>From my characters</strong> (the default) spells four-character, call-like groups only from your active Koch set &mdash; a digit in the second position when your set has one (<code>K5MR</code>), letters throughout when it doesn't (<code>KMRS</code>) &mdash; so nothing is ever sent that you haven't met. <strong>Real callsigns</strong> uses genuine US-style calls in the everyday shapes (<code>K1AB</code>, <code>AB1C</code>, <code>K1ABC</code>, <code>AB1CD</code>). No two assets on the field ever share a callsign.</p>
+        <h3>The speed ramp</h3>
+        <p>A game opens <strong>8 WPM below your character speed</strong>, never below 15, and steps up <strong>2 WPM after every four hits</strong> (four in total, not in a row) until it reaches your character speed. Losing an asset steps the speed back 2 WPM, never below where the game started; a wasted shot leaves it alone. Because a callsign is several characters, <strong>Farnsworth spacing applies</strong> when it's switched on: the characters go at the ramp's speed and the gaps between them stretch to your effective speed. The setup card says where a game will open and where it climbs to, the score line shows the speed right now, and the end card shows the highest speed you reached.</p>
+        <h3>How it's scored</h3>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Assets</td><td>Four to start. Every wave clear adds one, up to eight; at eight, a wave clear rebuilds the first destroyed asset instead (with a new callsign). At zero the game is over.</td></tr>
+              <tr><td>Attackers</td><td>One in flight at a time on waves 1&ndash;2, two on waves 3&ndash;4, three from wave 5 on.</td></tr>
+              <tr><td>Points</td><td>100 per hit, times the combo multiplier.</td></tr>
+              <tr><td>Combo</td><td>Consecutive hits: &times;1 for the first three, &times;2 for the next three, up to &times;4. A wasted shot or a lost asset resets it.</td></tr>
+              <tr><td>Waves</td><td>Every 6 hits clears a wave. On Normal the first wave launches an attacker every 5 s with 14 s to reach its asset; each wave after that launches 10% sooner and flies 8% faster, down to 2 s between launches and 6 s to arrive.</td></tr>
+              <tr><td>Difficulty</td><td><strong>Relaxed</strong>, <strong>Normal</strong> or <strong>Fast</strong>: the same rules with more or less breathing room (every timing scaled by 1.35, 1 or 0.75).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The end card shows your score, the wave you reached, accuracy, best combo and the speed you reached. Your input, callsign source and difficulty are remembered for next time.</p>
+        <p><strong>It counts.</strong> Every route feeds the same per-character stats and <a href="#confusion">confusion matrix</a> as the drills do, character by character: a correct route is a hit on each character of the callsign; a wrong tap or a wrong typed copy is compared position by position against the callsign of the attacker nearest arrival, so routing <code>K1AB</code> when <code>K1AR</code> was sent records B confused with R; an attacker that gets through is a miss on each character it sent. The session record counts one attempt per callsign, and its chart shows the characters.</p>
+        <div class="tip">
+          <span class="tip-icon">TIP</span>
+          <p>Start with <strong>Tap the target</strong> and <strong>From my characters</strong> on Relaxed. Switch to Real callsigns once the whole alphabet is in your set; it's the closest thing to copying a call off the air with something riding on it.</p>
         </div>
       </div>
     </section>
