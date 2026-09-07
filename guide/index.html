@@ -35,7 +35,7 @@
 <section class="guide-hero">
   <p class="eyebrow"><span class="morse">·&#8202;&#8202;&#8202;&minus;</span>&nbsp; The manual</p>
   <h1>Everything in the app,<br>and <span class="accent">how to use it</span></h1>
-  <p class="lede">Twenty-two ways to train, on iPhone and Android, from your first two letters to working a contest pileup, with a word-a-day puzzle and an arcade game among them. This page walks through each one: what it's for, when to reach for it, and how to get the most out of it. Skip to whatever you need.</p>
+  <p class="lede">Twenty-seven ways to train, on iPhone and Android, from your first two letters to working a contest pileup, with a word-a-day puzzle and an arcade game among them. This page walks through each one: what it's for, when to reach for it, and how to get the most out of it. Skip to whatever you need.</p>
 
   <div class="jump">
     <a href="#start"><b>New here?</b><span>Your first session, in five minutes.</span></a>
@@ -65,6 +65,11 @@
         <a href="#characters">Characters</a>
         <a href="#confusion">Confusion Drill</a>
         <a href="#invaders">Morse Invaders</a>
+        <a href="#galaga">CW Galaga</a>
+        <a href="#defender">Morse Defender</a>
+        <a href="#dungeon">CW Dungeon</a>
+        <a href="#frogger">CW Frogger</a>
+        <a href="#asteroids">CW Asteroids</a>
 
         <h4>Copy real content</h4>
         <a href="#words">Common Words</a>
@@ -286,7 +291,7 @@
         </table>
       </div>
       <p>Under the header sit two cards. <strong><a href="#dailydit">Daily Dit</a></strong> is today's puzzle, and the card tells you where you stand: the puzzle number, how many guesses and listens you've spent, or the speed you got it at. <strong>New to Morse? Start here</strong> opens a condensed, in-app version of the opening sections of this guide: how to begin, why the code sounds fast, and what good looks like week by week. It stays there; it's as useful in week three as on day one.</p>
-      <p>Below that, the training tiles run roughly in learning order: <strong>Journey</strong> first, then the six choice-quiz modes, then the speed and operating modes, then the tools, with <a href="#invaders">Morse Invaders</a> at the end. You can jump anywhere at any time; nothing is locked behind anything else.</p>
+      <p>Below that, the training tiles run roughly in learning order: <strong>Journey</strong> first, then the six choice-quiz modes, then the speed and operating modes, then the tools, with the arcade games &mdash; <a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a>, <a href="#defender">Morse Defender</a>, <a href="#dungeon">CW Dungeon</a>, <a href="#frogger">CW Frogger</a> and <a href="#asteroids">CW Asteroids</a> &mdash; at the end. You can jump anywhere at any time; nothing is locked behind anything else.</p>
     </section>
 
     <!-- SESSION -->
@@ -342,7 +347,7 @@
     <!-- ============ MODES ============ -->
     <section id="modes">
       <h2><span class="h2-mc">&minus;·&minus;</span>The modes</h2>
-      <p class="guide-lead">Twenty-two of them. They're grouped here the way you'd actually grow into them, but nothing is gated, so use whatever you want whenever you want.</p>
+      <p class="guide-lead">Twenty-seven of them. They're grouped here the way you'd actually grow into them, but nothing is gated, so use whatever you want whenever you want.</p>
     </section>
 
     <!-- JOURNEY -->
@@ -413,7 +418,9 @@
         </ul>
         <p>The aliens carry either <strong>your active Koch set</strong>, so the game drills exactly what you're learning, or the <strong>full alphabet and digits</strong>.</p>
         <h3>The speed ramp</h3>
-        <p>In hear-it mode the game starts slow and speeds up as you land hits. A game opens <strong>10 WPM below your character speed</strong>, never below 15, and steps up <strong>2 WPM after every five hits</strong> (five in total, not in a row) until it reaches your character speed. An alien that lands steps the speed back 2 WPM, never below where the game started; a wrong shot leaves it alone. Farnsworth spacing doesn't apply, since a single character has no gaps to stretch. The setup card says where a game will open and where it climbs to, the score line shows the speed right now, and the end card shows the highest speed you reached. At a character speed of 15 there is nothing to ramp and every alien is sent at 15. In see-it mode nothing is sent, so there is no ramp: the decoder listens at your character speed.</p>
+        <p>In hear-it mode the game starts slow and speeds up only as you consolidate. A game opens <strong>10 WPM below your character speed</strong>, never below 15, and steps up <strong>1 WPM after six hits in a row</strong> at the current speed, until it reaches your character speed. A wrong shot resets that streak and leaves the speed alone; an alien that lands resets it and steps the speed back <strong>2 WPM</strong>, never below where the game started. After any change of speed, up or down, the first three hits are settling hits that don't count, so a fumble while you adjust costs nothing. The upshot: at around 90% accuracy the speed climbs steadily, at 80% it crawls, and below that it all but stops; a speed that beat you takes eighteen clean hits to reach again. Farnsworth spacing doesn't apply, since a single character has no gaps to stretch. The setup card says where a game will open and where it climbs to, the score line shows the speed right now, and the end card shows the highest speed you reached. At a character speed of 15 there is nothing to ramp and every alien is sent at 15. In see-it mode nothing is sent, so there is no ramp: the decoder listens at your character speed.</p>
+        <h3>Characters you miss come back</h3>
+        <p>Within a game, a character you miss, whether an alien that lands or a wrong shot while it was the lowest alien on the field, is dealt more often until you've mastered it again: one miss makes it twice as likely to be the next alien, each hit on it brings that back down, and after two more hits than misses it's back to normal. The weighting is capped (a character is never more than four times as likely as the others), the game still prefers characters not already on the field, and it resets with every new game, so nothing you missed last week follows you. This works the same in both modes.</p>
         <h3>How it's scored</h3>
         <div class="tbl-wrap">
           <table class="spec">
@@ -432,6 +439,203 @@
         <div class="tip">
           <span class="tip-icon">TIP</span>
           <p>Start on <strong>Relaxed</strong> with your active set. The game gets hard on its own; Fast is for when Normal's later waves stop landing anything.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALAGA -->
+    <section id="galaga">
+      <h2><span class="h2-mc">&minus;&minus;·</span>CW Galaga</h2>
+      <div class="entry">
+        <p class="entry-why">The second arcade game: the same drill as Morse Invaders, but the enemies come at you instead of falling.</p>
+        <p>Enemies swoop onto the field one at a time along curved paths, alternating from the left and the right, and settle into a formation at the top. Once a few have settled, one at a time peels off and dives at your ship at the bottom; if it isn't shot it loops back to its slot and will dive again. You shoot an enemy by naming the character it carries. Two ways to play, the same two as Invaders:</p>
+        <ul>
+          <li><strong>Hear it, type it</strong>: the enemies fly in unmarked. Each one is sent in Morse as it enters, and <strong>sent again as it starts a dive</strong>, so the threat announces itself (tap any enemy to hear it again). Type the character you heard on the on-screen <strong>QWERTY</strong> keyboard, the same one Invaders uses, and the most dangerous enemy carrying it is hit. A hardware keyboard works too.</li>
+          <li><strong>See it, key it</strong>: each enemy shows its character directly above it. Key it on the on-screen key or a <a href="#hardware">hardware key</a>, and the decoded character shoots the most dangerous one carrying it.</li>
+        </ul>
+        <p>"Most dangerous" is decided for you: a diving enemy first (the lower it is, the sooner), then one climbing back from a dive, then the lowest row of the formation, then anything still flying in. The enemies carry either <strong>your active Koch set</strong> or the <strong>full alphabet and digits</strong>, and a character already on the field is not sent again while another is free, so a character usually names exactly one enemy.</p>
+        <h3>The speed ramp</h3>
+        <p>In hear-it mode the game starts slow and speeds up as you land hits, on a gentler ramp than Invaders'. A game opens <strong>8 WPM below your character speed</strong>, never below 15, and steps up <strong>1 WPM after every six hits</strong> (six in total, not in a row) until it reaches your character speed. A dive that gets through steps the speed back 1 WPM, never below where the game started; a wrong shot leaves it alone. Farnsworth spacing doesn't apply, since a single character has no gaps to stretch. The setup card says where a game will open and where it climbs to, the score line shows the speed right now, and the end card shows the highest speed you reached. In see-it mode nothing is sent, so there is no ramp: the decoder listens at your character speed.</p>
+        <h3>How it's scored</h3>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Lives</td><td>Three. A dive that reaches the bottom costs one; at zero the game is over. The enemy that got through climbs back to its slot and stays in play.</td></tr>
+              <tr><td>Points</td><td>100 per hit, 150 for an enemy shot while it is diving, times the combo multiplier. Clearing a wave adds 500.</td></tr>
+              <tr><td>Combo</td><td>Consecutive hits: ×1 for the first three, ×2 for the next three, and so on up to <strong>×8</strong>. A wrong shot or a dive that gets through resets it.</td></tr>
+              <tr><td>Formation</td><td>Wave 1 is two rows of four; the formation grows a column a wave and a row every second wave, to four rows of six from wave 5. A wave is cleared when every enemy in it has been shot; the next one flies in after a short pause.</td></tr>
+              <tr><td>Timing</td><td>On Normal, wave 1 releases an enemy every 1.4 s with a 2.4 s flight to its slot, and once the formation has someone in it a dive starts every 3 s and takes 4 s to reach the bottom (the climb back takes half that). Each wave tightens every one of those (8%, 6%, 10% and 8% a wave) down to floors of 0.5 s, 1.2 s, 1 s and 1.8 s, and from wave 3 two enemies can be off the formation at once, from wave 5 three.</td></tr>
+              <tr><td>Difficulty</td><td><strong>Relaxed</strong>, <strong>Normal</strong> or <strong>Fast</strong>: the same rules with more or less breathing room (every timing scaled by 1.35, 1 or 0.75).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The end card shows your score, the wave you reached, accuracy, best combo and, in hear-it mode, the speed you reached. Your input, character set and difficulty are remembered for next time, separately from Invaders'.</p>
+        <p><strong>It counts.</strong> Every hit and miss feeds the same per-character stats and <a href="#confusion">confusion matrix</a> as the drills and Invaders do: a wrong shot records the pair you confused (what you pressed against the most dangerous enemy on the field), and a dive that gets through is a miss on that character. The session lands in your history as <strong>CW Galaga</strong>.</p>
+        <div class="tip">
+          <span class="tip-icon">TIP</span>
+          <p>Don't try to clear the formation from the top down. Shoot whatever is diving, then whatever is climbing back; the formation itself is safe until it moves.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEFENDER -->
+    <section id="defender">
+      <h2><span class="h2-mc">&minus;··</span>Morse Defender</h2>
+      <div class="entry">
+        <p class="entry-why">Arcade callsign copy: hear a callsign under pressure, find it on the screen, act on it before it's too late.</p>
+        <p>Cities and ships &mdash; the <strong>assets</strong> &mdash; line the bottom of the play field, each with its callsign written under it. Attackers come down from the top in five columns, and each one <strong>sends the callsign of the asset it is heading for</strong> in Morse as it launches (tap it to hear it again). Nothing on screen says where an attacker is going; only the callsign does. Copy it, find that asset, and route the defence to it before the attacker arrives. Two ways to route:</p>
+        <ul>
+          <li><strong>Tap the target</strong>: tap the asset whose callsign you heard. The attacker aimed at it is destroyed. Tap an asset nothing is aimed at and the shot is wasted.</li>
+          <li><strong>Type the callsign</strong>: type what you heard on the on-screen keyboard &mdash; the same <strong>QWERTY</strong> layout as Morse Invaders, with a digit row when the callsigns can have digits and a backspace &mdash; and the defence routes itself the moment your copy matches an asset. A copy that runs past the longest callsign on the field without matching is a wasted shot. A hardware keyboard works too.</li>
+        </ul>
+        <p>An attacker that reaches its asset destroys it; the rubble stays where it stood so the row doesn't shift under you, and any other attacker aimed at the same asset turns back. <strong>The assets are your lives:</strong> when the last one falls, the game is over.</p>
+        <h3>Where the callsigns come from</h3>
+        <p><strong>From my characters</strong> (the default) spells four-character, call-like groups only from your active Koch set &mdash; a digit in the second position when your set has one (<code>K5MR</code>), letters throughout when it doesn't (<code>KMRS</code>) &mdash; so nothing is ever sent that you haven't met. <strong>Real callsigns</strong> uses genuine US-style calls in the everyday shapes (<code>K1AB</code>, <code>AB1C</code>, <code>K1ABC</code>, <code>AB1CD</code>). No two assets on the field ever share a callsign.</p>
+        <h3>The speed ramp</h3>
+        <p>A game opens <strong>8 WPM below your character speed</strong>, never below 15, and steps up <strong>2 WPM after every four hits</strong> (four in total, not in a row) until it reaches your character speed. Losing an asset steps the speed back 2 WPM, never below where the game started; a wasted shot leaves it alone. Because a callsign is several characters, <strong>Farnsworth spacing applies</strong> when it's switched on: the characters go at the ramp's speed and the gaps between them stretch to your effective speed. The setup card says where a game will open and where it climbs to, the score line shows the speed right now, and the end card shows the highest speed you reached.</p>
+        <h3>How it's scored</h3>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Assets</td><td>Four to start. Every wave clear adds one, up to eight; at eight, a wave clear rebuilds the first destroyed asset instead (with a new callsign). At zero the game is over.</td></tr>
+              <tr><td>Attackers</td><td>One in flight at a time on waves 1&ndash;2, two on waves 3&ndash;4, three from wave 5 on.</td></tr>
+              <tr><td>Points</td><td>100 per hit, times the combo multiplier.</td></tr>
+              <tr><td>Combo</td><td>Consecutive hits: &times;1 for the first three, &times;2 for the next three, up to &times;4. A wasted shot or a lost asset resets it.</td></tr>
+              <tr><td>Waves</td><td>Every 6 hits clears a wave. On Normal the first wave launches an attacker every 5 s with 14 s to reach its asset; each wave after that launches 10% sooner and flies 8% faster, down to 2 s between launches and 6 s to arrive.</td></tr>
+              <tr><td>Difficulty</td><td><strong>Relaxed</strong>, <strong>Normal</strong> or <strong>Fast</strong>: the same rules with more or less breathing room (every timing scaled by 1.35, 1 or 0.75).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The end card shows your score, the wave you reached, accuracy, best combo and the speed you reached. Your input, callsign source and difficulty are remembered for next time.</p>
+        <p><strong>It counts.</strong> Every route feeds the same per-character stats and <a href="#confusion">confusion matrix</a> as the drills do, character by character: a correct route is a hit on each character of the callsign; a wrong tap or a wrong typed copy is compared position by position against the callsign of the attacker nearest arrival, so routing <code>K1AB</code> when <code>K1AR</code> was sent records B confused with R; an attacker that gets through is a miss on each character it sent. The session record counts one attempt per callsign, and its chart shows the characters.</p>
+        <div class="tip">
+          <span class="tip-icon">TIP</span>
+          <p>Start with <strong>Tap the target</strong> and <strong>From my characters</strong> on Relaxed. Switch to Real callsigns once the whole alphabet is in your set; it's the closest thing to copying a call off the air with something riding on it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DUNGEON -->
+    <section id="dungeon">
+      <h2><span class="h2-mc">&minus;··</span>CW Dungeon</h2>
+      <div class="entry">
+        <p class="entry-why">Copy on the way in, send on the way out: a roguelike where every spell is a word you hear and every counter is a word you key.</p>
+        <p>You stand in a dungeon room facing one or two monsters. Each one <strong>casts a spell by sending a word in Morse</strong> (<span class="morse">FIRE</span>, <span class="morse">STORM</span>, <span class="morse">CURSE</span>). Copy it, look it up in the spell book on screen, and <strong>key the counter word</strong> (<span class="morse">WATER</span>, <span class="morse">PORT</span>, <span class="morse">BLESS</span>) on the on-screen key or a <a href="#hardware">hardware key</a> before the attack lands. The word you key is decoded live; it casts the moment it matches the counter, or, if it doesn't, as soon as a word gap of silence follows it. Tap a monster to hear its spell again; the clock keeps running.</p>
+        <ul>
+          <li>A <strong>counter keyed in time</strong> takes one hit off the monster and scores. A counter marked ♥ in the spell book also <strong>heals you</strong> one life, up to the three you started with.</li>
+          <li>A <strong>wrong word</strong>, or the window closing with nothing keyed, costs a life. Keying the spell itself back instead of its counter is a wrong word; the game tells you so.</li>
+          <li>When every monster in the room is down the room is cleared and the next opens. Rooms 1 and 2 hold one monster, later rooms two, and <strong>every fifth room is a dragon</strong> that takes four hits instead of two.</li>
+        </ul>
+        <h3>The spell book</h3>
+        <p>Twenty-four fixed pairs, each spelled from the letters you'd know at some point on the Koch ladder, from <span class="morse">TRAP</span>&nbsp;&rarr;&nbsp;<span class="morse">MAP</span> (eight letters in) to <span class="morse">HEX</span>&nbsp;&rarr;&nbsp;<span class="morse">CHARM</span> (the whole alphabet). With <strong>My active characters</strong> the book holds only the pairs your current set spells, so a learner partway up the ladder gets a short book of words made from letters they know. If the set spells fewer than three pairs, the four <strong>starter spells</strong> (which need the first ten Koch letters) are used instead, and the setup screen says so. <strong>Full alphabet</strong> plays the whole book. The pairs in play are shown on the setup screen and along the bottom of the room during a run.</p>
+        <h3>The speed ramp</h3>
+        <p>Spells are sent at a speed that climbs as you land counters. A game opens <strong>8 WPM below your character speed</strong>, never below 15, and steps up <strong>1 WPM after every four counters</strong> (four in total, not in a row) until it reaches your character speed. A hit taken steps it back 1 WPM, never below where the game started. Unlike Morse Invaders, a spell is a whole word, so your <strong>Farnsworth spacing</strong> applies to it when the switch is on: the letters speed up with the ramp, the gaps between them stay at your effective speed. The setup screen says where a game opens and where it climbs to; the score line shows the speed right now; the end card shows the highest speed you reached.</p>
+        <h3>How it's scored</h3>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Lives</td><td>Three. A wrong or late counter costs one; a ♥ counter restores one; at zero the run is over.</td></tr>
+              <tr><td>Points</td><td>100 per counter, times the combo multiplier, plus 250 for each room cleared.</td></tr>
+              <tr><td>Combo</td><td>Consecutive counters: ×1 for the first three, ×2 for the next three, up to ×4. A hit taken resets it.</td></tr>
+              <tr><td>Attack window</td><td>Opens when the spell has finished sounding. On Normal it is 6 s in room 1 and 8% shorter each room after, down to 2.5 s. The next spell comes 1 s after the last resolves, 2 s after a room is cleared.</td></tr>
+              <tr><td>Difficulty</td><td><strong>Relaxed</strong>, <strong>Normal</strong> or <strong>Fast</strong>: the same rules with more or less breathing room (every window scaled by 1.35, 1 or 0.75).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The end card shows your score, rooms cleared, accuracy, best combo and the speed you reached. Your character set and difficulty are remembered for next time.</p>
+        <p><strong>It counts.</strong> Every character of every counter you key feeds the same per-character stats and <a href="#confusion">confusion matrix</a> as the drills do, letter by letter against the counter word: a right letter is a hit, a wrong letter records the pair you confused, and a letter you never reached (short or late) is a miss on that letter. A run is real sending practice, not a break from it.</p>
+        <div class="tip">
+          <span class="tip-icon">TIP</span>
+          <p>Read the spell book before you start and say the counters to yourself. In the room there is no time to hunt: the copy has to land as a word and the counter has to leave as one.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FROGGER -->
+    <section id="frogger">
+      <h2><span class="h2-mc">··&minus;·</span>CW Frogger</h2>
+      <div class="entry">
+        <p class="entry-why">Arcade crossing: hear a character, find it in the traffic, and hop.</p>
+        <p>A frog starts on the near bank and has to reach the far one: three lanes of road, a median to catch your breath, then three lanes of river. You move it the classic way, <strong>one hop at a time</strong> on the four direction buttons under the board (a hardware keyboard's arrow keys work too). Morse decides what is safe.</p>
+        <p>Every vehicle and every log carries a character from your set. Each lane has a <strong>cue</strong>: as soon as you land on the row below it the game sends one of that lane's characters in Morse, and the lane is outlined so you know which one the cue is for. Tap the board to hear it again.</p>
+        <ul>
+          <li><strong>On the road</strong>, the vehicle carrying the cue is harmless: you can stand in its path and it passes straight through you, and that counts as a correct decision. Every other vehicle is a hit and costs a life. Empty asphalt is safe, so you can wait for a gap; the cued vehicle is the one you never have to dodge.</li>
+          <li><strong>On the river</strong>, you have to land on a log, and only the log carrying the cue floats. It carries you sideways with it (and round the far edge, if it gets there). Any other log sinks, and water is water: both cost a life.</li>
+        </ul>
+        <p>A life lost puts the frog back on the near bank with fresh cues. Reaching the far bank completes a <strong>wave</strong>: the traffic is laid out again a little faster and you start over from the bank, keeping your combo.</p>
+        <h3>The label ladder</h3>
+        <p>How much the labels help changes with the wave, so the same board turns from a reading exercise into a copying one:</p>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Waves</th><th>Labels</th></tr></thead>
+            <tbody>
+              <tr><td>1 and 2</td><td><strong>Shown.</strong> Every vehicle and log shows its character; hear the cue, find it, hop.</td></tr>
+              <tr><td>3 and 4</td><td><strong>Memory.</strong> A lane's labels show until it is cued, then disappear. Note where the cued object is before you land below it.</td></tr>
+              <tr><td>5 and up</td><td><strong>Hidden.</strong> No labels at all. Instead, the vehicles and logs in the lane ahead announce their own character in Morse as they enter the board, behind the cue. You are copying the traffic and matching it against the cue by ear.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The traffic carries either <strong>your active Koch set</strong>, so the game drills exactly what you're learning, or the <strong>full alphabet and digits</strong>.</p>
+        <h3>The speed ramp</h3>
+        <p>The cues start slow and speed up as you get lanes right. A game opens <strong>8 WPM below your character speed</strong>, never below 15, and steps up <strong>2 WPM after every four correct lane decisions</strong> (four in total, not in a row) until it reaches your character speed. Losing a life steps it back 2 WPM, never below where the game started. Farnsworth spacing doesn't apply to a single character. The setup card says where a game will open and where it climbs to, the score line shows the speed right now, and the end card shows the highest speed you reached.</p>
+        <h3>How it's scored</h3>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Lives</td><td>Three. A wrong vehicle, a wrong log or the water costs one; at zero the game is over.</td></tr>
+              <tr><td>Hops</td><td>10 points for each hop onto a row you haven't reached yet this crossing. Hopping back and forth earns nothing.</td></tr>
+              <tr><td>Decisions</td><td>50 points for each correct decision (passing through the cued vehicle, landing on the cued log), times the combo multiplier.</td></tr>
+              <tr><td>Combo</td><td>Consecutive correct decisions: ×1 for the first three, ×2 for the next three, up to ×4. Losing a life resets it; completing a crossing keeps it.</td></tr>
+              <tr><td>Crossing</td><td>200 points for reaching the far bank, and the next wave begins.</td></tr>
+              <tr><td>Waves</td><td>Every lane runs 8% faster each wave, up to a cap. The three road lanes and the three river lanes each get faster toward the middle of the board, so the last lane before the median and the last lane before the far bank are the quick ones.</td></tr>
+              <tr><td>Difficulty</td><td><strong>Relaxed</strong>, <strong>Normal</strong> or <strong>Fast</strong>: the same rules with the whole board running slower or quicker (every speed divided by 1.35, 1 or 0.75).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The end card shows your score, the wave you reached, accuracy, best combo and the speed you reached. Your character set and difficulty are remembered for next time.</p>
+        <p><strong>It counts.</strong> Every lane decision feeds the same per-character stats and <a href="#confusion">confusion matrix</a> as the drills do, exactly as <a href="#invaders">Morse Invaders</a> does: a correct decision is a recognition of the cue, timed from the end of its tone; a wrong vehicle or log records the pair you confused (the cue you heard, the character you chose); the water is a miss on the cue with no partner.</p>
+        <div class="tip">
+          <span class="tip-icon">TIP</span>
+          <p>You don't have to cross fast. Nothing is timed but the traffic, and the near bank and the median are always safe, so stand there, replay the cue until you are sure, and pick your moment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASTEROIDS -->
+    <section id="asteroids">
+      <h2><span class="h2-mc">·&minus;</span>CW Asteroids</h2>
+      <div class="entry">
+        <p class="entry-why">Arcade sending: the other half of Morse Invaders. There you name what you hear; here you key what you see.</p>
+        <p>Your ship sits at the centre of the field and asteroids drift in from the edges, each carrying a visible label. Destroy one before it reaches the ship. Two ways to play:</p>
+        <ul>
+          <li><strong>See it, send it</strong>: key an asteroid's label on the on-screen key or a <a href="#hardware">hardware key</a>. Each decoded character is added to what you've sent so far (the readout under the field shows it): the moment it spells a label, the nearest asteroid carrying that label is destroyed; while it could still be the start of a label, the game waits for the next character; when it can't be, that's a miss and the readout clears. A pause of 2.5 s with a partial label pending clears it silently. You choose which asteroid to send next, so with several on screen, take the one nearest the ship.</li>
+          <li><strong>Hear it, tap it</strong>: the game sends one asteroid's label in Morse, and only the asteroid carrying it is the target. Tap it; tap the ship (or <strong>Hear it again</strong>) to hear the label once more. Tapping an asteroid with a different label is a miss; tapping empty space does nothing. When the target is gone, the next one is sent at once.</li>
+        </ul>
+        <p>Asteroids carry either <strong>your active Koch set</strong> or the <strong>full alphabet and digits</strong>. The first two waves are single characters. From <strong>wave 3</strong> some spawns are larger asteroids carrying a short word (two to five characters from the top 300 common words, spelt entirely from your set) or a generated callsign; the share grows 15% a wave up to half of spawns. A word asteroid <strong>splits</strong> when hit: one small asteroid per character, fanning out from where it was, each still heading for the ship. In hear-it mode the whole word is sent as one unit.</p>
+        <h3>The speed ramp</h3>
+        <p>In hear-it mode the game starts slow and speeds up as you land hits, more gently than Morse Invaders does. A game opens <strong>8 WPM below your character speed</strong>, never below 15, and steps up <strong>1 WPM after every four hits</strong> (four in total, not in a row) until it reaches your character speed. An asteroid that reaches the ship steps the speed back 1 WPM, never below where the game started; a miss leaves it alone. Farnsworth spacing doesn't apply. The setup card says where a game will open and where it climbs to, the score line shows the speed right now, and the end card shows the highest speed you reached. In see-it mode nothing is sent, so there is no ramp: the decoder listens at your character speed.</p>
+        <h3>How it's scored</h3>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Lives</td><td>Three. An asteroid that reaches the ship costs one; at zero the game is over.</td></tr>
+              <tr><td>Points</td><td>100 per character of the label, times the combo multiplier: a single character is 100, a four-letter word 400, and its four fragments 100 each.</td></tr>
+              <tr><td>Combo</td><td>Consecutive hits: ×1 for the first three, ×2 for the next three, up to ×4. A miss or an asteroid reaching the ship resets it.</td></tr>
+              <tr><td>Waves</td><td>Every 8 hits clears a wave (fragments count). On Normal the first wave spawns an asteroid every 3 s with 12 s to reach the ship; each wave after that spawns 10% faster and closes in 8% faster, down to 1.2 s between asteroids and 5 s to the ship. At most five asteroids are on the field at once.</td></tr>
+              <tr><td>Difficulty</td><td><strong>Relaxed</strong>, <strong>Normal</strong> or <strong>Fast</strong>: the same rules with more or less breathing room (every timing scaled by 1.35, 1 or 0.75).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The end card shows your score, the wave you reached, accuracy, best combo and, in hear-it mode, the speed you reached. Your input, character set and difficulty are remembered for next time.</p>
+        <p><strong>It counts.</strong> Every hit and miss feeds the same per-character stats and <a href="#confusion">confusion matrix</a> as the drills do. A destroyed asteroid is a correct recognition of every character in its label; a wrong character keyed, or the wrong asteroid tapped, records the pair you confused (the character that was expected against the one you sent or picked); an asteroid that reaches the ship is a miss on each of its characters. The end card's accuracy counts asteroids; the session in <a href="#progress">Progress</a> counts characters, so a word is worth its length there.</p>
+        <div class="tip">
+          <span class="tip-icon">TIP</span>
+          <p>In send mode, keep your letter spacing clean: the decoder finalises a character on the letter gap, and a run-together pair reads as one wrong character. If you're not sure what the decoder heard, the readout under the field tells you.</p>
         </div>
       </div>
     </section>
@@ -751,6 +955,8 @@
       <div class="entry">
         <p class="entry-why">Point the microphone at received Morse and read it as text.</p>
         <p>Open it from the waveform icon in the top bar. Hold the phone near your rig's speaker, or play a WebSDR through anything, and it decodes what it hears. Live <strong>WPM and pitch telemetry</strong> show what it's locked onto, and a two-core pitch-lock rescue helps it hang on when the signal wanders.</p>
+        <h3>Noise</h3>
+        <p>Static crashes (QRN) are what confuse a decoder most: each crash lands in the tone detector as a short spurious mark, splitting a character or adding a stray E. Both apps run a <strong>noise blanker</strong> ahead of the decoder. It catches each crash where it is unmistakable, in the wideband signal rather than at the tone's pitch, and while the crash lasts it substitutes the tone's own continuation, so a crash inside a dah fills the hole instead of breaking it, and a crash in a gap stays a gap. It is always on and has no setting. Steady hiss is left to the decoder, which copes with it on its own down to a poor signal-to-noise ratio. What the blanker cannot save is a band so busy that a third of the time is crash, or another station on the same pitch. Hold the phone close enough that the code sits well above the room, and if your rig has a noise blanker of its own, use it too.</p>
         <div class="tip">
           <span class="tip-icon">NOTE</span>
           <p>Use this as a <strong>check on your own copy, not a replacement for it</strong>. Any decoder struggles with QRM, drift and poor sending, the same conditions where a trained ear does best. Copy first, then compare.</p>
@@ -915,7 +1121,7 @@
       <p class="guide-lead">You can key into the app with real hardware, not just the touch key.</p>
 
       <h3>MIDI keys</h3>
-      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a> in keying mode, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
+      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a> and <a href="#asteroids">CW Asteroids</a> in keying mode, <a href="#dungeon">CW Dungeon</a>&rsquo;s spells, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
 
       <h3>Bluetooth LE MIDI keys</h3>
       <p>Wireless keys work on <strong>both platforms</strong>. Android scans for them directly, with unplug detection.</p>
