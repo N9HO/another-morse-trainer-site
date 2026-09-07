@@ -753,6 +753,8 @@
       <div class="entry">
         <p class="entry-why">Point the microphone at received Morse and read it as text.</p>
         <p>Open it from the waveform icon in the top bar. Hold the phone near your rig's speaker, or play a WebSDR through anything, and it decodes what it hears. Live <strong>WPM and pitch telemetry</strong> show what it's locked onto, and a two-core pitch-lock rescue helps it hang on when the signal wanders.</p>
+        <h3>Noise</h3>
+        <p>Static crashes (QRN) are what confuse a decoder most: each crash lands in the tone detector as a short spurious mark, splitting a character or adding a stray E. Both apps run a <strong>noise blanker</strong> ahead of the decoder. It catches each crash where it is unmistakable, in the wideband signal rather than at the tone's pitch, and while the crash lasts it substitutes the tone's own continuation, so a crash inside a dah fills the hole instead of breaking it, and a crash in a gap stays a gap. It is always on and has no setting. Steady hiss is left to the decoder, which copes with it on its own down to a poor signal-to-noise ratio. What the blanker cannot save is a band so busy that a third of the time is crash, or another station on the same pitch. Hold the phone close enough that the code sits well above the room, and if your rig has a noise blanker of its own, use it too.</p>
         <div class="tip">
           <span class="tip-icon">NOTE</span>
           <p>Use this as a <strong>check on your own copy, not a replacement for it</strong>. Any decoder struggles with QRM, drift and poor sending, the same conditions where a trained ear does best. Copy first, then compare.</p>
