@@ -68,6 +68,7 @@
         <a href="#galaga">CW Galaga</a>
         <a href="#defender">Morse Defender</a>
         <a href="#dungeon">CW Dungeon</a>
+        <a href="#frogger">CW Frogger</a>
 
         <h4>Copy real content</h4>
         <a href="#words">Common Words</a>
@@ -548,6 +549,57 @@
         <div class="tip">
           <span class="tip-icon">TIP</span>
           <p>Read the spell book before you start and say the counters to yourself. In the room there is no time to hunt: the copy has to land as a word and the counter has to leave as one.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FROGGER -->
+    <section id="frogger">
+      <h2><span class="h2-mc">··&minus;·</span>CW Frogger</h2>
+      <div class="entry">
+        <p class="entry-why">Arcade crossing: hear a character, find it in the traffic, and hop.</p>
+        <p>A frog starts on the near bank and has to reach the far one: three lanes of road, a median to catch your breath, then three lanes of river. You move it the classic way, <strong>one hop at a time</strong> on the four direction buttons under the board (a hardware keyboard's arrow keys work too). Morse decides what is safe.</p>
+        <p>Every vehicle and every log carries a character from your set. Each lane has a <strong>cue</strong>: as soon as you land on the row below it the game sends one of that lane's characters in Morse, and the lane is outlined so you know which one the cue is for. Tap the board to hear it again.</p>
+        <ul>
+          <li><strong>On the road</strong>, the vehicle carrying the cue is harmless: you can stand in its path and it passes straight through you, and that counts as a correct decision. Every other vehicle is a hit and costs a life. Empty asphalt is safe, so you can wait for a gap; the cued vehicle is the one you never have to dodge.</li>
+          <li><strong>On the river</strong>, you have to land on a log, and only the log carrying the cue floats. It carries you sideways with it (and round the far edge, if it gets there). Any other log sinks, and water is water: both cost a life.</li>
+        </ul>
+        <p>A life lost puts the frog back on the near bank with fresh cues. Reaching the far bank completes a <strong>wave</strong>: the traffic is laid out again a little faster and you start over from the bank, keeping your combo.</p>
+        <h3>The label ladder</h3>
+        <p>How much the labels help changes with the wave, so the same board turns from a reading exercise into a copying one:</p>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Waves</th><th>Labels</th></tr></thead>
+            <tbody>
+              <tr><td>1 and 2</td><td><strong>Shown.</strong> Every vehicle and log shows its character; hear the cue, find it, hop.</td></tr>
+              <tr><td>3 and 4</td><td><strong>Memory.</strong> A lane's labels show until it is cued, then disappear. Note where the cued object is before you land below it.</td></tr>
+              <tr><td>5 and up</td><td><strong>Hidden.</strong> No labels at all. Instead, the vehicles and logs in the lane ahead announce their own character in Morse as they enter the board, behind the cue. You are copying the traffic and matching it against the cue by ear.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The traffic carries either <strong>your active Koch set</strong>, so the game drills exactly what you're learning, or the <strong>full alphabet and digits</strong>.</p>
+        <h3>The speed ramp</h3>
+        <p>The cues start slow and speed up as you get lanes right. A game opens <strong>8 WPM below your character speed</strong>, never below 15, and steps up <strong>2 WPM after every four correct lane decisions</strong> (four in total, not in a row) until it reaches your character speed. Losing a life steps it back 2 WPM, never below where the game started. Farnsworth spacing doesn't apply to a single character. The setup card says where a game will open and where it climbs to, the score line shows the speed right now, and the end card shows the highest speed you reached.</p>
+        <h3>How it's scored</h3>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Lives</td><td>Three. A wrong vehicle, a wrong log or the water costs one; at zero the game is over.</td></tr>
+              <tr><td>Hops</td><td>10 points for each hop onto a row you haven't reached yet this crossing. Hopping back and forth earns nothing.</td></tr>
+              <tr><td>Decisions</td><td>50 points for each correct decision (passing through the cued vehicle, landing on the cued log), times the combo multiplier.</td></tr>
+              <tr><td>Combo</td><td>Consecutive correct decisions: ×1 for the first three, ×2 for the next three, up to ×4. Losing a life resets it; completing a crossing keeps it.</td></tr>
+              <tr><td>Crossing</td><td>200 points for reaching the far bank, and the next wave begins.</td></tr>
+              <tr><td>Waves</td><td>Every lane runs 8% faster each wave, up to a cap. The three road lanes and the three river lanes each get faster toward the middle of the board, so the last lane before the median and the last lane before the far bank are the quick ones.</td></tr>
+              <tr><td>Difficulty</td><td><strong>Relaxed</strong>, <strong>Normal</strong> or <strong>Fast</strong>: the same rules with the whole board running slower or quicker (every speed divided by 1.35, 1 or 0.75).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The end card shows your score, the wave you reached, accuracy, best combo and the speed you reached. Your character set and difficulty are remembered for next time.</p>
+        <p><strong>It counts.</strong> Every lane decision feeds the same per-character stats and <a href="#confusion">confusion matrix</a> as the drills do, exactly as <a href="#invaders">Morse Invaders</a> does: a correct decision is a recognition of the cue, timed from the end of its tone; a wrong vehicle or log records the pair you confused (the cue you heard, the character you chose); the water is a miss on the cue with no partner.</p>
+        <div class="tip">
+          <span class="tip-icon">TIP</span>
+          <p>You don't have to cross fast. Nothing is timed but the traffic, and the near bank and the median are always safe, so stand there, replay the cue until you are sure, and pick your moment.</p>
         </div>
       </div>
     </section>
