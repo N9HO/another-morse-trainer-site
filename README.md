@@ -19,7 +19,7 @@ python3 -m http.server 4178
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Landing page: hero, features, all 22 modes grouped by purpose |
+| `index.html` | Landing page: hero, features, all 22 modes grouped by purpose, a "Why I did this" note from the developer |
 | `guide/index.html` | The user manual: every mode, setting, hardware option, and the FAQ covering how to get the app |
 | `privacy/index.html` | Privacy policy (linked from both app store listings) |
 | `styles.css` | Navy / teal / white theme, responsive layout, guide layout |
