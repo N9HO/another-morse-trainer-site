@@ -102,6 +102,7 @@
 
         <h4>Everything else</h4>
         <a href="#progress">Progress &amp; stats</a>
+        <a href="#leaderboard">Shared leaderboard</a>
         <a href="#settings">Settings reference</a>
         <a href="#hardware">Hardware keys</a>
         <a href="#faq">Troubleshooting</a>
@@ -1022,6 +1023,7 @@
             <tr><td>Speed bands</td><td>Performance grouped into 5-WPM bands, showing exactly where your ceiling currently is.</td></tr>
             <tr><td>Session history</td><td>Every past session, each with its duration, fastest copy, character and effective speed, and its own recognition chart on its detail screen. The effective speed is the one the session actually played at: your Farnsworth speed only while the switch was on, the licence speed for a Code Exam, and never for QRQ, which ignores Farnsworth.</td></tr>
             <tr><td>Brag Sheet</td><td>A shareable summary card of where you've got to: streak, lifetime totals, personal bests, and the Characters stage you're on. It appears once you've finished a first session.</td></tr>
+            <tr><td>Leaderboard</td><td>The <a href="#leaderboard">shared leaderboard</a>: the top fifty in each ranked mode across both apps, read-only here, and the place your own runs land once you opt in.</td></tr>
           </tbody>
         </table>
       </div>
@@ -1029,6 +1031,21 @@
         <span class="tip-icon">TIP</span>
         <p>Read the <strong>recognition times</strong> before the accuracy figure. A character you get right 95% of the time but take 2.5 seconds over isn't learned yet. It's being decoded. Accuracy hides that; the timing doesn't.</p>
       </div>
+    </section>
+
+    <!-- LEADERBOARD -->
+    <section id="leaderboard">
+      <h2><span class="h2-mc">&minus;·&minus;·</span>Shared leaderboard</h2>
+      <p class="guide-lead">One board for both apps, opt-in, and hard to cheat. Off until you switch it on.</p>
+      <p>Nine modes are ranked: <a href="#rapidfire">Rapid Fire</a>, <a href="#contest">Contest</a>, <a href="#pileup">Pileup Runner</a> and the six arcade games (<a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a>, <a href="#defender">Morse Defender</a>, <a href="#dungeon">CW Dungeon</a>, <a href="#frogger">CW Frogger</a>, <a href="#asteroids">CW Asteroids</a>). Each mode has its own board, showing the top fifty with a display name, the score, which platform it came from and the date. You can browse the boards from <a href="#progress">Progress</a> without joining.</p>
+      <h3>Joining</h3>
+      <p>In Settings, switch on <strong>Share scores to the shared leaderboard</strong> and choose a <strong>display name</strong>: two to twelve characters, letters, digits, space, slash and hyphen, shown in capitals. A callsign is the natural choice. From then on every finished run in a ranked mode is sent in, and the session summary shows where it landed: your rank and your score, or the reason it was refused. Only your best run per mode is kept on the board, and posting one that is not your best changes nothing.</p>
+      <h3>What the score is</h3>
+      <p>The board does not trust the number on your screen. The app sends a transcript of the run, what was sent, what you answered and how fast, and the server grades it: for every item you copied correctly it adds the speed that item was sent at. A run at a steady speed therefore scores <em>correct copies × effective WPM</em>, so a slow perfect run does not beat a fast, nearly perfect one. In the games, which speed up as you go, each hit counts at the speed it was sent. That is why <strong>a game's leaderboard score is not its on-screen score</strong>: the on-screen one includes waves, combos and other things only the game can see. In Morse Invaders, CW Galaga and CW Asteroids only the <em>hear it</em> mode is ranked; the <em>see it, key it</em> mode plays no Morse, so there is nothing for the board to grade. In Rapid Fire the listen-only response is not ranked for the same reason.</p>
+      <h3>Why it is hard to cheat</h3>
+      <p>The app is open source, so nothing in it can be a secret. Trust comes from the device instead: an iPhone or iPad proves it is running the genuine App Store build with Apple's App Attest, and an Android phone proves the same with Google's Play Integrity. A build you compile yourself, a sideloaded APK, or a script pretending to be the app cannot post. Each run gets a one-time token from the server when it starts, so the server also knows how long the run took, and a run that claims more Morse than could have been sent in that time is thrown out. Only genuine builds on real devices can post; the iOS Simulator and Android emulators cannot.</p>
+      <h3>Your data</h3>
+      <p>The board stores your display name, your best score per mode, the platform, and the run transcripts for thirty days. It never sees your name, email or account. <strong>Delete my scores</strong> in Settings removes everything the board holds about this device, and you can switch sharing off at any time. Both apps do exactly the same; only the attestation mechanism differs by platform.</p>
     </section>
 
     <!-- SETTINGS -->
