@@ -103,6 +103,7 @@
         <h4>Everything else</h4>
         <a href="#progress">Progress &amp; stats</a>
         <a href="#leaderboard">Shared leaderboard</a>
+        <a href="#buddy">Buddy streak</a>
         <a href="#settings">Settings reference</a>
         <a href="#hardware">Hardware keys</a>
         <a href="#faq">Troubleshooting</a>
@@ -1048,6 +1049,16 @@
       <p>The app is open source, so nothing in it can be a secret. Trust comes from the device instead: an iPhone or iPad proves it is running the genuine App Store build with Apple's App Attest, and an Android phone proves the same with Google's Play Integrity. A build you compile yourself, a sideloaded APK, or a script pretending to be the app cannot post. Each run gets a one-time token from the server when it starts, so the server also knows how long the run took, and a run that claims more Morse than could have been sent in that time is thrown out. Only genuine builds on real devices can post; the iOS Simulator and Android emulators cannot.</p>
       <h3>Your data</h3>
       <p>The board stores your display name, your best score per mode, the platform, and the run transcripts for thirty days. It never sees your name, email or account. <strong>Delete my scores</strong> in Settings removes everything the board holds about this device, and you can switch sharing off at any time. Both apps do exactly the same; only the attestation mechanism differs by platform.</p>
+    </section>
+
+    <!-- BUDDY -->
+    <section id="buddy">
+      <h2><span class="h2-mc">&minus;···</span>Buddy streak</h2>
+      <p class="guide-lead">Pair with one other person and keep a streak together: it lives only while you both practise every day.</p>
+      <p>Settings › <strong>Buddy streak</strong>. One of you taps <strong>Invite a buddy</strong> and gets a six-character code, good for 24 hours and for one use; send it however you like, a message, Discord, on the air. The other taps <strong>Join with a code</strong> and types it in. That's the pairing: no accounts, no contacts, and it works between an iPhone and an Android phone. One buddy at a time; <strong>Leave buddy</strong> unpairs, from either side.</p>
+      <p><strong>What keeps it alive</strong> is the same thing that keeps your own streak alive: any practice day. A finished session, a Daily Dit guess, a Listen &amp; Learn session, whatever the app already counts as practising, counts for the buddy streak too. The first time each day you practise, the app tells the server; the buddy streak is the number of consecutive days on which <em>both</em> of you did. Your day is your local calendar day, so time zones work the way your own streak does, and yesterday keeps it alive until the later of you has had their whole day.</p>
+      <p><strong>Where you see it.</strong> The home screen's streak card gains a line: "W1AW practised today · 12-day buddy streak", or "W1AW hasn't practised yet today". If you use the daily reminder, it adds the same nudge when your buddy is still missing for the day, as of the last time the app checked. There are no push notifications; the app checks when you open it.</p>
+      <p><strong>Your data.</strong> Pairing uses the same device attestation as the <a href="#leaderboard">shared leaderboard</a> and your leaderboard display name, which is what your buddy sees, along with whether you practised each day. Nothing else. <strong>Delete my scores</strong> in Settings removes the pairing and your practice days along with everything else the server holds for this device.</p>
     </section>
 
     <!-- SETTINGS -->
