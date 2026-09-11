@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy: Another Morse Trainer</title>
-<meta name="description" content="Privacy policy for the Another Morse Trainer app. No accounts, no ads, no tracking. Your data stays on your device.">
+<meta name="description" content="Privacy policy for the Another Morse Trainer app. No accounts, no ads, no tracking. Your data stays on your device unless you opt in to the shared leaderboard.">
 <meta name="theme-color" content="#071B34">
 <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,11 +44,14 @@
 <main>
 <article class="legal">
   <h1>Privacy Policy</h1>
-  <p class="date">Effective date: August 29, 2026</p>
+  <p class="date">Effective date: September 11, 2026 (previous version: August 29, 2026)</p>
 
   <p class="lead">Another Morse Trainer (“the app”) is a Morse code learning app.
-  The short version: <strong>the app does not collect, transmit, or share any
-  personal data, and has no accounts, ads, or analytics.</strong></p>
+  The short version: <strong>the app has no accounts, ads, or analytics, and
+  sends nothing about you anywhere unless you switch on the optional shared
+  leaderboard.</strong> If you do, it sends the run you just finished and a
+  display name you chose, and nothing else; the section below says exactly
+  what and how to delete it.</p>
 
   <h2>Information the app stores</h2>
   <p>The app stores the following <strong>only on your device</strong>, in the
@@ -108,6 +111,43 @@
   </ul>
   <p>Neither feature sends your settings, progress, or any personal data.</p>
 
+  <h2>Shared leaderboard (optional, off by default)</h2>
+  <p>Settings has a switch, <strong>Share scores to the shared leaderboard</strong>.
+  It is off when you install the app and nothing in this section happens until
+  you turn it on. The leaderboard is run by the developer on Cloudflare’s
+  Workers and D1 services.</p>
+  <p>When it is on, each time you finish a run in a ranked mode (Rapid Fire,
+  Contest, Pileup Runner, and the arcade games in hear-it mode) the app sends:</p>
+  <ul>
+    <li><strong>A display name you chose</strong> (two to twelve characters; a
+        callsign is typical). It is shown publicly on the leaderboard next to
+        your scores. Do not use a name you would not want public.</li>
+    <li><strong>The run’s transcript</strong>: what the app sent in Morse, what you
+        answered, how quickly, and the speed, so the server can grade the run
+        itself. Transcripts are kept for thirty days and then deleted; your best
+        score per mode, the platform (iPhone or Android) and the date are kept
+        while it is on the board.</li>
+    <li><strong>A device attestation.</strong> On iPhone, iPad and Mac the app uses
+        Apple’s App Attest, which proves to the server that the request comes from
+        the genuine app on a real device; on Android it uses Google’s Play
+        Integrity for the same purpose. Each produces a token the server verifies
+        with Apple or Google. The server keeps the resulting per-install key
+        identifier (iOS) or a hash of a random per-install identifier (Android)
+        as your entry’s identity. This identifier is not linked to your Apple ID,
+        Google account, name, email or any other account, and the app never has
+        those.</li>
+  </ul>
+  <p>Nothing else is sent: not your settings, your practice history, your
+  location, contacts, or anything about other apps. The leaderboard is public
+  and shows only display names, scores, platform and date. Browsing it sends no
+  information about you.</p>
+  <p><strong>Deleting your data:</strong> Settings › Leaderboard › <strong>Delete my
+  scores</strong> removes everything the server holds for this device, including
+  the identifier, at once. Turning the switch off stops any further sending.
+  You can also email the address below and the developer will remove an entry
+  for you. Scores may be removed by the developer if they were not produced by
+  genuinely playing.</p>
+
   <h2>Notifications</h2>
   <p>If you enable the daily practice reminder, the app schedules a local
   notification on your device. No notification data is sent anywhere.</p>
@@ -118,7 +158,11 @@
 
   <h2>Third parties</h2>
   <p>The app contains no advertising, no analytics, and no third-party tracking
-  SDKs.</p>
+  SDKs. The Android app includes Google’s Play Integrity library, used only to
+  produce the attestation described above and only when the leaderboard is on;
+  the iOS app uses Apple’s built-in App Attest for the same purpose. The
+  leaderboard server runs on Cloudflare, which processes the requests as the
+  developer’s hosting provider.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the updated version will be posted on this page with
