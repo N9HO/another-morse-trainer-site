@@ -19,7 +19,7 @@ python3 -m http.server 4178
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Landing page: hero, features, all 22 modes grouped by purpose, a "Why I did this" note from the developer |
+| `index.html` | Landing page: hero, features, all 28 modes grouped by purpose, a "Why I did this" note from the developer |
 | `guide/index.html` | The user manual: every mode, setting, hardware option, and the FAQ covering how to get the app |
 | `privacy/index.html` | Privacy policy (linked from both app store listings) |
 | `styles.css` | Navy / teal / white theme, responsive layout, guide layout |
@@ -34,7 +34,7 @@ app repos. It's organised as:
 
 - **Basics**: getting started, how Koch / time-to-recognize / Farnsworth work,
   the home screen, running a session, the four ways to answer
-- **The modes**: all twenty-two (Daily Dit among them), grouped as learn the
+- **The modes**: all twenty-eight (Daily Dit and the six arcade games among them), grouped as learn the
   characters · copy real content · build speed · get on the air · send, decode &
   look up
 - **Reference**: progress & stats, every setting, hardware keys, troubleshooting
