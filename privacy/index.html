@@ -66,7 +66,7 @@
   any third party, and is deleted when you uninstall the app.</p>
 
   <h2>Microphone</h2>
-  <p>The app requests microphone access for two optional features, both off
+  <p>The app requests microphone access for three optional features, all off
   until you use them:</p>
   <ul>
     <li><strong>Voice answers</strong>, which let you speak your answer instead of tapping it.
@@ -77,6 +77,11 @@
         speaker, for instance) and decodes it to text. This runs entirely
         on your device; the audio is analysed in memory and is not sent
         anywhere.</li>
+    <li><strong>Sending Analyzer</strong>, when you choose the microphone as its
+        input: it listens for the tone of a key, keyer or radio you are
+        sending on and times each key-down and key-up. This also runs
+        entirely on your device; the audio is analysed in memory and is not
+        sent anywhere. Only the timing results are kept, on your device.</li>
   </ul>
   <p>The app itself does <strong>not</strong> record, save, or transmit any
   audio. The microphone is used only while you are actively using one of these
@@ -112,7 +117,7 @@
   <p>Neither feature sends your settings, progress, or any personal data.</p>
 
   <h2>Shared leaderboard (optional, off by default)</h2>
-  <p>Settings has a switch, <strong>Share scores to the shared leaderboard</strong>.
+  <p>Settings › Leaderboard &amp; Buddy has a switch, <strong>Share scores to the shared leaderboard</strong>.
   It is off when you install the app and nothing in this section happens until
   you turn it on. The leaderboard is run by the developer on Cloudflare’s
   Workers and D1 services.</p>
