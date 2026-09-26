@@ -350,7 +350,7 @@
 
       <div class="entry">
         <div class="entry-head"><h3>Key it back</h3><span class="tag both">Touch or hardware</span></div>
-        <p>Answer by sending, not selecting. Key the character on the on-screen touch key or a connected <a href="#hardware">MIDI key</a> and the app decodes what you sent. It's available in every choice quiz whose answer is a character or a word, with a <strong>Key answers</strong> toggle in the session bar so you can flip between keying and tapping mid-drill; drills whose answer is a meaning or a prosign show the choices instead. This is the fastest way to make sending and receiving reinforce each other. See <a href="#sending">Sending Practice</a> for the dedicated mode.</p>
+        <p>Answer by sending, not selecting. Key the character on the on-screen touch key or a connected <a href="#hardware">MIDI key</a> and the app decodes what you sent. It's available in every choice quiz whose answer is a character or a word, with a <strong>Key answers</strong> toggle in the session bar so you can flip between keying and tapping mid-drill; drills whose answer is a meaning or a prosign show the choices instead. This is the fastest way to make sending and receiving reinforce each other. See <a href="#sending">Sending Practice</a> for the dedicated mode. If you send with paddles, switch the on-screen key to <a href="#paddles">touch paddles</a>.</p>
       </div>
     </section>
 
@@ -923,6 +923,7 @@
           <li><strong>Signal timeline</strong>: a visual trace of what's arriving, so you can see the rhythm as well as hear it.</li>
           <li><strong>Chat</strong> alongside the CW, for when you need to say something in plain text, with an unread badge so you notice a message that arrived while you were keying.</li>
           <li><strong>Who's on</strong>: a roster of the stations on the channel. A station that's gone quiet drops off it after a minute.</li>
+          <li><strong>Straight key or paddles</strong>: the on-screen key is whichever you chose in <a href="#paddles">Settings › Keys &amp; Sending</a>, and the paddles' keyed elements go out on the air exactly as straight-key presses would.</li>
           <li><strong>Vail Adapter support</strong>: MIDI key input <em>and</em> output, keyer modes and speed, sidetone, and the RX piezo buzz (which you can turn off). The sidetone ducks other audio rather than taking it over, so a radio app can keep running underneath.</li>
         </ul>
         <div class="tip">
@@ -943,7 +944,7 @@
           <li><strong>Always-on replay</strong>: re-hear the target as often as you want.</li>
           <li><strong>Connected MIDI key readout</strong>: shows what hardware the app can see, so you know the key is actually talking to it, and says when MIDI itself is unavailable on the device as opposed to no key being connected.</li>
         </ul>
-        <p>Works with the on-screen touch key or a <a href="#hardware">hardware key</a>. Most people's sending is worse than they think, and the live decode is a fast, slightly humbling way to find out.</p>
+        <p>Works with the on-screen touch key (a straight key, or a pair of <a href="#paddles">touch paddles</a>) or a <a href="#hardware">hardware key</a>. Most people's sending is worse than they think, and the live decode is a fast, slightly humbling way to find out.</p>
       </div>
     </section>
 
@@ -1158,9 +1159,20 @@
           <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
           <tbody>
             <tr><td>Keyer mode</td><td>How the <a href="#hardware">Vail Adapter</a> reads the key plugged into it: Straight Key (the default) or an iambic mode for a paddle. It describes your key, not a drill, so it applies in Sending Practice, keyed answers and on the Vail screen alike, and a connected adapter is reconfigured the moment you change it. On Android it's shown only on devices with MIDI support.</td></tr>
+            <tr><td>On-screen key</td><td><strong>Straight key</strong> (default): one hold-to-key pad, the tone sounds for as long as you hold it. <strong>Paddles</strong>: two touch paddles, dit and dah, side by side, with a built-in keyer that times the elements at your character speed.</td></tr>
+            <tr><td>Paddle mode</td><td>How the paddles are keyed: <strong>Iambic A</strong> (default), <strong>Iambic B</strong> or <strong>Ultimatic</strong>. Shown when the key is set to Paddles.</td></tr>
+            <tr><td>Dah on the left</td><td>Swaps the paddles for a left-handed operator. Off: dit on the left.</td></tr>
           </tbody>
         </table>
       </div>
+      <p id="paddles"><strong>On-screen key.</strong> The choice applies wherever there is an on-screen key: keyed quiz answers, <a href="#sending">Sending Practice</a>, <a href="#rapidfire">Rapid Fire</a>, the keying modes of <a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a>, <a href="#dungeon">CW Dungeon</a> and <a href="#asteroids">CW Asteroids</a>, and the <a href="#repeater">Repeater</a>. The keyed elements are decoded, sounded and sent exactly as straight-key presses are. A <a href="#hardware">hardware key</a> is unaffected; a Vail Adapter keeps its own keyer mode.</p>
+      <p>Hold one paddle and it repeats its element; tap the other while one is still sounding and it's remembered and sent next (dit and dah memory). Hold both to squeeze:</p>
+      <ul>
+        <li><strong>Iambic A</strong>: a squeeze alternates dit and dah; let go and the keyer finishes the element it's sending and stops.</li>
+        <li><strong>Iambic B</strong>: the same, but letting go of a squeeze sends one more alternate element. Squeeze from a dah, release during the dit, and B sends <span class="morse">K</span> where A sends <span class="morse">N</span>.</li>
+        <li><strong>Ultimatic</strong>: a squeeze repeats whichever paddle you pressed last instead of alternating; release it and the other paddle takes over.</li>
+      </ul>
+      <p>Two fingers can hold both paddles at once. With a mouse or trackpad on a Mac you can hold only one paddle at a time, so squeezing needs a touchscreen.</p>
 
       <h3 id="set-qso">QSO &amp; Pileups</h3>
       <div class="tbl-wrap">
@@ -1223,7 +1235,7 @@
     <!-- HARDWARE -->
     <section id="hardware">
       <h2><span class="h2-mc">&minus;··&minus;</span>Hardware keys</h2>
-      <p class="guide-lead">You can key into the app with real hardware, not just the touch key.</p>
+      <p class="guide-lead">You can key into the app with real hardware, not just the touch key (a straight key or <a href="#paddles">paddles</a>).</p>
 
       <h3>MIDI keys</h3>
       <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a> and <a href="#asteroids">CW Asteroids</a> in keying mode, <a href="#dungeon">CW Dungeon</a>&rsquo;s spells, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
