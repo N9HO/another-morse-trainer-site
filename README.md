@@ -49,23 +49,23 @@ The two hero badges track where each app actually is:
 | Badge | State | Markup |
 |-------|-------|--------|
 | TestFlight | iOS open beta, **live link** | `<a class="store-badge" href="…">` with `<span class="sb-soon live">Open beta</span>` |
-| Google Play | Android closed testing, **not a link** | `<div class="store-badge">` with `<span class="sb-soon">Closed testing</span>` |
+| Google Play | Android production, **live link** | `<a class="store-badge" href="…">` with `<span class="sb-soon live">Available now</span>` |
 
-`a.store-badge` picks up full opacity and a hover lift; the plain `div` form stays
-dimmed and non-interactive. When the Play listing goes public, swap the `div` for
-an `<a href="…">`, change the ribbon to `class="sb-soon live"`, and update the
-`.store-note` paragraph underneath. That's the sentence telling people iOS is
-open and Android is invite-only via Discord.
+`a.store-badge` picks up full opacity and a hover lift; a plain `div` form stays
+dimmed and non-interactive, for a store that is not public yet. When the App
+Store listing goes live, swap the TestFlight badge for it the same way and
+update the `.store-note` paragraph underneath.
 
 Links used in the hero, nav, footer and guide FAQ:
 
 - TestFlight: <https://testflight.apple.com/join/ZwXF88Gh>
+- Google Play: <https://play.google.com/store/apps/details?id=app.anothermorsetrainer>
 - Discord: <https://discord.gg/qgyk3TPUd9>
 
-Discord is the route to an Android closed-test invite, so it appears in the nav,
-the community block on the landing page, the footer of every page, and the first
-two answers in the guide's FAQ. If the invite is ever rotated, those are the
-places to change.
+Discord is where support and beta testing happen, so it appears in the nav, the
+community block on the landing page, the footer of every page, the support
+page's Get help section and the guide's FAQ. If the invite is ever rotated,
+those are the places to change.
 
 ## Brand
 
