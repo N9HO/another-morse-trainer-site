@@ -96,6 +96,7 @@
         <h4>Send &amp; decode</h4>
         <a href="#sending">Sending Practice</a>
         <a href="#drills">Sending Drills</a>
+        <a href="#analyzer">Sending Analyzer</a>
         <a href="#decoder">CW Decoder</a>
         <a href="#reference">Reference</a>
         <a href="#listen">Listen &amp; Learn</a>
@@ -281,7 +282,7 @@
     <!-- HOME -->
     <section id="home">
       <h2><span class="h2-mc">····</span>The home screen</h2>
-      <p class="guide-lead">Every mode is one tap from the menu. Three icons sit in the top bar, above the tiles. (On iPhone and iPad the bar also carries shortcuts to the <a href="#repeater">Repeater</a>, <a href="#reference">Reference</a> and <a href="#drills">Sending Drills</a>; on Android those three are tiles like everything else.)</p>
+      <p class="guide-lead">Every mode is one tap from the menu. Three icons sit in the top bar, above the tiles. (On iPhone and iPad the bar also carries shortcuts to the <a href="#repeater">Repeater</a>, <a href="#reference">Reference</a>, <a href="#drills">Sending Drills</a> and the <a href="#analyzer">Sending Analyzer</a> (the gauge); on Android those four are tiles like everything else.)</p>
       <div class="tbl-wrap">
         <table class="spec">
           <thead><tr><th>Icon</th><th>Opens</th><th>What it's for</th></tr></thead>
@@ -951,6 +952,46 @@
       </div>
     </section>
 
+    <!-- ANALYZER -->
+    <section id="analyzer">
+      <h2><span class="h2-mc">···&minus;·</span>Sending Analyzer</h2>
+      <div class="entry">
+        <p class="entry-why">Send a whole text on your own key and find out exactly how it came out: which characters, and how good your spacing was.</p>
+        <p>The app shows a text, you send it, and it copies you the way a listener would. Then it lines up what it copied against the text and takes your timing apart. Open it from the gauge icon in the top bar on iPhone and iPad, or the <strong>Sending Analyzer</strong> tile on Android.</p>
+
+        <h3>Setting up</h3>
+        <ul>
+          <li><strong>Send this</strong>: a pangram (<span class="morse">JACKDAWS LOVE MY BIG SPHINX OF QUARTZ</span> among them), five call signs, six common words, five groups of five from the characters you've studied, or your own text. <strong>New text</strong> draws another.</li>
+          <li><strong>Your key</strong>: straight key, bug, cootie, or paddles through a keyer. This decides what is fair to judge. A straight key or cootie is judged on everything. A bug makes its own dits, so only your dahs and spacing are judged. A keyer makes all the elements and sets the speed, so only your spacing between characters and words is judged; the element figures are still shown.</li>
+          <li><strong>Input</strong>: <strong>Key</strong> is the on-screen key, a <a href="#hardware">Vail adapter</a> or another MIDI key, wired or Bluetooth. With the Vail adapter, set its keyer mode in <a href="#settings">Settings</a> to match your key; in a paddle mode the adapter keys at your Settings speed. <strong>Microphone</strong> listens for a tone instead: see below.</li>
+          <li><strong>Judged against</strong>: the speed your sending is compared with (20 WPM to start, 5 to 50), and an optional <strong>Farnsworth spacing</strong> switch with its own effective speed. With Farnsworth on, character and word spacing are judged in stretched spacing units, so 3 and 7 are still the targets.</li>
+        </ul>
+
+        <h3>Sending</h3>
+        <p>Tap <strong>Start sending</strong> and send the text. What the app has copied so far appears as you go. Once you've sent as many characters as the text has, a pause of a second and a half or so (longer at slow speeds) finishes the attempt by itself; <strong>Finish</strong> ends it early and <strong>Cancel</strong> throws it away.</p>
+
+        <h3>The results</h3>
+        <ul>
+          <li><strong>Correct, char WPM and overall WPM</strong>: the share of the text's characters you got right; the speed your elements were sent at (from your average dit); and your overall pace, the standard length of what you sent over the time it took, which is lower than the character speed when your spacing is stretched.</li>
+          <li><strong>What you sent</strong>: the text with every mistake marked. Red is a character sent as something else, orange is one left out (or a word break sent too short, so two words ran together), grey is something extra (or a gap inside a word long enough to read as a break). Below it, each mistake is spelled out with both patterns, such as <span class="morse">8</span> (&minus;&minus;&minus;··) sent as <span class="morse">7</span> (&minus;&minus;···).</li>
+          <li><strong>Feedback</strong>: plain sentences about what to fix: dahs short or long against the 3:1 ratio, dits or dahs that vary a lot, gaps inside characters clipped or stretched, character or word spacing short, long or uneven, and speed well off the one you set. Each needs a few examples before it speaks up. A clean attempt says so.</li>
+          <li><strong>Spacing</strong>: a histogram of the gaps between characters, centred on 3 units, and another of the gaps between words, centred on 7, with the average and spread of each. A tall, narrow bar on the bright one is the goal.</li>
+          <li><strong>Elements</strong>: average dit and dah in milliseconds and in units of the speed you set, the dah-to-dit ratio, and the gap inside characters.</li>
+        </ul>
+        <p>How it decides: dits and dahs are told apart by their lengths as you actually sent them, not by a fixed speed, and are measured separately, which is what lets a bug's quick machine dits and slower hand dahs both be read correctly. A gap under two units is inside a character, and one of five or more (spacing) units is a word break.</p>
+
+        <h3>Your sending over time</h3>
+        <p>Every attempt is added to a running record under the results: the characters and the letter pairs (like <span class="morse">LL</span>) you miss most often once you've tried them at least three times, the mix-ups you make (which character came out instead of which), and your last few attempts. It's kept apart from the <a href="#confusion">confusion matrix</a> that drives the copying drills, because a slip of the hand is a different mistake from a slip of the ear. <strong>Clear sending record</strong> wipes it, and so does resetting all progress.</p>
+
+        <h3>Using the microphone</h3>
+        <p>Choose <strong>Microphone</strong> to send on anything the phone can hear: a practice oscillator, an electronic keyer's sidetone, a rig's speaker, or a signal generator. The app finds the pitch itself (anything from 300 to 1200 Hz) and times each key-down and key-up from the audio. A light follows the tone, and a meter shows its level against the room's, marked in orange. Key a few characters before you start: the light should come on with every element and stay off in the gaps. If it flickers in the gaps, lower the <strong>Sensitivity</strong>; if it misses quiet elements, raise it. If it has locked onto the wrong sound, <strong>Find pitch again</strong> starts the search over. The microphone is only used while the Sending Analyzer is open with Microphone chosen.</p>
+        <div class="tip">
+          <span class="tip-icon">NOTE</span>
+          <p>A key adapter gives the cleanest timing, because the app gets the key's own edges. The microphone is good to a few milliseconds with a clear tone, but room noise and a soft sidetone blur exactly the thing being measured, so hold the phone close and keep the tone well above the room.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- DECODER -->
     <section id="decoder">
       <h2><span class="h2-mc">&minus;·&minus;·</span>CW Decoder</h2>
@@ -1152,13 +1193,13 @@
       <p class="guide-lead">You can key into the app with real hardware, not just the touch key.</p>
 
       <h3>MIDI keys</h3>
-      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a> and <a href="#asteroids">CW Asteroids</a> in keying mode, <a href="#dungeon">CW Dungeon</a>&rsquo;s spells, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
+      <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, the <a href="#analyzer">Sending Analyzer</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a> and <a href="#asteroids">CW Asteroids</a> in keying mode, <a href="#dungeon">CW Dungeon</a>&rsquo;s spells, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
 
       <h3>Bluetooth LE MIDI keys</h3>
       <p>Wireless keys work on <strong>both platforms</strong>. Android scans for them directly, with unplug detection.</p>
       <div class="tip warn">
         <span class="tip-icon">iOS</span>
-        <p>On iPhone and iPad, <strong>pairing the key in Settings &gt; Bluetooth is not enough</strong>. iOS only hands a Bluetooth MIDI key to an app once something has connected it as a MIDI device, and only the system's own MIDI pairing sheet does that. Open that sheet from inside the app: the Vail adapter row in the <a href="#repeater">Repeater</a>, or <a href="#sending">Sending Practice</a>. Until you do, the app will correctly report no MIDI adapter even though iOS shows the key as connected.</p>
+        <p>On iPhone and iPad, <strong>pairing the key in Settings &gt; Bluetooth is not enough</strong>. iOS only hands a Bluetooth MIDI key to an app once something has connected it as a MIDI device, and only the system's own MIDI pairing sheet does that. Open that sheet from inside the app: the Vail adapter row in the <a href="#repeater">Repeater</a>, <a href="#sending">Sending Practice</a>, or the <a href="#analyzer">Sending Analyzer</a> with Key chosen. Until you do, the app will correctly report no MIDI adapter even though iOS shows the key as connected.</p>
       </div>
 
       <h3>Vail Adapter</h3>
@@ -1169,6 +1210,9 @@
         <li><strong>Keyer modes and speed</strong>: configured from within the app. Change the keyer mode, speed or tone in Settings and a connected adapter is reconfigured on the spot, whatever screen you're on.</li>
         <li><strong>Sidetone</strong> and the <strong>RX piezo buzz</strong>, which you can turn off if it's not to your taste.</li>
       </ul>
+
+      <h3>A key the microphone hears</h3>
+      <p>No adapter? In the <a href="#analyzer">Sending Analyzer</a> the microphone can stand in for one: key your oscillator, keyer, rig or signal generator near the phone and the app times the tone. See <a href="#analyzer">Using the microphone</a>.</p>
 
       <h3>Hardware keyboards</h3>
       <p>A paired keyboard works for answering the choice quizzes, <a href="#journey">Journey</a>, and <a href="#typeit">Type It</a>: type the answer and it's submitted. Much more comfortable than tapping for a long typing session.</p>
