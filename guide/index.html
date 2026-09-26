@@ -333,6 +333,13 @@
       <div class="entry">
         <div class="entry-head"><h3>Type</h3><span class="tag both">Free recall</span></div>
         <p>No choices at all. Hear it, type it. Harder and more honest than multiple choice, because there's nothing to eliminate. This is the whole point of <a href="#typeit">Type It</a>, and a hardware keyboard works too if you have one paired: just type the answer and it's submitted.</p>
+        <p>The choice quizzes (Characters, Common Words, Abbreviations, Q-Codes, Prosigns and Confusion Drill) can take a typed answer too, set by <strong>Answer entry</strong> in <a href="#set-practice">Settings › Practice &amp; Feedback</a> or the <strong>Answers</strong> menu in the drill itself:</p>
+        <ul>
+          <li><strong>Tap</strong> (the default) keeps the buttons.</li>
+          <li><strong>Progressive</strong> makes the answer method part of each level: you start on 4 choices, move to 6 once you get 18 of your last 20 right, then to typing the answer after 18 of 20 more. Each quiz climbs its own ladder, and a new level (a new character, or a new Characters stage) starts again at 4 choices, since multiple choice is the scaffold for something new.</li>
+          <li><strong>Type</strong> always has you type, for when you want to jump straight to full recall.</li>
+        </ul>
+        <p>A single character is submitted the moment you type it, so typing costs no more time than a tap; words take <strong>Submit</strong> or Return. <strong>Don't know</strong> passes the item as a miss. Drills whose answer is a meaning or a prosign always show the choices, and <strong>Key answers</strong> or <strong>Voice answers</strong>, when you have switched one on, take precedence over typing. A wrong typed character counts in your stats and <a href="#confusion">confusion matrix</a> exactly like a wrong tap; a blank, a slip of two characters, or a symbol Morse has no code for is a miss with nothing recorded as the character it was mistaken for.</p>
       </div>
 
       <div class="entry">
@@ -403,7 +410,7 @@
       <h2><span class="h2-mc">&#8644;</span>Confusion Drill</h2>
       <div class="entry">
         <p class="entry-why">Reach for this the moment two characters start blurring together.</p>
-        <p>The app keeps a confusion matrix. Every time you answer <strong>D</strong> when it sent <strong>B</strong>, it's recorded. Confusion Drill reads that matrix and builds a session out of <em>your</em> actual mix-ups, not a generic list of tricky pairs.</p>
+        <p>The app keeps a confusion matrix. Every time you answer <strong>D</strong> when it sent <strong>B</strong>, tapped, typed or keyed, it's recorded. Confusion Drill reads that matrix and builds a session out of <em>your</em> actual mix-ups, not a generic list of tricky pairs.</p>
         <p>If you haven't recorded enough confusions yet, it falls back to your slowest active characters paired against their nearest sound-alikes, which is a good drill in its own right.</p>
         <p><strong>When to use it:</strong> when accuracy is fine but one or two pairs keep costing you. Ten minutes here is worth an hour of general practice for a pair you've been fumbling for weeks.</p>
       </div>
@@ -1130,6 +1137,7 @@
           <tbody>
             <tr><td>Recognition target</td><td>The time bar a character must beat to count as learned, <code>0.5-3.0 s</code> (default 1.0 s). Beat it consistently and a new character is added. (Called <em>Recognize within</em> on iOS.)</td></tr>
             <tr><td>Answer choices</td><td>Maximum number of multiple-choice buttons. Choices only ever include characters you've met, so the count grows as you learn.</td></tr>
+            <tr><td>Answer entry</td><td>How the choice quizzes take your answer: <strong>Tap</strong> the buttons (default), <strong>Progressive</strong> (4 choices, then 6, then typing, per level), or always <strong>Type</strong>. See <a href="#answering">Type</a>. Progressive's 4 and 6 replace the Answer choices limit while it is on.</td></tr>
             <tr><td>Word pool</td><td>How many ranked common words to draw from: top 100, 300, 500 or 1000, or the <a href="#cw77">CW 77 (CWOps)</a> list instead (the <strong>Use CW 77 (CWOps) instead</strong> switch). Smaller = more repetition, larger = more variety. Here on Android; on the Common Words setup on iOS.</td></tr>
             <tr><td>Use my word list</td><td>A switch that replaces the built-in pool with your own words, one per line (or comma- or space-separated). Needs at least two words. Here on Android; on the Common Words setup on iOS.</td></tr>
             <tr><td>Session length</td><td>Default practice length, 1-30 minutes (default 5) or open-ended. Here on Android; on each mode's setup on iOS.</td></tr>
