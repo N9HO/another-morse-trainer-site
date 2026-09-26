@@ -125,7 +125,7 @@
         <li><strong>Open <a href="#journey">Journey</a>.</strong> It's the first tile on the home screen, and it's the guided path. It decides what to teach you and when, so you don't have to.</li>
         <li><strong>Listen, don't look.</strong> A character plays. Answer choices appear below. Pick the one you heard. If you get it wrong, the answer is revealed and the character is re-sent so your ear gets a second pass at the right sound.</li>
         <li><strong>Don't count dots and dashes.</strong> This is the one habit that will hold you back. At the default 33 WPM you physically can't count them, and that's deliberate. Let each character land as a single sound, like a syllable. If it feels too fast, <a href="#method">widen the gaps, don't slow the characters</a>.</li>
-        <li><strong>Stop after 10-15 minutes.</strong> Short and daily beats long and occasional. Turn on the <a href="#settings">daily reminder</a> in Settings and let the streak do the nagging.</li>
+        <li><strong>Stop after 10-15 minutes.</strong> Short and daily beats long and occasional. Turn on the <a href="#set-reminders">daily reminder</a> in Settings › Reminders and let the streak do the nagging.</li>
       </ol>
 
       <div class="tip">
@@ -186,7 +186,7 @@
 
       <h3>Farnsworth spacing</h3>
       <p>Farnsworth is the mechanism that lets those two speeds differ. Each character stays at full speed (33 WPM, or whatever you've set) but extra silence is inserted <em>between</em> characters. So you hear a real, fast <span class="morse">&minus;·&minus;·</span> and then get a beat to think before the next one.</p>
-      <p>Set the <strong>character speed</strong> to what you want your ear trained at, then switch on <strong>Farnsworth spacing</strong> in Settings (it's off by default) and set the <strong>effective speed</strong> to what you can currently keep up with, as low as 8 WPM. Close the gap over time. Farnsworth only affects multi-character content (words, groups, call signs), since single characters have nothing to space out.</p>
+      <p>Set the <strong>character speed</strong> to what you want your ear trained at, then switch on <strong>Farnsworth spacing</strong> in Settings › Speed &amp; Timing (it's off by default) and set the <strong>effective speed</strong> to what you can currently keep up with, as low as 8 WPM. Close the gap over time. Farnsworth only affects multi-character content (words, groups, call signs), since single characters have nothing to space out.</p>
 
       <h3>What "good" looks like</h3>
       <div class="tbl-wrap">
@@ -220,8 +220,9 @@
         <p>You need to <strong>recognize your call instantly when someone sends it</strong>, which is your cue that the contact is yours and it's your turn, and you need to <strong>send it cleanly and consistently</strong>. Both directions matter, and most people drill only the first.</p>
         <p><strong>How to drill it in the app:</strong></p>
         <ul>
-          <li>Set it once in <strong>Settings → Your callsign</strong>, so the app uses it throughout.</li>
+          <li>Set it once in <strong>Settings › QSO &amp; Pileups › Your callsign</strong>, so the app uses it throughout.</li>
           <li>Turn on <strong>Use my word list</strong> and put your callsign in it (with a few near-misses: calls that share your prefix or suffix). Then run <a href="#words">Common Words</a>: you're training to pick your call out of things that sound like it, which is the real skill.</li>
+          <li>Pick <a href="#cw77">CW 77</a> and turn on <strong>Include my callsign and name</strong>, so your call and name come round with the words you'll hear alongside them.</li>
           <li><a href="#rapidfire">Rapid Fire</a> → <strong>Call signs</strong> for volume, so your call stops being a special case and becomes one call among many.</li>
           <li><a href="#sending">Sending Practice</a> to key it back until the rhythm is automatic and identical every time.</li>
         </ul>
@@ -333,17 +334,24 @@
       <div class="entry">
         <div class="entry-head"><h3>Type</h3><span class="tag both">Free recall</span></div>
         <p>No choices at all. Hear it, type it. Harder and more honest than multiple choice, because there's nothing to eliminate. This is the whole point of <a href="#typeit">Type It</a>, and a hardware keyboard works too if you have one paired: just type the answer and it's submitted.</p>
+        <p>The choice quizzes (Characters, Common Words, Abbreviations, Q-Codes, Prosigns and Confusion Drill) can take a typed answer too, set by <strong>Answer entry</strong> in <a href="#set-practice">Settings › Practice &amp; Feedback</a> or the <strong>Answers</strong> menu in the drill itself:</p>
+        <ul>
+          <li><strong>Tap</strong> (the default) keeps the buttons.</li>
+          <li><strong>Progressive</strong> makes the answer method part of each level: you start on 4 choices, move to 6 once you get 18 of your last 20 right, then to typing the answer after 18 of 20 more. Each quiz climbs its own ladder, and a new level (a new character, or a new Characters stage) starts again at 4 choices, since multiple choice is the scaffold for something new.</li>
+          <li><strong>Type</strong> always has you type, for when you want to jump straight to full recall.</li>
+        </ul>
+        <p>A single character is submitted the moment you type it, so typing costs no more time than a tap; words take <strong>Submit</strong> or Return. <strong>Don't know</strong> passes the item as a miss. Drills whose answer is a meaning or a prosign always show the choices, and <strong>Key answers</strong> or <strong>Voice answers</strong>, when you have switched one on, take precedence over typing. A wrong typed character counts in your stats and <a href="#confusion">confusion matrix</a> exactly like a wrong tap; a blank, a slip of two characters, or a symbol Morse has no code for is a miss with nothing recorded as the character it was mistaken for.</p>
       </div>
 
       <div class="entry">
         <div class="entry-head"><h3>Speak</h3><span class="tag both">Voice answers</span></div>
-        <p>Turn on <strong>Voice answers</strong> in Settings and say the answer instead of tapping it. It understands NATO phonetics ("Charlie"), letter names ("see"), and digit words ("niner"). When it isn't sure it asks <em>"did you say…?"</em> rather than marking you wrong, and it <strong>learns your corrections</strong>, so your accent and habits improve the matching over time. Uses the microphone; nothing leaves the device.</p>
+        <p>Turn on <strong>Voice answers</strong> (the mode's setup on iOS, Settings › Practice &amp; Feedback on Android) and say the answer instead of tapping it. It understands NATO phonetics ("Charlie"), letter names ("see"), and digit words ("niner"). When it isn't sure it asks <em>"did you say…?"</em> rather than marking you wrong, and it <strong>learns your corrections</strong>, so your accent and habits improve the matching over time. Uses the microphone; nothing leaves the device.</p>
         <p>On iPhone and iPad, listening starts by itself the moment the tone ends, and your recognition time runs from when you start speaking. On Android you tap <strong>Speak answer</strong> for each prompt, because Android's recognizer plays a start chime every time it opens the microphone and would chime over every character if the app listened automatically; the clock runs from the tap.</p>
       </div>
 
       <div class="entry">
         <div class="entry-head"><h3>Key it back</h3><span class="tag both">Touch or hardware</span></div>
-        <p>Answer by sending, not selecting. Key the character on the on-screen touch key or a connected <a href="#hardware">MIDI key</a> and the app decodes what you sent. It's available in every choice quiz whose answer is a character or a word, with a <strong>Key answers</strong> toggle in the session bar so you can flip between keying and tapping mid-drill; drills whose answer is a meaning or a prosign show the choices instead. This is the fastest way to make sending and receiving reinforce each other. See <a href="#sending">Sending Practice</a> for the dedicated mode.</p>
+        <p>Answer by sending, not selecting. Key the character on the on-screen touch key or a connected <a href="#hardware">MIDI key</a> and the app decodes what you sent. It's available in every choice quiz whose answer is a character or a word, with a <strong>Key answers</strong> toggle in the session bar so you can flip between keying and tapping mid-drill; drills whose answer is a meaning or a prosign show the choices instead. This is the fastest way to make sending and receiving reinforce each other. See <a href="#sending">Sending Practice</a> for the dedicated mode. If you send with paddles, switch the on-screen key to <a href="#paddles">touch paddles</a>.</p>
       </div>
     </section>
 
@@ -403,7 +411,7 @@
       <h2><span class="h2-mc">&#8644;</span>Confusion Drill</h2>
       <div class="entry">
         <p class="entry-why">Reach for this the moment two characters start blurring together.</p>
-        <p>The app keeps a confusion matrix. Every time you answer <strong>D</strong> when it sent <strong>B</strong>, it's recorded. Confusion Drill reads that matrix and builds a session out of <em>your</em> actual mix-ups, not a generic list of tricky pairs.</p>
+        <p>The app keeps a confusion matrix. Every time you answer <strong>D</strong> when it sent <strong>B</strong>, tapped, typed or keyed, it's recorded. Confusion Drill reads that matrix and builds a session out of <em>your</em> actual mix-ups, not a generic list of tricky pairs.</p>
         <p>If you haven't recorded enough confusions yet, it falls back to your slowest active characters paired against their nearest sound-alikes, which is a good drill in its own right.</p>
         <p><strong>When to use it:</strong> when accuracy is fine but one or two pairs keep costing you. Ten minutes here is worth an hour of general practice for a pair you've been fumbling for weeks.</p>
       </div>
@@ -650,8 +658,10 @@
         <p class="entry-why">The jump from copying letters to copying language.</p>
         <p>Whole ham-radio words sent as single units: <span class="morse">CQ</span>, <span class="morse">DE</span>, <span class="morse">ANTENNA</span>, <span class="morse">RIG</span>. The goal is to stop spelling words out letter by letter and start recognizing their overall shape, the same way you read English without sounding out syllables.</p>
         <h3>Your own word list</h3>
-        <p>Turn on <strong>Use my word list</strong> in Settings and paste in whatever you want: your callsign, your local repeater, club names, the vocabulary of whatever you actually talk about on the air. One entry per line, or separated by commas or spaces; the list needs at least two words before the switch will take. The quiz then draws from your list instead of the built-in ranked pool.</p>
+        <p>Turn on <strong>Use my word list</strong> (the Common Words setup on iOS, Settings › Practice &amp; Feedback on Android) and paste in whatever you want: your callsign, your local repeater, club names, the vocabulary of whatever you actually talk about on the air. One entry per line, or separated by commas or spaces; the list needs at least two words before the switch will take. The quiz then draws from your list instead of the built-in ranked pool.</p>
         <p>The built-in pool is the 1000 most useful words, ranked, and it's size-adjustable: <strong>top 100, 300, 500 or 1000</strong>. A smaller pool means more repetition per word, a larger one means more variety.</p>
+        <h3>CW 77</h3>
+        <p>The pool can be the <a href="#cw77">CW 77 (CWOps)</a> list instead: on iOS it's an entry in the word-pool picker, on Android the <strong>Use CW 77 (CWOps) instead</strong> switch under the word pool. You hear the item and pick it, prosigns included (a prosign is picked from the choices even with keyed answers on). The same <strong>Use 40 WPM, no Farnsworth</strong> preset and <strong>Include my callsign and name</strong> switch appear with it. Your own word list, when it's on, still takes precedence.</p>
       </div>
     </section>
 
@@ -805,7 +815,7 @@
       <h2><span class="h2-mc">&minus;·&minus;&minus;·</span>Pileup Runner</h2>
       <div class="entry">
         <p class="entry-why">The full simulator: you call CQ, stations answer, and you work them. This is the mode that turns copying into operating.</p>
-        <p>Set your callsign in Settings (it starts as <code>W1AW</code>) and it's used throughout, sent when you call CQ and work stations. With <strong>Key my side in Morse</strong> on, <strong>your own side is keyed on the air</strong>, so you hear the whole exchange as it would sound; off, your CQ, calls and TU are logged silently.</p>
+        <p>Set your callsign in Settings › QSO &amp; Pileups (it starts as <code>W1AW</code>) and it's used throughout, sent when you call CQ and work stations. With <strong>Key my side in Morse</strong> on, <strong>your own side is keyed on the air</strong>, so you hear the whole exchange as it would sound; off, your CQ, calls and TU are logged silently.</p>
 
         <h3>Eight exchange flavours</h3>
         <div class="tbl-wrap">
@@ -914,6 +924,7 @@
           <li><strong>Signal timeline</strong>: a visual trace of what's arriving, so you can see the rhythm as well as hear it.</li>
           <li><strong>Chat</strong> alongside the CW, for when you need to say something in plain text, with an unread badge so you notice a message that arrived while you were keying.</li>
           <li><strong>Who's on</strong>: a roster of the stations on the channel. A station that's gone quiet drops off it after a minute.</li>
+          <li><strong>Straight key or paddles</strong>: the on-screen key is whichever you chose in <a href="#paddles">Settings › Keys &amp; Sending</a>, and the paddles' keyed elements go out on the air exactly as straight-key presses would.</li>
           <li><strong>Vail Adapter support</strong>: MIDI key input <em>and</em> output, keyer modes and speed, sidetone, and the RX piezo buzz (which you can turn off). The sidetone ducks other audio rather than taking it over, so a radio app can keep running underneath.</li>
         </ul>
         <div class="tip">
@@ -934,7 +945,7 @@
           <li><strong>Always-on replay</strong>: re-hear the target as often as you want.</li>
           <li><strong>Connected MIDI key readout</strong>: shows what hardware the app can see, so you know the key is actually talking to it, and says when MIDI itself is unavailable on the device as opposed to no key being connected.</li>
         </ul>
-        <p>Works with the on-screen touch key or a <a href="#hardware">hardware key</a>. Most people's sending is worse than they think, and the live decode is a fast, slightly humbling way to find out.</p>
+        <p>Works with the on-screen touch key (a straight key, or a pair of <a href="#paddles">touch paddles</a>) or a <a href="#hardware">hardware key</a>. Most people's sending is worse than they think, and the live decode is a fast, slightly humbling way to find out.</p>
       </div>
     </section>
 
@@ -1037,14 +1048,22 @@
         <p>Code plays, then the answer is <strong>spoken aloud</strong>. No interaction at all. It keeps playing with the screen locked, with full background audio and lock-screen controls, so it works with the phone in your pocket. The lock screen, CarPlay and a Bluetooth car display show the current item as the track title (the revealed answer once it has been spoken, "Listening…" before that) with the app logo as the artwork, so a head unit no longer keeps the last podcast's cover up.</p>
         <p>It deals the whole pool like a deck of cards, <strong>every item once before anything repeats</strong>, and the word source is the full 1000-word list, so a long commute doesn't circle back to the same dozen words.</p>
         <ul>
-          <li><strong>What it announces</strong>: choose the content it draws from. <strong>Characters</strong> is your active Koch set; <strong>QSO elements · Top 20</strong> and <strong>QSO elements · Top 100</strong> are the on-air vocabulary below; <strong>Words</strong> is the 1000-word list; <strong>Abbreviations &amp; Q-codes</strong> is the same table the <a href="#abbreviations">Abbreviations</a> and <a href="#qcodes">Q-Codes</a> drills use.</li>
+          <li><strong>What it announces</strong>: choose the content it draws from. <strong>Characters</strong> is your active Koch set; <strong>QSO elements · Top 20</strong> and <strong>QSO elements · Top 100</strong> are the on-air vocabulary below; <strong>CW 77 (CWOps)</strong> is the CW Academy list below; <strong>Words</strong> is the 1000-word list; <strong>Abbreviations &amp; Q-codes</strong> is the same table the <a href="#abbreviations">Abbreviations</a> and <a href="#qcodes">Q-Codes</a> drills use.</li>
           <li><strong>Gap before the spoken answer</strong>: how long you get to answer in your head before it tells you. Four tiers: <strong>Standard</strong> 1.3 s, <strong>Rapid Fire</strong> 1.0 s, <strong>Warp</strong> 0.5 s, <strong>ICR-Territory</strong> 0.2 s.</li>
-          <li><strong>Readback</strong> (QSO elements and Abbreviations &amp; Q-codes only): <strong>Spell it out</strong> reads the token letter by letter and then its full meaning, "k n, go ahead, named station only"; <strong>Meaning only</strong> says the short meaning and nothing else, "go ahead", so a drilling session moves at the pace of the code rather than the gloss. The screen shows the token and the whole meaning either way.</li>
+          <li><strong>Readback</strong> (QSO elements, CW 77 and Abbreviations &amp; Q-codes only): <strong>Spell it out</strong> reads the token letter by letter and then its full meaning, "k n, go ahead, named station only"; <strong>Meaning only</strong> says the short meaning and nothing else, "go ahead", so a drilling session moves at the pace of the code rather than the gloss. The screen shows the token and the whole meaning either way.</li>
         </ul>
         <h3>QSO elements</h3>
         <p>Dictionary words are poor practice for the air: nobody sends GOVERNMENT in a contact. The two <strong>QSO elements</strong> sets are one curated list of the hundred things you actually hear, ordered most common first, so <strong>Top 20</strong> is the skeleton of every contact and <strong>Top 100</strong> adds the rest of a ragchew, a DX exchange and the weather. The first twenty, in order:</p>
         <p class="morse">CQ &nbsp;DE &nbsp;&lt;K&gt; &nbsp;&lt;KN&gt; &nbsp;&lt;AR&gt; &nbsp;&lt;SK&gt; &nbsp;&lt;BK&gt; &nbsp;TU &nbsp;73 &nbsp;RST &nbsp;599 &nbsp;5NN &nbsp;UR &nbsp;NAME &nbsp;QTH &nbsp;HR &nbsp;ES &nbsp;HW? &nbsp;R &nbsp;TNX</p>
         <p>Prosigns are sent run-together and shown in angle brackets; a few items are short phrases (<span class="morse">CQ CQ CQ</span>, <span class="morse">TNX FER CALL</span>, <span class="morse">5NN TU</span>) sent with their word gaps. The reveal shows the token and its meaning, and speaks the token letter by letter and then the meaning, exactly as the Abbreviations set does: "q t h, my location is". Switch <strong>Readback</strong> to Meaning only once you know the tokens and it says just "my location is". Both apps have both sets.</p>
+        <h3 id="cw77">CW 77</h3>
+        <p><strong>CW 77 (CWOps)</strong> is the list of the most-used words and abbreviations in a CW contact that CW Academy advisors have their students listen to. The list as circulated has 75 entries with five repeats, so the set is the 70 distinct items, in the list's order, keeping the familiar name:</p>
+        <p class="morse">VVV &nbsp;VERT &nbsp;OM &nbsp;HR &nbsp;XYL &nbsp;QTH &nbsp;RR &nbsp;AGE &nbsp;FB &nbsp;LID &nbsp;QSL &nbsp;TKS &nbsp;RIG &nbsp;QSB &nbsp;CQ &nbsp;CL &nbsp;&lt;KN&gt; &nbsp;NAME &nbsp;PKT &nbsp;QSO &nbsp;TEST &nbsp;DE &nbsp;&lt;BT&gt; &nbsp;73 &nbsp;QRM &nbsp;BK &nbsp;AGN &nbsp;DIPOLE &nbsp;&lt;SK&gt; &nbsp;HW? &nbsp;QRP &nbsp;TNX &nbsp;YRS &nbsp;YL &nbsp;QRX &nbsp;QRL &nbsp;ES &nbsp;WX &nbsp;QRT &nbsp;K &nbsp;QRS &nbsp;88 &nbsp;PWR &nbsp;RUNS &nbsp;CALL &nbsp;VY &nbsp;WIRE &nbsp;YAGI &nbsp;NR &nbsp;RPT &nbsp;OP &nbsp;&lt;AR&gt; &nbsp;PSE &nbsp;EL &nbsp;LOOP &nbsp;ABT &nbsp;QSY &nbsp;TU &nbsp;HI &nbsp;BEAM &nbsp;RST &nbsp;WATT &nbsp;&lt;AS&gt; &nbsp;TEMP &nbsp;CPY &nbsp;QRZ &nbsp;ANT &nbsp;QRN &nbsp;CW &nbsp;DX</p>
+        <p>The five prosigns, <span class="morse">&lt;AR&gt; &lt;AS&gt; &lt;BT&gt; &lt;KN&gt; &lt;SK&gt;</span>, are sent run-together as they are on the air; <span class="morse">BK</span> and <span class="morse">CL</span> are sent as the letter abbreviations for break and closing. It is revealed and spoken like the QSO elements, token then meaning, or the meaning alone with <strong>Readback</strong> on Meaning only. <a href="#words">Common Words</a> can drill the same list.</p>
+        <ul>
+          <li><strong>Use 40 WPM, no Farnsworth</strong>: Bob Carter WR7Q recommends hearing this list at 40 WPM with no Farnsworth spacing. With CW 77 chosen, one tap sets your speed to that (it changes the speed in Settings, which you can move back any time); once you're there it says so instead.</li>
+          <li><strong>Include my callsign and name</strong> (off by default): adds your own call and name to the set, the two things you'll hear most often on the air. They come from <strong>Your callsign</strong> and <strong>Your name</strong> (see <a href="#set-qso">Settings › QSO &amp; Pileups</a>). The switch appears once either is set; a callsign still at the W1AW placeholder doesn't count.</li>
+        </ul>
         <p>Passive practice isn't as effective as active drilling, but it's dramatically better than not practising, and it turns dead time into reps. A commute a day adds up quickly.</p>
       </div>
     </section>
@@ -1083,52 +1102,42 @@
       <p class="guide-lead">One board for both apps, opt-in, and hard to cheat. Off until you switch it on.</p>
       <p>Nine modes are ranked: <a href="#rapidfire">Rapid Fire</a>, <a href="#contest">Contest</a>, <a href="#pileup">Pileup Runner</a> and the six arcade games (<a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a>, <a href="#defender">Morse Defender</a>, <a href="#dungeon">CW Dungeon</a>, <a href="#frogger">CW Frogger</a>, <a href="#asteroids">CW Asteroids</a>). Each mode has its own board, showing the top fifty with a display name, the score, which platform it came from and the date. You can browse the boards from <a href="#progress">Progress</a> without joining.</p>
       <h3>Joining</h3>
-      <p>In Settings, switch on <strong>Share scores to the shared leaderboard</strong> and choose a <strong>display name</strong>: two to twelve characters, letters, digits, space, slash and hyphen, shown in capitals. A callsign is the natural choice. From then on every finished run in a ranked mode is sent in, and the session summary shows where it landed: your rank and your score, or the reason it was refused. Only your best run per mode is kept on the board, and posting one that is not your best changes nothing.</p>
+      <p>In Settings › Leaderboard &amp; Buddy, switch on <strong>Share scores to the shared leaderboard</strong> and choose a <strong>display name</strong>: two to twelve characters, letters, digits, space, slash and hyphen, shown in capitals. A callsign is the natural choice. From then on every finished run in a ranked mode is sent in, and the session summary shows where it landed: your rank and your score, or the reason it was refused. Only your best run per mode is kept on the board, and posting one that is not your best changes nothing.</p>
       <p><strong>Sharing scores from a game.</strong> The first time you start one of the six arcade games while score sharing is off, the app asks once whether to post your finished games to the shared leaderboard. Enter a display name and tap <strong>Share scores</strong>, choose <strong>Not now</strong> to be asked again the next time you start a game, or <strong>Don't ask again</strong> to never see the prompt. The game starts whichever you pick, and sharing can be turned on or off at any time in Settings. You don't need to share to look: the <strong>Shared leaderboard</strong> entry at the bottom of the Games menu, like the one on <a href="#progress">Progress</a>, opens the board for browsing, with a mode picker across all nine ranked modes. The board is the same one on iPhone and Android.</p>
       <h3>What the score is</h3>
       <p>The board does not trust the number on your screen. The app sends a transcript of the run, what was sent, what you answered and how fast, and the server grades it: for every item you copied correctly it adds the speed that item was sent at. A run at a steady speed therefore scores <em>correct copies × effective WPM</em>, so a slow perfect run does not beat a fast, nearly perfect one. In the games, which speed up as you go, each hit counts at the speed it was sent. That is why <strong>a game's leaderboard score is not its on-screen score</strong>: the on-screen one includes waves, combos and other things only the game can see. In Morse Invaders, CW Galaga and CW Asteroids only the <em>hear it</em> mode is ranked; the <em>see it, key it</em> mode plays no Morse, so there is nothing for the board to grade. In Rapid Fire the listen-only response is not ranked for the same reason.</p>
       <h3>Why it is hard to cheat</h3>
       <p>The app is open source, so nothing in it can be a secret. Trust comes from the device instead: an iPhone or iPad proves it is running the genuine App Store build with Apple's App Attest, and an Android phone proves the same with Google's Play Integrity. A build you compile yourself, a sideloaded APK, or a script pretending to be the app cannot post. Each run gets a one-time token from the server when it starts, so the server also knows how long the run took, and a run that claims more Morse than could have been sent in that time is thrown out. Only genuine builds on real devices can post; the iOS Simulator and Android emulators cannot.</p>
       <h3>Your data</h3>
-      <p>The board stores your display name, your best score per mode, the platform, and the run transcripts for thirty days. It never sees your name, email or account. <strong>Delete my scores</strong> in Settings removes everything the board holds about this device, and you can switch sharing off at any time. Both apps do exactly the same; only the attestation mechanism differs by platform.</p>
+      <p>The board stores your display name, your best score per mode, the platform, and the run transcripts for thirty days. It never sees your name, email or account. <strong>Delete my scores</strong> in Settings › Leaderboard &amp; Buddy removes everything the board holds about this device, and you can switch sharing off at any time. Both apps do exactly the same; only the attestation mechanism differs by platform.</p>
     </section>
 
     <!-- BUDDY -->
     <section id="buddy">
       <h2><span class="h2-mc">&minus;···</span>Buddy streak</h2>
       <p class="guide-lead">Pair with one other person and keep a streak together: it lives only while you both practise every day.</p>
-      <p>Settings › <strong>Buddy streak</strong>. One of you taps <strong>Invite a buddy</strong> and gets a six-character code, good for 24 hours and for one use; send it however you like, a message, Discord, on the air. The other taps <strong>Join with a code</strong> and types it in. That's the pairing: no accounts, no contacts, and it works between an iPhone and an Android phone. One buddy at a time; <strong>Leave buddy</strong> unpairs, from either side.</p>
+      <p>Settings › Leaderboard &amp; Buddy › <strong>Buddy streak</strong>. One of you taps <strong>Invite a buddy</strong> and gets a six-character code, good for 24 hours and for one use; send it however you like, a message, Discord, on the air. The other taps <strong>Join with a code</strong> and types it in. That's the pairing: no accounts, no contacts, and it works between an iPhone and an Android phone. One buddy at a time; <strong>Leave buddy</strong> unpairs, from either side.</p>
       <p><strong>What keeps it alive</strong> is the same thing that keeps your own streak alive: any practice day. A finished session, a Daily Dit guess, a Listen &amp; Learn session, whatever the app already counts as practising, counts for the buddy streak too. The first time each day you practise, the app tells the server; the buddy streak is the number of consecutive days on which <em>both</em> of you did. Your day is your local calendar day, so time zones work the way your own streak does, and yesterday keeps it alive until the later of you has had their whole day.</p>
       <p><strong>Where you see it.</strong> The home screen's streak card gains a line: "W1AW practised today · 12-day buddy streak", or "W1AW hasn't practised yet today". If you use the daily reminder, it adds the same nudge when your buddy is still missing for the day, as of the last time the app checked. There are no push notifications; the app checks when you open it.</p>
-      <p><strong>Your data.</strong> Pairing uses the same device attestation as the <a href="#leaderboard">shared leaderboard</a> and your leaderboard display name, which is what your buddy sees, along with whether you practised each day. Nothing else. <strong>Delete my scores</strong> in Settings removes the pairing and your practice days along with everything else the server holds for this device.</p>
+      <p><strong>Your data.</strong> Pairing uses the same device attestation as the <a href="#leaderboard">shared leaderboard</a> and your leaderboard display name, which is what your buddy sees, along with whether you practised each day. Nothing else. <strong>Delete my scores</strong> in Settings › Leaderboard &amp; Buddy removes the pairing and your practice days along with everything else the server holds for this device.</p>
     </section>
 
     <!-- SETTINGS -->
     <section id="settings">
       <h2><span class="h2-mc">&minus;&minus;&minus;</span>Settings reference</h2>
-      <p class="guide-lead">The gear icon on the home screen. Mid-session, the Settings button shows only the parts that apply to the mode you're running.</p>
+      <p class="guide-lead">The gear icon on the home screen. Settings opens on a list of categories with a search field at the top; tap a category for its settings. Mid-session, the Settings button shows only the categories and settings that apply to the mode you're running.</p>
+      <p><strong>Search.</strong> Type into the search field and the list becomes every matching setting, with the category it lives in. It matches names and the words you are likely to reach for, so <em>pitch</em> finds the sidetone, <em>paddle</em> finds the keyer mode and <em>vibrate</em> finds haptics. Tap a result and the app opens that category scrolled to it, with the setting briefly highlighted.</p>
+      <p>The categories, in order, are the same on iPhone, iPad, Mac and Android: <a href="#set-sound">Sound</a>, <a href="#set-speed">Speed &amp; Timing</a>, <a href="#set-characters">Characters &amp; Lessons</a>, <a href="#set-practice">Practice &amp; Feedback</a>, <a href="#set-keys">Keys &amp; Sending</a>, <a href="#set-qso">QSO &amp; Pileups</a>, <a href="#set-reminders">Reminders</a>, <a href="#set-display">Display</a>, <a href="#set-leaderboard">Leaderboard &amp; Buddy</a> and <a href="#set-about">Help &amp; About</a>. Where a setting is on only one app, the table says so.</p>
 
-      <h3>Your station</h3>
+      <h3 id="set-sound">Sound</h3>
       <div class="tbl-wrap">
         <table class="spec">
           <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
           <tbody>
-            <tr><td>Your callsign</td><td>Used across the app, sent when you call CQ and work stations in <a href="#pileup">Pileup Runner</a> and <a href="#contest">Contest</a>.</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>Sound</h3>
-      <div class="tbl-wrap">
-        <table class="spec">
-          <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
-          <tbody>
-            <tr><td>Character speed</td><td>How fast each character is sent, <code>15-60 WPM</code>. Both apps start at <strong>33 WPM</strong>, which is <a href="#method">the number to aim for</a>. Going below about 33 invites element-counting, so raise the recognition target instead; the app warns you if you do.</td></tr>
-            <tr><td>Farnsworth spacing</td><td>A switch, off by default. On, it keeps characters at full speed but stretches the gaps between them, down to your chosen effective speed (<code>8 WPM</code> up to the character speed). Multi-character content only.</td></tr>
-            <tr><td>Sidetone pitch</td><td>The tone frequency, <code>300-1000 Hz</code>. Default 600 Hz. Pick what's comfortable for your ears over a long session.</td></tr>
+            <tr><td>Sidetone pitch</td><td>The tone frequency, <code>300-1000 Hz</code>. Default 600 Hz. Pick what's comfortable for your ears over a long session. (Called <em>Side tone</em> on iOS.)</td></tr>
+            <tr><td>Preview tone</td><td>Sends <code>PARIS</code> at your current settings so you can hear the effect before committing.</td></tr>
             <tr><td>Keep Bluetooth audio awake</td><td>On by default. Plays a floor deliberately just above digital silence, too quiet to hear, so Bluetooth earbuds never idle between characters. See <a href="#noisefloor">why it's on</a>.</td></tr>
             <tr><td>Band noise</td><td>Audible noise under everything, for copying through: <strong>Off, Whisper, Low, Moderate, Heavy</strong>. Off by default. Any level also keeps Bluetooth audio awake.</td></tr>
-            <tr><td>Preview tone</td><td>Sends <code>PARIS</code> at your current settings so you can hear the effect before committing.</td></tr>
           </tbody>
         </table>
       </div>
@@ -1137,60 +1146,137 @@
       <p>With <strong>Keep Bluetooth audio awake</strong> on, a floor runs under everything, and it is deliberate. <strong>Bluetooth earbuds power their receiver down during silence</strong> and wake a moment late, which clips the front of the first character. You lose the character, the app records a miss, and nothing on screen suggests your headphones did it rather than your ear. The floor sits about 56 dB under the tone, below hearing at any volume you'd copy at, and it is kept just above true digital silence on purpose: actual zeros are exactly what lets some headsets sleep. Turn it off if you're on wired headphones and want real silence.</p>
       <p><strong>Band noise</strong> is a separate control for a different reason: it is audible noise, so copying through it is closer to working a real signal than copying off a silent tone generator. Pick a level when you want that. Any band-noise level keeps Bluetooth awake as a side effect, so the two never fight.</p>
 
-      <h3>Learning</h3>
+      <h3 id="set-speed">Speed &amp; Timing</h3>
+      <div class="tbl-wrap">
+        <table class="spec">
+          <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Character speed</td><td>How fast each character is sent, <code>15-60 WPM</code>. Both apps start at <strong>33 WPM</strong>, which is <a href="#method">the number to aim for</a>. Going below about 33 invites element-counting, so raise the recognition target instead; the app warns you if you do.</td></tr>
+            <tr><td>Farnsworth spacing</td><td>A switch, off by default. On, it keeps characters at full speed but stretches the gaps between them, down to your chosen effective speed (<code>8 WPM</code> up to the character speed). Multi-character content only.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="set-characters">Characters &amp; Lessons</h3>
       <div class="tbl-wrap">
         <table class="spec">
           <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
           <tbody>
             <tr><td>Proficiency</td><td>What you already know. Sets your starting character set and unlocks the <a href="#journey">Journey</a> as far as it reaches. It's asked once, at first run, and lives here; the mode setup screens no longer ask it per mode. Changing it restarts your active set.</td></tr>
             <tr><td>New characters</td><td>Whether a character or prosign is introduced on its own, with its sound and a Replay button, before it joins the drill for the first time. On by default.</td></tr>
-            <tr><td>Answer choices</td><td>Maximum number of multiple-choice buttons. Choices only ever include characters you've met, so the count grows as you learn.</td></tr>
-            <tr><td>Recognition target</td><td>The time bar a character must beat to count as learned, <code>0.5-3.0 s</code> (default 1.0 s). Beat it consistently and a new character is added.</td></tr>
-            <tr><td>Word pool</td><td>How many ranked common words to draw from: top 100, 300, 500 or 1000. Smaller = more repetition, larger = more variety.</td></tr>
-            <tr><td>Use my word list</td><td>A switch that replaces the built-in pool with your own words, one per line (or comma- or space-separated). Needs at least two words.</td></tr>
+            <tr><td>Track stage</td><td>Pin the Characters ladder to a stage: characters, pairs, triples, or words &amp; call signs. In Settings on iOS; on Android it's the stage pills on the Characters setup and mid-session.</td></tr>
             <tr><td>Punctuation</td><td>Opt individual punctuation marks into your practice. <code>?</code> is already part of the base set. A mark you turn on joins your Characters drill straight away, alongside whatever you are learning, and has to be mastered like any other character before the next unlock; turn it off and it leaves the drill, with its stats kept for when you return to it. It joins the arcade games' <em>Full alphabet and digits</em> set at once too, and Listen &amp; Learn's Characters set, which follows your active set.</td></tr>
-            <tr><td>Track stage</td><td>Pin the Characters ladder to a stage: characters, pairs, triples, or words &amp; call signs. Also reachable mid-session, from the gear on iOS and the stage pills on Android.</td></tr>
+            <tr><td>Developer · Preview Stage</td><td>Jumps the Characters track to a stage and starts drilling it, for trying a stage out. Clears any Track-stage pin.</td></tr>
+            <tr><td>Reset all progress</td><td>Clears learned characters, stats, session history and the streak. Your settings are kept. There's a confirmation, because it isn't reversible, and it's hidden mid-session.</td></tr>
           </tbody>
         </table>
       </div>
 
-      <h3>Feedback &amp; display</h3>
+      <h3 id="set-practice">Practice &amp; Feedback</h3>
       <div class="tbl-wrap">
         <table class="spec">
           <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
           <tbody>
+            <tr><td>Recognition target</td><td>The time bar a character must beat to count as learned, <code>0.5-3.0 s</code> (default 1.0 s). Beat it consistently and a new character is added. (Called <em>Recognize within</em> on iOS.)</td></tr>
+            <tr><td>Answer choices</td><td>Maximum number of multiple-choice buttons. Choices only ever include characters you've met, so the count grows as you learn.</td></tr>
+            <tr><td>Answer entry</td><td>How the choice quizzes take your answer: <strong>Tap</strong> the buttons (default), <strong>Progressive</strong> (4 choices, then 6, then typing, per level), or always <strong>Type</strong>. See <a href="#answering">Type</a>. Progressive's 4 and 6 replace the Answer choices limit while it is on.</td></tr>
+            <tr><td>Word pool</td><td>How many ranked common words to draw from: top 100, 300, 500 or 1000, or the <a href="#cw77">CW 77 (CWOps)</a> list instead (the <strong>Use CW 77 (CWOps) instead</strong> switch). Smaller = more repetition, larger = more variety. Here on Android; on the Common Words setup on iOS.</td></tr>
+            <tr><td>Use my word list</td><td>A switch that replaces the built-in pool with your own words, one per line (or comma- or space-separated). Needs at least two words. Here on Android; on the Common Words setup on iOS.</td></tr>
+            <tr><td>Session length</td><td>Default practice length, 1-30 minutes (default 5) or open-ended. Here on Android; on each mode's setup on iOS.</td></tr>
             <tr><td>Show right / wrong</td><td>Whether correctness is shown after each answer.</td></tr>
             <tr><td>Reveal the letter</td><td>When (and whether) the correct answer is displayed. Default: on a miss.</td></tr>
             <tr><td>Show replay button</td><td>Whether the replay control appears during a session.</td></tr>
             <tr><td>Haptic feedback</td><td>Vibration on hit and miss.</td></tr>
-            <tr><td>Voice answers</td><td>Speak answers instead of tapping. Uses the microphone; learns your corrections over time.</td></tr>
-            <tr><td>Slashed zero</td><td>Show <code>0</code> with a line through it, the operator's convention for telling zero from O.</td></tr>
+            <tr><td>Voice answers</td><td>Speak answers instead of tapping. Uses the microphone; learns your corrections over time. Here on Android; on each choice quiz's setup on iOS.</td></tr>
             <tr><td>Auto-repeats</td><td>How many times <a href="#headcopy">Head Copy</a> replays the prompt before revealing, <code>0-3</code> (default 2).</td></tr>
             <tr><td>Auto-reveal after</td><td>How long Head Copy counts down before showing the answer, <code>0-10 s</code> (default 5). At 0 it waits for you.</td></tr>
           </tbody>
         </table>
       </div>
 
-      <h3>Session &amp; reminders</h3>
+      <h3 id="set-keys">Keys &amp; Sending</h3>
       <div class="tbl-wrap">
         <table class="spec">
           <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
           <tbody>
-            <tr><td>Session length</td><td>Default practice length, 1-30 minutes (default 5) or open-ended.</td></tr>
-            <tr><td>Daily reminder</td><td>A streak-aware daily nudge at a time you pick. To the minute on iPhone; on Android it can land a few minutes late, because the app deliberately doesn't ask for the exact-alarm permission.</td></tr>
-            <tr><td>Copy diagnostic info</td><td>Copies your app version, OS, device and current settings to the clipboard, ready to paste into a bug report.</td></tr>
-            <tr><td>About</td><td>Three links out of the app: <a href="/support/">Support the project</a>, the <a href="https://discord.gg/qgyk3TPUd9" rel="noopener">Discord</a>, and the source on GitHub. Both apps are free and open source with no ads, subscriptions or tracking; the support page is where a coffee for the developer lives.</td></tr>
-            <tr><td>Reset all progress</td><td>Clears learned characters, stats, session history and the streak. Your settings are kept. There's a confirmation, because it isn't reversible, and it's hidden mid-session.</td></tr>
+            <tr><td>Keyer mode</td><td>How the <a href="#hardware">Vail Adapter</a> reads the key plugged into it: Straight Key (the default) or an iambic mode for a paddle. It describes your key, not a drill, so it applies in Sending Practice, keyed answers and on the Vail screen alike, and a connected adapter is reconfigured the moment you change it. On Android it's shown only on devices with MIDI support.</td></tr>
+            <tr><td>On-screen key</td><td><strong>Straight key</strong> (default): one hold-to-key pad, the tone sounds for as long as you hold it. <strong>Paddles</strong>: two touch paddles, dit and dah, side by side, with a built-in keyer that times the elements at your character speed.</td></tr>
+            <tr><td>Paddle mode</td><td>How the paddles are keyed: <strong>Iambic A</strong> (default), <strong>Iambic B</strong> or <strong>Ultimatic</strong>. Shown when the key is set to Paddles.</td></tr>
+            <tr><td>Dah on the left</td><td>Swaps the paddles for a left-handed operator. Off: dit on the left.</td></tr>
           </tbody>
         </table>
       </div>
-      <p>The <a href="#pileup">Pileup Runner</a> keeps its own extensive settings (exchange type, caller count, QSB, QRN, cut numbers, bust behavior and callsign shapes), documented in that section.</p>
+      <p id="paddles"><strong>On-screen key.</strong> The choice applies wherever there is an on-screen key: keyed quiz answers, <a href="#sending">Sending Practice</a>, <a href="#rapidfire">Rapid Fire</a>, the keying modes of <a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a>, <a href="#dungeon">CW Dungeon</a> and <a href="#asteroids">CW Asteroids</a>, and the <a href="#repeater">Repeater</a>. The keyed elements are decoded, sounded and sent exactly as straight-key presses are. A <a href="#hardware">hardware key</a> is unaffected; a Vail Adapter keeps its own keyer mode.</p>
+      <p>Hold one paddle and it repeats its element; tap the other while one is still sounding and it's remembered and sent next (dit and dah memory). Hold both to squeeze:</p>
+      <ul>
+        <li><strong>Iambic A</strong>: a squeeze alternates dit and dah; let go and the keyer finishes the element it's sending and stops.</li>
+        <li><strong>Iambic B</strong>: the same, but letting go of a squeeze sends one more alternate element. Squeeze from a dah, release during the dit, and B sends <span class="morse">K</span> where A sends <span class="morse">N</span>.</li>
+        <li><strong>Ultimatic</strong>: a squeeze repeats whichever paddle you pressed last instead of alternating; release it and the other paddle takes over.</li>
+      </ul>
+      <p>Two fingers can hold both paddles at once. With a mouse or trackpad on a Mac you can hold only one paddle at a time, so squeezing needs a touchscreen.</p>
+
+      <h3 id="set-qso">QSO &amp; Pileups</h3>
+      <div class="tbl-wrap">
+        <table class="spec">
+          <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Your callsign</td><td>Used across the app, sent when you call CQ and work stations in <a href="#pileup">Pileup Runner</a> and <a href="#contest">Contest</a>, and drilled in <a href="#cw77">CW 77</a> when you include it. On Android it's also in Pileup Runner's setup.</td></tr>
+            <tr><td>Your name</td><td>Optional. Your first name, drilled in <a href="#cw77">CW 77</a> with your callsign when you turn on <strong>Include my callsign and name</strong>. Beside Your callsign; on Android it's also in Pileup Runner's setup, under Your call. On iOS the pair can be reached from Listen &amp; Learn's and Common Words' settings too.</td></tr>
+            <tr><td>Pileup Runner options</td><td>The exchange type, caller count and speeds, Farnsworth for callers, tone spread, QSB, QRN, wait times, cut numbers, bust behavior, give-up, key my side, re-calls after TU and callsign shapes, documented in the <a href="#pileup">Pileup Runner</a> section. On Android this is the same set of options as the Pileup Runner setup screen, and it appears from the home screen's Settings only.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="set-reminders">Reminders</h3>
+      <div class="tbl-wrap">
+        <table class="spec">
+          <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Daily reminder</td><td>A streak-aware daily nudge at a time you pick. To the minute on iPhone; on Android it can land a few minutes late, because the app deliberately doesn't ask for the exact-alarm permission.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="set-display">Display</h3>
+      <div class="tbl-wrap">
+        <table class="spec">
+          <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Slashed zero</td><td>Show <code>0</code> with a line through it, the operator's convention for telling zero from O.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="set-leaderboard">Leaderboard &amp; Buddy</h3>
+      <div class="tbl-wrap">
+        <table class="spec">
+          <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Share scores to the shared leaderboard</td><td>Off by default. With a display name set, finished runs in the ranked modes are posted to the <a href="#leaderboard">shared leaderboard</a>.</td></tr>
+            <tr><td>Display name</td><td>Two to twelve characters, shown in capitals. Also what a <a href="#buddy">buddy</a> sees.</td></tr>
+            <tr><td>Delete my scores</td><td>Removes everything the board holds about this device, including a buddy pairing.</td></tr>
+            <tr><td>Buddy streak</td><td>Invite a buddy, join with a code, or leave. See <a href="#buddy">Buddy streak</a>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="set-about">Help &amp; About</h3>
+      <div class="tbl-wrap">
+        <table class="spec">
+          <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Copy diagnostic info</td><td>Copies your app version, OS, device and current settings to the clipboard, ready to paste into a bug report.</td></tr>
+            <tr><td>About</td><td>Three links out of the app: <a href="/support/">Support the project</a>, the <a href="https://discord.gg/qgyk3TPUd9" rel="noopener">Discord</a>, and the source on GitHub. Both apps are free and open source with no ads, subscriptions or tracking; the support page is where a coffee for the developer lives.</td></tr>
+            <tr><td>Licenses</td><td>The app's GPL notice and the notices of the code it includes.</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <!-- HARDWARE -->
     <section id="hardware">
       <h2><span class="h2-mc">&minus;··&minus;</span>Hardware keys</h2>
-      <p class="guide-lead">You can key into the app with real hardware, not just the touch key.</p>
+      <p class="guide-lead">You can key into the app with real hardware, not just the touch key (a straight key or <a href="#paddles">paddles</a>).</p>
 
       <h3>MIDI keys</h3>
       <p>Connect a MIDI Morse key and it works anywhere the app accepts keying: <a href="#sending">Sending Practice</a>, the <a href="#analyzer">Sending Analyzer</a>, keyed quiz answers, <a href="#rapidfire">Rapid Fire</a>, <a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a> and <a href="#asteroids">CW Asteroids</a> in keying mode, <a href="#dungeon">CW Dungeon</a>&rsquo;s spells, and the <a href="#repeater">Repeater</a>. Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
@@ -1207,7 +1293,7 @@
       <ul>
         <li><strong>Input</strong>: your key, straight into the app.</li>
         <li><strong>Output</strong>: the app drives the adapter, so received code comes out of your own hardware.</li>
-        <li><strong>Keyer modes and speed</strong>: configured from within the app. Change the keyer mode, speed or tone in Settings and a connected adapter is reconfigured on the spot, whatever screen you're on.</li>
+        <li><strong>Keyer modes and speed</strong>: configured from within the app. Change the keyer mode (Settings › Keys &amp; Sending), speed or tone in Settings and a connected adapter is reconfigured on the spot, whatever screen you're on.</li>
         <li><strong>Sidetone</strong> and the <strong>RX piezo buzz</strong>, which you can turn off if it's not to your taste.</li>
       </ul>
 
