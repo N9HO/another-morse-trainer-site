@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Guide: Another Morse Trainer</title>
-<meta name="description" content="The complete manual for Another Morse Trainer: every training mode on iPhone and Android, what it's for, how to use it, plus settings, progress tracking and hardware key support.">
+<meta name="description" content="The complete manual for Another Morse Trainer: every training mode on iPhone, iPad, Mac and Android, what it's for, how to use it, plus settings, progress tracking and hardware key support.">
 <meta name="theme-color" content="#071B34">
 <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
 <meta property="og:title" content="Another Morse Trainer Guide">
@@ -35,7 +35,7 @@
 <section class="guide-hero">
   <p class="eyebrow"><span class="morse">·&#8202;&#8202;&#8202;&minus;</span>&nbsp; The manual</p>
   <h1>Everything in the app,<br>and <span class="accent">how to use it</span></h1>
-  <p class="lede">Twenty-eight ways to train, on iPhone and Android, from your first two letters to working a contest pileup, with a word-a-day puzzle and six arcade games among them. This page walks through each one: what it's for, when to reach for it, and how to get the most out of it. Skip to whatever you need.</p>
+  <p class="lede">Twenty-eight ways to train, on iPhone, iPad, Mac and Android, from your first two letters to working a contest pileup, with a word-a-day puzzle and six arcade games among them. This page walks through each one: what it's for, when to reach for it, and how to get the most out of it. Skip to whatever you need.</p>
 
   <div class="jump">
     <a href="#start"><b>New here?</b><span>Your first session, in five minutes.</span></a>
@@ -284,7 +284,7 @@
     <!-- HOME -->
     <section id="home">
       <h2><span class="h2-mc">····</span>The home screen</h2>
-      <p class="guide-lead">Every mode is one tap from the menu. Three icons sit in the top bar, above the tiles. (On iPhone and iPad the bar also carries shortcuts to the <a href="#repeater">Repeater</a>, <a href="#reference">Reference</a>, <a href="#drills">Sending Drills</a> and the <a href="#analyzer">Sending Analyzer</a> (the gauge); on Android those four are tiles like everything else.)</p>
+      <p class="guide-lead">Every mode is one tap from the menu. Three icons sit in the top bar, above the tiles. (On iPhone, iPad and Mac the bar also carries shortcuts to the <a href="#repeater">Repeater</a>, <a href="#reference">Reference</a>, <a href="#drills">Sending Drills</a> and the <a href="#analyzer">Sending Analyzer</a> (the gauge); on Android those four are tiles like everything else.)</p>
       <div class="tbl-wrap">
         <table class="spec">
           <thead><tr><th>Icon</th><th>Opens</th><th>What it's for</th></tr></thead>
@@ -990,7 +990,7 @@
       <h2><span class="h2-mc">···&minus;·</span>Sending Analyzer</h2>
       <div class="entry">
         <p class="entry-why">Send a whole text on your own key and find out exactly how it came out: which characters, and how good your spacing was.</p>
-        <p>The app shows a text, you send it, and it copies you the way a listener would. Then it lines up what it copied against the text and takes your timing apart. Open it from the gauge icon in the top bar on iPhone and iPad, or the <strong>Sending Analyzer</strong> tile on Android.</p>
+        <p>The app shows a text, you send it, and it copies you the way a listener would. Then it lines up what it copied against the text and takes your timing apart. Open it from the gauge icon in the top bar on iPhone, iPad and Mac, or the <strong>Sending Analyzer</strong> tile on Android.</p>
 
         <h3>Setting up</h3>
         <ul>
@@ -1129,7 +1129,7 @@
       <h3>What the score is</h3>
       <p>The board does not trust the number on your screen. The app sends a transcript of the run, what was sent, what you answered and how fast, and the server grades it: for every item you copied correctly it adds the speed that item was sent at. A run at a steady speed therefore scores <em>correct copies × effective WPM</em>, so a slow perfect run does not beat a fast, nearly perfect one. In the games, which speed up as you go, each hit counts at the speed it was sent. That is why <strong>a game's leaderboard score is not its on-screen score</strong>: the on-screen one includes waves, combos and other things only the game can see. In Morse Invaders, CW Galaga and CW Asteroids only the <em>hear it</em> mode is ranked; the <em>see it, key it</em> mode plays no Morse, so there is nothing for the board to grade. In Rapid Fire the listen-only response is not ranked for the same reason.</p>
       <h3>Why it is hard to cheat</h3>
-      <p>The app is open source, so nothing in it can be a secret. Trust comes from the device instead: an iPhone or iPad proves it is running the genuine App Store build with Apple's App Attest, and an Android phone proves the same with Google's Play Integrity. A build you compile yourself, a sideloaded APK, or a script pretending to be the app cannot post. Each run gets a one-time token from the server when it starts, so the server also knows how long the run took, and a run that claims more Morse than could have been sent in that time is thrown out. Only genuine builds on real devices can post; the iOS Simulator and Android emulators cannot.</p>
+      <p>The app is open source, so nothing in it can be a secret. Trust comes from the device instead: an iPhone or iPad proves it is running the genuine App Store build with Apple's App Attest, and an Android phone proves the same with Google's Play Integrity. A build you compile yourself, a sideloaded APK, or a script pretending to be the app cannot post. Each run gets a one-time token from the server when it starts, so the server also knows how long the run took, and a run that claims more Morse than could have been sent in that time is thrown out. Only genuine builds on real devices can post; the iOS Simulator and Android emulators cannot. A Mac that cannot attest can read the boards but not post to them, and says so when a run ends.</p>
       <h3>Your data</h3>
       <p>The board stores your display name, your best score per mode, the platform, and the run transcripts for thirty days. It never sees your name, email or account. <strong>Delete my scores</strong> in Settings › Leaderboard &amp; Buddy removes everything the board holds about this device, and you can switch sharing off at any time. Both apps do exactly the same; only the attestation mechanism differs by platform.</p>
     </section>
@@ -1304,10 +1304,14 @@
       <p>Connect a MIDI Morse key, wired or Bluetooth, or a <a href="#vail-adapter">Vail Adapter</a>, and it works anywhere the app accepts keying and anywhere you type an answer (see <a href="#hardware-modes">where a hardware key works</a>, below). Sending Practice shows a <strong>connected-key readout</strong> so you can confirm the app sees your hardware before wondering why nothing's happening.</p>
 
       <h3>Bluetooth LE MIDI keys</h3>
-      <p>Wireless keys work on <strong>both platforms</strong>. Android scans for them directly, with unplug detection.</p>
+      <p>Wireless keys work on <strong>every platform</strong>. Android scans for them directly, with unplug detection.</p>
       <div class="tip warn">
         <span class="tip-icon">iOS</span>
         <p>On iPhone and iPad, <strong>pairing the key in iOS Settings &gt; Bluetooth is not enough</strong>. iOS only hands a Bluetooth MIDI key to an app once something has connected it as a MIDI device, and only the system's own MIDI pairing sheet does that. Open that sheet from inside the app: the Vail adapter row in the <a href="#repeater">Repeater</a>, <a href="#sending">Sending Practice</a>, or the <a href="#analyzer">Sending Analyzer</a> with Key chosen. Until you do, the app will correctly report no MIDI adapter even though iOS shows the key as connected.</p>
+      </div>
+      <div class="tip">
+        <span class="tip-icon">Mac</span>
+        <p>On a Mac there is no pairing sheet inside the app; macOS connects Bluetooth MIDI keys for every app at once. Open <strong>Audio MIDI Setup</strong> (Applications › Utilities), choose <strong>Window › Show MIDI Studio</strong>, click the <strong>Bluetooth</strong> button in its toolbar, and click <strong>Connect</strong> next to your key. The same buttons that open the sheet on iPhone show these steps on the Mac. A USB key or a Vail Adapter needs none of this: plug it in and it works.</p>
       </div>
 
       <h3 id="vail-adapter">Vail Adapter</h3>
@@ -1333,6 +1337,7 @@
 
       <h3>Hardware keyboards</h3>
       <p>A paired keyboard works for answering the choice quizzes, <a href="#journey">Journey</a>, and <a href="#typeit">Type It</a>: type the answer and it's submitted. Much more comfortable than tapping for a long typing session.</p>
+      <p>On a Mac the keyboard is always there, so all of this works with nothing to pair, and so do the games' letter keys.</p>
     </section>
 
     <!-- FAQ -->
@@ -1343,6 +1348,7 @@
       <p><strong>iPhone and iPad:</strong> the beta is open to anyone, so
       <a href="https://testflight.apple.com/join/ZwXF88Gh" rel="noopener">join via TestFlight</a>
       and you'll get builds as they ship.</p>
+      <p><strong>Mac:</strong> the same app runs on the Mac, with one purchase covering both. The Mac build is not out yet; this page will link it when it is.</p>
       <p><strong>Android:</strong> it's free on
       <a href="https://play.google.com/store/apps/details?id=app.anothermorsetrainer" rel="noopener">Google Play</a>.</p>
 
@@ -1359,6 +1365,7 @@
 
       <h3>My MIDI key isn't doing anything.</h3>
       <p>Open <a href="#sending">Sending Practice</a> and look at the connected-key readout, which will tell you whether the app can see the hardware at all.</p>
+      <p><strong>On a Mac with a Bluetooth key,</strong> connect it once in Audio MIDI Setup; <a href="#hardware">the steps are here.</a></p>
       <p><strong>On iPhone or iPad with a Bluetooth key,</strong> this is almost always the same cause: pairing it in iOS Settings does not make it visible to apps. Open the MIDI pairing sheet from inside the app instead, via the Vail adapter row in the <a href="#repeater">Repeater</a> or via Sending Practice. <a href="#hardware">Full explanation here.</a></p>
       <p><strong>On Android,</strong> Bluetooth LE keys need Bluetooth permission granted.</p>
 
@@ -1395,7 +1402,7 @@
     <a href="https://github.com/N9HO/another-morse-trainer">another-morse-trainer</a>, one repository for both apps
   </p>
   <p class="footer-fine"><a href="/" style="color:var(--teal)">Home</a> &nbsp;·&nbsp; <a href="https://discord.gg/qgyk3TPUd9" style="color:var(--teal)" rel="noopener">Discord</a> &nbsp;·&nbsp; <a href="/privacy/" style="color:var(--teal)">Privacy</a></p>
-  <p class="footer-fine">A modern, open-source Morse code trainer for iPhone and Android. 73 &amp; good copy.</p>
+  <p class="footer-fine">A modern, open-source Morse code trainer for iPhone, iPad, Mac and Android. 73 &amp; good copy.</p>
 </footer>
 
 </body>
