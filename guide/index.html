@@ -41,7 +41,7 @@
     <a href="#start"><b>New here?</b><span>Your first session, in five minutes.</span></a>
     <a href="#method"><b>Why 33 WPM?</b><span>The two speeds, and which one to change.</span></a>
     <a href="#fasttrack"><b>On the air fast</b><span>The short path to your first contact.</span></a>
-    <a href="#modes"><b>The modes</b><span>All twenty-eight, grouped by what they're for.</span></a>
+    <a href="#modes"><b>The modes</b><span>All twenty-nine, grouped by what they're for.</span></a>
   </div>
 </section>
 
@@ -55,6 +55,7 @@
         <a href="#start">Getting started</a>
         <a href="#method">How the training works</a>
         <a href="#fasttrack">The fast track to the air</a>
+        <a href="#firstfour">First Four</a>
         <a href="#home">The home screen</a>
         <a href="#session">Running a session</a>
         <a href="#answering">Ways to answer</a>
@@ -136,7 +137,7 @@
 
       <div class="tip">
         <span class="tip-icon">AIM</span>
-        <p>Have a target beyond "learn Morse". The best one is a real contact, and it needs far less than the full alphabet. See <a href="#fasttrack">the fast track to the air</a>. People who aim at a contact tend to get there; people who aim at finishing the alphabet often stall.</p>
+        <p>Have a target beyond "learn Morse". The best one is a real contact, and it needs far less than the full alphabet. See <a href="#fasttrack">the fast track to the air</a>, and <a href="#firstfour">First Four</a>, which walks you through it; the first-run screen offers it too. People who aim at a contact tend to get there; people who aim at finishing the alphabet often stall.</p>
       </div>
 
       <h3>If you already know some Morse</h3>
@@ -274,10 +275,39 @@
       </div>
 
       <h3>Rehearsing it in the app first</h3>
+      <p><a href="#firstfour">First Four</a> is this section as a lesson: your call, your state, <span class="morse">?</span> and <span class="morse">73</span>, heard and sent, then a busted call, a call nobody answers, and the whole hunter-side contact. Start there.</p>
       <p><a href="#pileup">Pileup Runner</a> → <strong>POTA Activator</strong> puts you on the <em>activator's</em> side, working hunters. That's the harder job, so it over-prepares you for hunting, but it drills precisely the vocabulary above: calls, reports and states, over and over. Run it with <strong>one caller</strong> and no QSB or QRN and it becomes a clean rehearsal of the exchange you're about to have for real.</p>
       <div class="tip warn">
         <span class="tip-icon">NOTE</span>
         <p>Everything in this section assumes you hold a license permitting CW on the band you're using. The app itself needs no license, and the <a href="#repeater">Repeater</a> is a fine place to have your first live exchange with a real human if you aren't licensed yet, or aren't ready to key up on the air.</p>
+      </div>
+    </section>
+
+    <!-- FIRST FOUR -->
+    <section id="firstfour">
+      <h2><span class="h2-mc">··&minus;·</span>First Four</h2>
+      <div class="entry">
+        <p class="entry-why">The fast track above, as a guided lesson: just enough CW to hunt one POTA activator, and nothing more.</p>
+        <p>Open it from the <strong>First Four</strong> card on the home screen, just under "Start here", or from the first-run screen's <strong>Or learn just enough for your first POTA contact</strong>, which records your answer to the proficiency question exactly as <strong>Start practicing</strong> does and then opens First Four. Enter your <strong>callsign</strong> and your <strong>state</strong> (or province) the first time; they're saved as <strong>Your callsign</strong> and <strong>Your state</strong> in <a href="#set-qso">Settings › QSO &amp; Pileups</a>, and <strong>Change</strong> on the stage list edits them. The W1AW placeholder doesn't count as a callsign.</p>
+        <p>There are seven stages. Any of them can be opened at any time from the list; <strong>Begin</strong> / <strong>Continue</strong> takes you to the first one you haven't passed, and each stage's <strong>Next</strong> button follows the list.</p>
+        <div class="tbl-wrap">
+          <table class="spec">
+            <thead><tr><th>Stage</th><th>What you do</th><th>Passes when</th></tr></thead>
+            <tbody>
+              <tr><td>1. Your call</td><td><strong>Copy</strong>: hear it and type it. Then <strong>Send</strong>: key it.</td><td>3 right in a row copying, then 3 right in a row sending</td></tr>
+              <tr><td>2. Your state</td><td>The same, with your state</td><td>The same</td></tr>
+              <tr><td>3. ? &mdash; say again</td><td>The same, with <span class="morse">?</span></td><td>The same</td></tr>
+              <tr><td>4. 73 &mdash; best regards</td><td>The same, with <span class="morse">73</span></td><td>The same</td></tr>
+              <tr><td>5. Busted call</td><td>You call; the activator sends back only part of it (<span class="morse">N9?</span>, <span class="morse">N9H?</span>) or a bare <span class="morse">?</span>. You send your full call and wait for them to come back to you.</td><td>3 clean rounds</td></tr>
+              <tr><td>6. No reply</td><td>Two scenes. In the first nobody answers: that's normal, so you call again. In the second they answer someone else: you tap <strong>Wait and listen</strong> rather than keying over their contact, then call again when they send <span class="morse">QRZ</span>.</td><td>Each scene once, clean</td></tr>
+              <tr><td>7. The whole contact</td><td>They call <span class="morse">CQ POTA</span>, you send your call, they send your call, <span class="morse">5NN</span> and their state (you type the state), you send <span class="morse">5NN</span>, your state and <span class="morse">73</span>, and they sign off.</td><td>2 clean runs</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>A miss resets a copy or send count to zero. In the scenes a slip doesn't end the run: the screen says what went wrong and waits for another try, but only a run with no slips counts. Sending your call twice (<span class="morse">N9HO N9HO</span>) is accepted wherever your call is asked for, and word spacing is ignored both when you type and when you key, since it's the part of a beginner's fist the decoder is least sure of.</p>
+        <p>Everything plays at <strong>your own speed and tone</strong> from Settings. You send on the on-screen key (straight key or paddles, per <a href="#set-keys">Settings</a>) or a <a href="#hardware">hardware key</a>; the answer submits itself once you've keyed enough characters and stopped, or tap <strong>Submit</strong>. The activators are fictional, a different one each run.</p>
+        <p>Pass the last stage and First Four ends with a note worth repeating here: a first CW contact is a big deal, for you and often for the activator too. Afterwards, follow up &mdash; a QSL card, an email, or just a thank-you note. Many activators love hearing they were someone's first.</p>
+        <p>First Four is a tutorial, not a scored mode: it isn't recorded as a session in <a href="#progress">Progress</a> and isn't on the <a href="#leaderboard">leaderboard</a>. An answer in it does count as a practice day for your <a href="#progress">streak</a>. <strong>Start over</strong>, at the bottom of the stage list, clears the stages and keeps your callsign and state.</p>
       </div>
     </section>
 
@@ -295,7 +325,7 @@
           </tbody>
         </table>
       </div>
-      <p>Under the header sit two cards. <strong><a href="#dailydit">Daily Dit</a></strong> is today's puzzle, and the card tells you where you stand: the puzzle number, how many guesses and listens you've spent, or the speed you got it at. <strong>New to Morse? Start here</strong> opens a condensed, in-app version of the opening sections of this guide: how to begin, why the code sounds fast, and what good looks like week by week. It stays there; it's as useful in week three as on day one.</p>
+      <p>Under the header sit three cards. <strong><a href="#dailydit">Daily Dit</a></strong> is today's puzzle, and the card tells you where you stand: the puzzle number, how many guesses and listens you've spent, or the speed you got it at. <strong>New to Morse? Start here</strong> opens a condensed, in-app version of the opening sections of this guide: how to begin, why the code sounds fast, and what good looks like week by week. It stays there; it's as useful in week three as on day one. <strong><a href="#firstfour">First Four</a></strong> is the guided path to your first POTA contact; the card shows how many of its seven stages you've passed.</p>
       <p>Below that, the training tiles run roughly in learning order: <strong>Journey</strong> first, then the six choice-quiz modes with <a href="#cw77-mode">CW 77</a> beside Common Words, then the speed and operating modes, then the tools, with a single <strong>Games</strong> tile at the end. That tile opens the arcade games on their own screen &mdash; <a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a>, <a href="#defender">Morse Defender</a>, <a href="#dungeon">CW Dungeon</a>, <a href="#frogger">CW Frogger</a> and <a href="#asteroids">CW Asteroids</a> &mdash; so the main menu stays short as games are added, with a <strong>Shared leaderboard</strong> entry at the bottom that opens the <a href="#leaderboard">board</a> for browsing; Back from a game returns you to that screen. The mid-session mode switcher lists the games under a Games heading too. You can jump anywhere at any time; nothing is locked behind anything else.</p>
     </section>
 
@@ -359,7 +389,7 @@
     <!-- ============ MODES ============ -->
     <section id="modes">
       <h2><span class="h2-mc">&minus;·&minus;</span>The modes</h2>
-      <p class="guide-lead">Twenty-eight of them. They're grouped here the way you'd actually grow into them, but nothing is gated, so use whatever you want whenever you want.</p>
+      <p class="guide-lead">Twenty-nine of them, counting <a href="#firstfour">First Four</a> up with the fast track. They're grouped here the way you'd actually grow into them, but nothing is gated, so use whatever you want whenever you want.</p>
     </section>
 
     <!-- JOURNEY -->
@@ -1244,6 +1274,7 @@
           <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
           <tbody>
             <tr><td>Your callsign</td><td>Used across the app, sent when you call CQ and work stations in <a href="#pileup">Pileup Runner</a> and <a href="#contest">Contest</a>, and drilled in <a href="#cw77">CW 77</a> when you include it. On Android it's also in Pileup Runner's setup.</td></tr>
+            <tr><td>Your state</td><td>Optional. Your state or province abbreviation, taught and sent as your exchange in <a href="#firstfour">First Four</a>, which asks for it the first time. Beside Your callsign; on Android it's also in Pileup Runner's setup, under Your name.</td></tr>
             <tr><td>Your name</td><td>Optional. Your first name, drilled in <a href="#cw77">CW 77</a> with your callsign when you turn on <strong>Include my callsign and name</strong>. Beside Your callsign; on Android it's also in Pileup Runner's setup, under Your call. On iOS the pair can be reached from Listen &amp; Learn's, Common Words' and CW 77's settings too.</td></tr>
             <tr><td>Pileup Runner options</td><td>The exchange type, caller count and speeds, Farnsworth for callers, tone spread, QSB, QRN, wait times, cut numbers, bust behavior, give-up, key my side, re-calls after TU and callsign shapes, documented in the <a href="#pileup">Pileup Runner</a> section. On Android this is the same set of options as the Pileup Runner setup screen, and it appears from the home screen's Settings only.</td></tr>
           </tbody>
@@ -1355,7 +1386,7 @@
       <a href="https://play.google.com/store/apps/details?id=app.anothermorsetrainer" rel="noopener">Google Play</a>.</p>
 
       <h3>Does it work on an iPad or an Android tablet?</h3>
-      <p>Yes, as a proper tablet app, not a blown-up phone. Both turn to any orientation and run side by side with another app: Split View, Slide Over and resizable windows on iPad, split screen and freeform windows on Android. On a big screen the home menu shows its tiles four across, with Daily Dit and Start here side by side, and the drills, quizzes and text keep a comfortable reading width instead of stretching edge to edge. In a narrow window you get the phone layout.</p>
+      <p>Yes, as a proper tablet app, not a blown-up phone. Both turn to any orientation and run side by side with another app: Split View, Slide Over and resizable windows on iPad, split screen and freeform windows on Android. On a big screen the home menu shows its tiles four across, with Daily Dit beside Start here and First Four, and the drills, quizzes and text keep a comfortable reading width instead of stretching edge to edge. In a narrow window you get the phone layout.</p>
       <p>On iPad, <a href="#settings">Settings</a> opens with its categories in a sidebar beside the one you're in, <a href="#progress">Progress</a> lists your characters and confused pairs two to a row, and the on-screen key is bigger. A keyboard works for answering as described under <a href="#hardware">Hardware keyboards</a>, and a Bluetooth MIDI key pairs the same way as on iPhone.</p>
 
       <h3>It's too fast. Can I slow it down?</h3>
