@@ -1,7 +1,7 @@
 # Another Morse Trainer: website
 
 Landing page and user guide for **Another Morse Trainer**, a modern Morse code
-(CW) trainer for **iPhone and Android**.
+(CW) trainer for **iPhone and Android**, with **Mac, Windows and Linux** in beta.
 
 > Learn Morse. Hear Progress.
 
@@ -55,6 +55,22 @@ The two hero badges track where each app actually is:
 dimmed and non-interactive, for a store that is not public yet. When the App
 Store listing goes live, swap the TestFlight badge for it the same way and
 update the `.store-note` paragraph underneath.
+
+### Desktop downloads (beta)
+
+Under the store badges, `.desktop-dl` (`#download`) holds three `.dl-card`s:
+Mac, Windows and Linux (AppImage, plus a smaller Flatpak link). The guide's
+`#downloads` section repeats the same cards with install steps. The Windows
+and Linux files are assets on the GitHub pre-release `desktop-v1.0.0-beta1`:
+
+- Mac: the TestFlight beta, <https://testflight.apple.com/join/ZwXF88Gh> (no Mac file on the GitHub release)
+- Windows: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-v1.0.0-beta1/AnotherMorseTrainer-Windows-x64.msi>
+- Linux AppImage: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-v1.0.0-beta1/AnotherMorseTrainer-Linux-x86_64.AppImage>
+- Linux Flatpak: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-v1.0.0-beta1/AnotherMorseTrainer-Linux-x86_64.flatpak>
+- Release page: <https://github.com/N9HO/another-morse-trainer/releases/tag/desktop-v1.0.0-beta1>
+
+For a new release, change the tag in every one of these links: `index.html`
+and `guide/index.html` (search for `desktop-v`). The file names stay the same.
 
 Links used in the hero, nav, footer and guide FAQ:
 
