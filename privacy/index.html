@@ -44,14 +44,15 @@
 <main>
 <article class="legal">
   <h1>Privacy Policy</h1>
-  <p class="date">Effective date: September 11, 2026 (previous version: August 29, 2026)</p>
+  <p class="date">Effective date: October 6, 2026 (previous version: September 11, 2026)</p>
 
   <p class="lead">Another Morse Trainer (“the app”) is a Morse code learning app.
-  The short version: <strong>the app has no accounts, ads, or analytics, and
-  sends nothing about you anywhere unless you switch on the optional shared
-  leaderboard.</strong> If you do, it sends the run you just finished and a
-  display name you chose, and nothing else; the section below says exactly
-  what and how to delete it.</p>
+  The short version: <strong>the app has no ads or analytics, and sends
+  nothing about you anywhere unless you sign in to the optional account or
+  switch on the optional shared leaderboard.</strong> The account syncs your
+  own training progress between your devices; the leaderboard sends the run
+  you just finished and a display name you chose. The sections below say
+  exactly what each sends and how to delete it.</p>
 
   <h2>Information the app stores</h2>
   <p>The app stores the following <strong>only on your device</strong>, in the
@@ -62,8 +63,9 @@
     <li>Your practice progress (daily streak, session history, and per-character
         recognition times).</li>
   </ul>
-  <p>This information never leaves your device, is not sent to the developer or
-  any third party, and is deleted when you uninstall the app.</p>
+  <p>Unless you sign in to the optional <a href="#account">account</a>, this
+  information never leaves your device, is not sent to the developer or any
+  third party, and is deleted when you uninstall the app.</p>
 
   <h2>Microphone</h2>
   <p>The app requests microphone access for three optional features, all off
@@ -159,21 +161,77 @@
   for you. Scores may be removed by the developer if they were not produced by
   genuinely playing.</p>
 
+  <h2 id="account">Optional account and sync (signed out by default)</h2>
+  <p>Settings › Account &amp; Sync lets you sign in so that your progress is
+  the same on every device you use the app on, and comes back on a new one.
+  Nothing in this section happens unless you sign in, and every feature of
+  the app works without an account. The account service is run by the
+  developer on Cloudflare’s Workers and D1 services.</p>
+  <p>Signing in asks for <strong>your email address</strong> and emails you a
+  one-time link (through the email provider Resend). There is no password.
+  Once you are signed in, the account stores:</p>
+  <ul>
+    <li><strong>Your email address and an account id</strong> the server
+        assigns.</li>
+    <li><strong>A callsign and display name</strong>, only if you enter them.
+        They are not public: they are shown to you, and to another app only if
+        you let that app read your statistics.</li>
+    <li><strong>Your training sessions</strong>: for each, the date, the mode,
+        the speeds, how many answers and how many correct, recognition times,
+        the duration, the mode’s score, and per-character results.</li>
+    <li><strong>Your practice days</strong>: for each calendar day and device,
+        how many seconds you practiced (the newest 400 days).</li>
+    <li><strong>Your course progress</strong>: your Journey level, your place on
+        the Characters ladder, First Four and CW Operating Procedure progress,
+        and your Short Stories bookmarks.</li>
+    <li><strong>The devices you are signed in on</strong>: the app’s name, the
+        device’s own name (for example “Hiram’s iPhone”), the platform, and when
+        it signed in and was last seen, so you can see and sign out each one.</li>
+  </ul>
+  <p>From these the server works out your totals, personal bests and streak.
+  Your settings, location, contacts and anything about other apps are never
+  sent. Your account is private: it is not shown to other users and does not
+  feed the public leaderboard. It is not used for advertising, tracking or
+  analytics, and it is not sold or shared, except with Cloudflare and Resend
+  as the developer’s service providers. The data is kept until you delete it.</p>
+  <p><strong>Other apps.</strong> You can choose to let another app (for
+  example a logging app) read your training statistics by signing in to it
+  with the same emailed link; the email says which app is asking and what it
+  will see. Such an app can only read your own statistics, never change
+  anything and never see your email address, and it appears in your devices
+  list, where you can sign it out at any time.</p>
+  <h3 id="delete-account">Deleting your account</h3>
+  <p>In the app, open Settings › Account &amp; Sync and choose <strong>Delete
+  account</strong>. After you confirm, the account and everything synced to it
+  (your email address, sessions, practice days, progress, profile and devices)
+  are deleted from the server immediately and for good. What is stored on your
+  own device stays until you clear it with Reset progress or uninstall the
+  app. If you no longer have the app, email
+  <a href="mailto:jus.k.rog@gmail.com">jus.k.rog@gmail.com</a> from the
+  address you signed in with and ask for your account to be deleted; it will
+  be deleted within 30 days and you will get a reply when it is done.
+  <strong>Sign out</strong> on its own only signs that device out and deletes
+  nothing.</p>
   <h2>Notifications</h2>
   <p>If you enable the daily practice reminder, the app schedules a local
   notification on your device. No notification data is sent anywhere.</p>
 
   <h2>Children</h2>
-  <p>The app is suitable for all ages and does not knowingly collect any personal
-  information from anyone, including children.</p>
+  <p>The app is suitable for all ages. The optional account collects an email
+  address, as described above; no other personal information is collected
+  from anyone, and the account is never required. A parent who believes a
+  child has created an account can delete it in the app or by email as
+  described under <a href="#delete-account">Deleting your account</a>.</p>
 
   <h2>Third parties</h2>
   <p>The app contains no advertising, no analytics, and no third-party tracking
   SDKs. The Android app includes Google’s Play Integrity library, used only to
   produce the attestation described above and only when the leaderboard is on;
   the iOS app uses Apple’s built-in App Attest for the same purpose. The
-  leaderboard server runs on Cloudflare, which processes the requests as the
-  developer’s hosting provider.</p>
+  leaderboard and account servers run on Cloudflare, which processes the
+  requests as the developer’s hosting provider, and the account’s sign-in
+  emails are sent through Resend, which receives your email address and the
+  message for that purpose only.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the updated version will be posted on this page with
