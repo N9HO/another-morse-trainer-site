@@ -109,6 +109,7 @@
         <a href="#progress">Progress &amp; stats</a>
         <a href="#leaderboard">Shared leaderboard</a>
         <a href="#buddy">Buddy streak</a>
+        <a href="#account">Account &amp; sync</a>
         <a href="#settings">Settings reference</a>
         <a href="#hardware">Hardware keys</a>
         <a href="#faq">Troubleshooting</a>
@@ -211,7 +212,7 @@
       <h3>What's different on desktop</h3>
       <ul>
         <li><strong>Mac:</strong> everything in this guide applies, with a keyboard always to hand. A Bluetooth MIDI key is connected once in macOS's <strong>Audio MIDI Setup</strong> rather than a pairing sheet in the app; <a href="#hardware">the steps are under Hardware keys</a>. A USB key or a <a href="#vail-adapter">Vail Adapter</a> just plugs in.</li>
-        <li><strong>Windows and Linux:</strong> USB MIDI keys and the Vail Adapter work, but <strong>Bluetooth keys don't pair</strong>. There are no <strong>voice answers</strong> and no <strong>daily reminder</strong>. Scores are <strong>unranked</strong>: the <a href="#leaderboard">shared leaderboard</a> only accepts runs a phone can prove came from a genuine install, so desktop runs count toward your personal bests and you can still browse the boards. <a href="#buddy">Buddy streaks</a> rely on the same proof and aren't available either.</li>
+        <li><strong>Windows and Linux:</strong> USB MIDI keys and the Vail Adapter work, but <strong>Bluetooth keys don't pair</strong>. There are no <strong>voice answers</strong> and no <strong>daily reminder</strong>. Scores are <strong>unranked</strong>: the <a href="#leaderboard">shared leaderboard</a> only accepts runs a phone can prove came from a genuine install, so desktop runs count toward your personal bests and you can still browse the boards. <a href="#buddy">Buddy streaks</a> rely on the same proof and aren't available either. The <a href="#account">account and sync</a> need no such proof and work the same as on a phone.</li>
       </ul>
     </section>
 
@@ -1258,6 +1259,7 @@
             <tr><td>Session history</td><td>Every past session, each with its duration, fastest copy, character and effective speed, and its own recognition chart on its detail screen. The effective speed is the one the session actually played at: your Farnsworth speed only while the switch was on, the license speed for a Code Exam, and never for QRQ, which ignores Farnsworth.</td></tr>
             <tr><td>Personal bests</td><td>Fastest copy, best session accuracy, biggest session, characters mastered, and your best score in each mode that keeps one: every arcade game's score, Contest's points, Pileup Runner's QSOs worked, and Rapid Fire's correct copies. A mode appears once you've played it; the bests are kept for good, not just while the session is in the history. On iPhone, iPad and Mac the card is on the Brag Sheet; on Android it is on the Progress screen.</td></tr>
             <tr><td>Brag Sheet</td><td>A shareable summary card of where you've got to: streak, lifetime totals, personal bests, and the Characters stage you're on. It appears once you've finished a first session.</td></tr>
+            <tr><td>Signed in</td><td>With an <a href="#account">account</a>, the streak, the activity grid, the lifetime totals and the personal bests count every device you train on, and a new install shows them in full, including totals from sessions older than the hundred kept in the list.</td></tr>
             <tr><td>Leaderboard</td><td>The <a href="#leaderboard">shared leaderboard</a>: the top fifty in each ranked mode across both apps, read-only here, and the place your own runs land once you opt in.</td></tr>
           </tbody>
         </table>
@@ -1294,12 +1296,39 @@
       <p><strong>Your data.</strong> Pairing uses the same device attestation as the <a href="#leaderboard">shared leaderboard</a> and your leaderboard display name, which is what your buddy sees, along with whether you practiced each day. Nothing else. <strong>Delete my scores</strong> in Settings › Leaderboard &amp; Buddy removes the pairing and your practice days along with everything else the server holds for this device.</p>
     </section>
 
+    <!-- ACCOUNT -->
+    <section id="account">
+      <h2><span class="h2-mc">·&minus;&minus;·</span>Account &amp; sync</h2>
+      <p class="guide-lead">An optional account that keeps your progress the same on every device you train on, and brings it back on a new one. Nothing changes until you sign in.</p>
+      <p>Everything in the app works without an account. Sign in when you want your iPhone, iPad, Mac, Android phone and desktop computer to share one history, or to move to a new device without starting over. It works between all of them: practice on the phone in the morning and the Mac at night, and both show the same streak.</p>
+      <h3>Signing in</h3>
+      <p>Settings › Account &amp; Sync. Type your email address and tap <strong>Send link</strong>. The app says <em>Check your email on any device and tap Confirm</em> and waits. Open the email (on the phone, a computer, anywhere), tap its link, and press <strong>Confirm</strong> on the page that opens. The app finishes signing in by itself a few seconds later. There is no password. The link works for fifteen minutes and only once; if it runs out, the app says so and offers to send another. <strong>Cancel</strong> stops waiting.</p>
+      <p>The email names the device that asked, so if you get one you didn't ask for, ignore it: nobody can sign in without the app that started it, even with the link. Opening the link alone does nothing; only the Confirm button signs in.</p>
+      <h3>What syncs</h3>
+      <div class="tbl-wrap">
+        <table class="spec">
+          <thead><tr><th>Synced</th><th>Not synced</th></tr></thead>
+          <tbody>
+            <tr><td>Every session, with its per-character results</td><td>Mode, sound, speed and key settings</td></tr>
+            <tr><td>Practice days and minutes (the activity grid) and your streak</td><td>The leaderboard and buddy streak, which keep their own per-device identity</td></tr>
+            <tr><td>Lifetime totals and personal bests</td><td>Answer-entry ladders, voice profiles, reminder times</td></tr>
+            <tr><td>Course progress: your Journey level, the Characters ladder, First Four, CW Operating Procedure and Short Stories bookmarks</td><td>Per-character stats, confused pairs and Sending Analyzer results, which stay on each device</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>How two devices merge.</strong> Sessions only ever add up: nothing on one device overwrites anything on another. Practice time on the same day adds up across devices, in your own time zone's calendar day. Course progress follows the most recent change, so the device you trained on last sets your Journey level. Signing in on a device that already has practice keeps it and adds it to the account; signing in on a new install brings everything back, including totals and bests from sessions older than the hundred each device keeps in its list.</p>
+      <p>Sync runs by itself when the app opens, when it comes back to the front and after each session. It never interrupts training, and a session finished offline is sent the next time there is a connection. The <strong>Last synced</strong> line and <strong>Sync now</strong> are there if you want to check.</p>
+      <h3>Devices, signing out and deleting</h3>
+      <p><strong>Devices</strong> lists every device and app signed in to your account, with when it was last seen, and lets you sign out any of them from here. That includes another app you have let read your stats, such as a logging app; it can only read your own statistics and can't change anything. <strong>Sign out</strong> signs this device out and keeps everything on it. <strong>Delete account</strong>, after a confirmation, deletes the account and everything synced to it from the server, for good. It does not touch what is on this device; to clear that too, use Reset progress.</p>
+      <p>If the app is ever signed out by the server (say you signed it out from another device), Account &amp; Sync says so with a line asking you to sign in again. The privacy policy lists <a href="/privacy/#account">exactly what the account stores</a>.</p>
+    </section>
+
     <!-- SETTINGS -->
     <section id="settings">
       <h2><span class="h2-mc">&minus;&minus;&minus;</span>Settings reference</h2>
       <p class="guide-lead">The gear icon on the home screen. Settings opens on a list of categories with a search field at the top; tap a category for its settings. Mid-session, the Settings button shows only the categories and settings that apply to the mode you're running.</p>
       <p><strong>Search.</strong> Type into the search field and the list becomes every matching setting, with the category it lives in. It matches names and the words you are likely to reach for, so <em>pitch</em> finds the sidetone, <em>paddle</em> finds the keyer mode and <em>vibrate</em> finds haptics. Tap a result and the app opens that category scrolled to it, with the setting briefly highlighted.</p>
-      <p>The categories, in order, are the same on iPhone, iPad, Mac and Android: <a href="#set-sound">Sound</a>, <a href="#set-speed">Speed &amp; Timing</a>, <a href="#set-characters">Characters &amp; Lessons</a>, <a href="#set-practice">Practice &amp; Feedback</a>, <a href="#set-keys">Keys &amp; Sending</a>, <a href="#set-qso">QSO &amp; Pileups</a>, <a href="#set-reminders">Reminders</a>, <a href="#set-display">Display</a>, <a href="#set-leaderboard">Leaderboard &amp; Buddy</a> and <a href="#set-about">Help &amp; About</a>. Where a setting is on only one app, the table says so. On an iPad the categories stay in a sidebar on the left and the one you pick opens beside them; on a phone, or an iPad window too narrow for both, each category opens over the list.</p>
+      <p>The categories, in order, are the same on iPhone, iPad, Mac, Android and desktop: <a href="#set-sound">Sound</a>, <a href="#set-speed">Speed &amp; Timing</a>, <a href="#set-characters">Characters &amp; Lessons</a>, <a href="#set-practice">Practice &amp; Feedback</a>, <a href="#set-keys">Keys &amp; Sending</a>, <a href="#set-qso">QSO &amp; Pileups</a>, <a href="#set-reminders">Reminders</a>, <a href="#set-display">Display</a>, <a href="#set-leaderboard">Leaderboard &amp; Buddy</a>, <a href="#set-account">Account &amp; Sync</a> and <a href="#set-about">Help &amp; About</a>. Where a setting is on only one app, the table says so. On an iPad the categories stay in a sidebar on the left and the one you pick opens beside them; on a phone, or an iPad window too narrow for both, each category opens over the list.</p>
 
       <h3 id="set-sound">Sound</h3>
       <div class="tbl-wrap">
@@ -1430,6 +1459,18 @@
             <tr><td>Delete my scores</td><td>Removes everything the board holds about this device, including a buddy pairing.</td></tr>
             <tr><td>Buddy streak</td><td>Invite a buddy, join with a code, or leave. See <a href="#buddy">Buddy streak</a>.</td></tr>
             <tr><td>Show buddy line on home screen</td><td>On by default. Off hides the buddy line on the home screen, and nothing else: the buddy list here and the daily reminder's nudge stay. The line only ever appears while you have a buddy.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="set-account">Account &amp; Sync</h3>
+      <div class="tbl-wrap">
+        <table class="spec">
+          <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Account</td><td>Signed out: your email and <strong>Send link</strong> to sign in. Signed in: your email, an editable callsign (three to sixteen letters, digits or slashes, in capitals) and display name (two to twenty-four characters), when it last synced, <strong>Sync now</strong> and <strong>Sign out</strong>. See <a href="#account">Account &amp; sync</a>.</td></tr>
+            <tr><td>Devices</td><td>Every device and app signed in to your account, with a Sign out for each of the others.</td></tr>
+            <tr><td>Delete account</td><td>Deletes the account and everything synced to it from the server, after a confirmation. What is on this device stays.</td></tr>
           </tbody>
         </table>
       </div>
