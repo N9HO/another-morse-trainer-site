@@ -50,7 +50,7 @@
   The short version: <strong>the app has no ads or analytics, and sends
   nothing about you anywhere unless you sign in to the optional account or
   switch on the optional shared leaderboard.</strong> The account syncs your
-  own training progress between your devices; the leaderboard sends the run
+  own training progress and training settings between your devices; the leaderboard sends the run
   you just finished and a display name you chose. The sections below say
   exactly what each sends and how to delete it.</p>
 
@@ -162,8 +162,9 @@
   genuinely playing.</p>
 
   <h2 id="account">Optional account and sync (signed out by default)</h2>
-  <p>Settings › Account &amp; Sync lets you sign in so that your progress is
-  the same on every device you use the app on, and comes back on a new one.
+  <p>Settings › Account &amp; Sync lets you sign in so that your progress and
+  training settings are the same on every device you use the app on, and come
+  back on a new one.
   Nothing in this section happens unless you sign in, and every feature of
   the app works without an account. The account service is run by the
   developer on Cloudflare’s Workers and D1 services.</p>
@@ -184,13 +185,19 @@
     <li><strong>Your course progress</strong>: your Journey level, your place on
         the Characters ladder, First Four and CW Operating Procedure progress,
         and your Short Stories bookmarks.</li>
+    <li><strong>Your training settings</strong>, only the ones you have changed:
+        speeds, tone pitch, session and drill options, the word list you typed,
+        each mode’s set-up, and the station details you entered for the Pileup
+        Runner, Contest, CW 77 and First Four (callsign, optional first name,
+        state or province). Not device settings such as sound output, haptics,
+        keys or reminders, and not the leaderboard switch.</li>
     <li><strong>The devices you are signed in on</strong>: the app’s name, the
         device’s own name (for example “Hiram’s iPhone”), the platform, and when
         it signed in and was last seen, so you can see and sign out each one.</li>
   </ul>
   <p>From these the server works out your totals, personal bests and streak.
-  Your settings, location, contacts and anything about other apps are never
-  sent. Your account is private: it is not shown to other users and does not
+  Your device settings, location, contacts and anything about other apps are
+  never sent. Your account is private: it is not shown to other users and does not
   feed the public leaderboard. It is not used for advertising, tracking or
   analytics, and it is not sold or shared, except with Cloudflare and Resend
   as the developer’s service providers. The data is kept until you delete it.</p>
@@ -203,7 +210,8 @@
   <h3 id="delete-account">Deleting your account</h3>
   <p>In the app, open Settings › Account &amp; Sync and choose <strong>Delete
   account</strong>. After you confirm, the account and everything synced to it
-  (your email address, sessions, practice days, progress, profile and devices)
+  (your email address, sessions, practice days, progress, settings, profile
+  and devices)
   are deleted from the server immediately and for good. What is stored on your
   own device stays until you clear it with Reset progress or uninstall the
   app. If you no longer have the app, email
