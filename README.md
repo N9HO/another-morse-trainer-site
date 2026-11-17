@@ -1,7 +1,7 @@
 # Another Morse Trainer: website
 
 Landing page and user guide for **Another Morse Trainer**, a modern Morse code
-(CW) trainer for **iPhone and Android**.
+(CW) trainer for **iPhone and Android**, with **Mac, Windows and Linux** in beta.
 
 > Learn Morse. Hear Progress.
 
@@ -19,7 +19,7 @@ python3 -m http.server 4178
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Landing page: hero, features, all 29 modes grouped by purpose, a "Why I did this" note from the developer |
+| `index.html` | Landing page: hero, features, all 31 modes grouped by purpose, a "Why I did this" note from the developer |
 | `guide/index.html` | The user manual: every mode, setting, hardware option, and the FAQ covering how to get the app |
 | `privacy/index.html` | Privacy policy (linked from both app store listings) |
 | `styles.css` | Navy / teal / white theme, responsive layout, guide layout |
@@ -34,7 +34,7 @@ app repos. It's organised as:
 
 - **Basics**: getting started, how Koch / time-to-recognize / Farnsworth work,
   the home screen, running a session, the four ways to answer
-- **The modes**: all twenty-nine (Daily Dit, First Four and the six arcade games among them), grouped as learn the
+- **The modes**: all thirty-one (Daily Dit, The Daily DiDaaaaahDit, First Four and the seven arcade games among them), grouped as learn the
   characters · copy real content · build speed · get on the air · send, decode &
   look up
 - **Reference**: progress & stats, every setting, hardware keys, troubleshooting
@@ -55,6 +55,22 @@ The two hero badges track where each app actually is:
 dimmed and non-interactive, for a store that is not public yet. When the App
 Store listing goes live, swap the TestFlight badge for it the same way and
 update the `.store-note` paragraph underneath.
+
+### Desktop downloads (beta)
+
+Under the store badges, `.desktop-dl` (`#download`) holds three `.dl-card`s:
+Mac, Windows and Linux (AppImage, plus a smaller Flatpak link). The guide's
+`#downloads` section repeats the same cards with install steps. The files are
+assets on GitHub pre-releases (Windows and Linux: `desktop-beta-v2.0.0-b4`; Mac: `desktop-v2.0.0-beta1`):
+
+- Mac: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-v2.0.0-beta1/AnotherMorseTrainer-Mac.zip> (Developer ID, notarized), with the TestFlight beta <https://testflight.apple.com/join/ZwXF88Gh> as the alternative
+- Windows: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-beta-v2.0.0-b4/AnotherMorseTrainer-2.0.0-b4-windows-x64.msi>
+- Linux AppImage: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-beta-v2.0.0-b4/AnotherMorseTrainer-2.0.0-b4-linux-x86_64.AppImage>
+- Linux Flatpak: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-beta-v2.0.0-b4/AnotherMorseTrainer-2.0.0-b4-linux-x86_64.flatpak>
+- Release page: <https://github.com/N9HO/another-morse-trainer/releases>
+
+For a new release, change the tag in every one of these links: `index.html`
+and `guide/index.html` (search for `desktop-v`). The file names stay the same.
 
 Links used in the hero, nav, footer and guide FAQ:
 
