@@ -61,13 +61,13 @@ update the `.store-note` paragraph underneath.
 Under the store badges, `.desktop-dl` (`#download`) holds three `.dl-card`s:
 Mac, Windows and Linux (AppImage, plus a smaller Flatpak link). The guide's
 `#downloads` section repeats the same cards with install steps. The files are
-assets on the GitHub pre-release `desktop-v2.0.0-beta1`:
+assets on GitHub pre-releases (Windows and Linux: `desktop-beta-v2.0.0-b4`; Mac: `desktop-v2.0.0-beta1`):
 
 - Mac: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-v2.0.0-beta1/AnotherMorseTrainer-Mac.zip> (Developer ID, notarized), with the TestFlight beta <https://testflight.apple.com/join/ZwXF88Gh> as the alternative
-- Windows: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-v2.0.0-beta1/AnotherMorseTrainer-Windows-x64.msi>
-- Linux AppImage: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-v2.0.0-beta1/AnotherMorseTrainer-Linux-x86_64.AppImage>
-- Linux Flatpak: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-v2.0.0-beta1/AnotherMorseTrainer-Linux-x86_64.flatpak>
-- Release page: <https://github.com/N9HO/another-morse-trainer/releases/tag/desktop-v2.0.0-beta1>
+- Windows: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-beta-v2.0.0-b4/AnotherMorseTrainer-2.0.0-b4-windows-x64.msi>
+- Linux AppImage: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-beta-v2.0.0-b4/AnotherMorseTrainer-2.0.0-b4-linux-x86_64.AppImage>
+- Linux Flatpak: <https://github.com/N9HO/another-morse-trainer/releases/download/desktop-beta-v2.0.0-b4/AnotherMorseTrainer-2.0.0-b4-linux-x86_64.flatpak>
+- Release page: <https://github.com/N9HO/another-morse-trainer/releases>
 
 For a new release, change the tag in every one of these links: `index.html`
 and `guide/index.html` (search for `desktop-v`). The file names stay the same.
