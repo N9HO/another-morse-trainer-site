@@ -253,6 +253,7 @@
 
       <h3>Time-to-recognize</h3>
       <p>Every answer is timed from the moment the last tone ends. The app doesn't just track whether you got a character right. It tracks <strong>how long you took</strong>. A character you get right in 0.4 seconds is learned. The same character at 3 seconds means you're still decoding it consciously.</p>
+      <p>In <a href="#invaders">Morse Invaders</a>, <a href="#galaga">CW Galaga</a> and <a href="#defender">Morse Defender</a>, sounds take turns, so you can hit an enemy before its sound has played; that hit is timed from when the enemy appeared.</p>
       <p>That timing drives everything: which character comes next, when a new one is unlocked, and what shows up in your <a href="#progress">weakest-first stats</a>. The <strong>Recognize within</strong> setting (default 1.0 s) is the bar a character has to clear to count as fast enough.</p>
 
       <div class="tip">
@@ -488,6 +489,7 @@
 
       <h3>Before you start</h3>
       <p>Tapping a mode opens a setup screen with the options that mode supports: how long to practice, what content to send, how to answer. <strong>Session length</strong> runs from 1 to 30 minutes (five by default), or open-ended if you'd rather just stop when you stop. A timed session shows a countdown and ends itself.</p>
+      <p><strong>When time runs out mid-drill.</strong> If the countdown reaches 0:00 while a drill is waiting for your answer, the session holds so you can still answer it, and ends when you do, or after 15 seconds if you don't. This applies to Sending Practice, the quizzes, Type It, Head Copy, Journey and Rapid Fire. Listen &amp; Learn, stories, the code exam, pileups, Contest, the games and Rapid Fire's Review response end at 0:00, and so does a Rapid Fire run being posted to the leaderboard. Adding time from the timer menu during the hold carries the session on, and removing the limit lets it run on untimed; subtracting time down to 0:00 still ends the session at once, even during a hold. All apps.</p>
 
       <h3>During</h3>
       <p>The session bar carries your timer and a <strong>Settings</strong> button. That mid-session Settings panel is scoped to the mode you're running, so you get the knobs that apply right now (speed, tone, answer choices) without wading through everything else. Changes take effect on the next item.</p>
@@ -651,6 +653,7 @@
         <p>"Most dangerous" is decided for you: a diving enemy first (the lower it is, the sooner), then one climbing back from a dive, then the lowest row of the formation, then anything still flying in. The enemies carry either <strong>your active Koch set</strong> or the <strong>full alphabet and digits</strong>, and a character already on the field is not sent again while another is free, so a character usually names exactly one enemy.</p>
         <h3>The speed ramp</h3>
         <p>In hear-it mode the game starts slow and speeds up as you land hits, on a gentler ramp than Invaders'. A game opens <strong>8 WPM below your character speed</strong>, never below 15, and steps up <strong>1 WPM after every six hits</strong> (six in total, not in a row) until it reaches your character speed. A dive that gets through steps the speed back 1 WPM, never below where the game started; a wrong shot leaves it alone. Farnsworth spacing doesn't apply, since a single character has no gaps to stretch. The setup card says where a game will open and where it climbs to, the score line shows the speed right now, and the end card shows the highest speed you reached. In see-it mode nothing is sent, so there is no ramp: the decoder listens at your character speed.</p>
+        <p>When you copy by ear, a new enemy waits until the previous sound has finished before it flies in, so every enemy is sent the moment it enters and you always have time to hear it before it can dive at you. At the fastest waves this means enemies arrive as fast as Morse can announce them, never faster. All apps.</p>
         <h3>How it's scored</h3>
         <div class="tbl-wrap">
           <table class="spec">
@@ -1434,7 +1437,7 @@
           <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
           <tbody>
             <tr><td>Sidetone pitch</td><td>The tone frequency, <code>300-1000 Hz</code>. Default 600 Hz. Pick what's comfortable for your ears over a long session. The slider moves in 10 Hz steps on every app, and a saved value outside the range is brought back into it when the app opens.</td></tr>
-            <tr><td>Preview tone</td><td>Plays the item you're on, at your current settings, so you can hear the effect before committing. When there is no item to play it sends <code>PARIS</code>.</td></tr>
+            <tr><td>Preview tone</td><td>Sends <code>PARIS</code> at your current settings, so you can hear the effect before committing. It is unavailable during a session, where it would play over the session's own sound; change the pitch there and the next item plays at the new pitch. All apps.</td></tr>
             <tr><td>Keep Bluetooth audio awake</td><td>On by default. Plays a floor deliberately just above digital silence, too quiet to hear, so Bluetooth earbuds never idle between characters. See <a href="#noisefloor">why it's on</a>.</td></tr>
             <tr><td>Band noise</td><td>Audible noise under the Morse, for copying through: <strong>Off, Whisper, Low, Moderate, Heavy</strong>. Off by default. It plays only while a mode, game or lesson is running, and stays quiet on the home screen, the menus, Settings and Progress. Picking a level plays a short sample (about 2.5 seconds) so you can judge it; leaving Settings stops the sample. Any level also keeps Bluetooth audio awake.</td></tr>
           </tbody>
